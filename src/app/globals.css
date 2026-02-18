@@ -2,26 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1, .font-serif {
+  font-family: var(--font-playfair), serif;
+}
+
+/* Subtle network pattern for hero */
+.hero-pattern {
+  background-image: radial-gradient(circle at 1px 1px, rgba(0, 100, 120, 0.07) 1px, transparent 0);
+  background-size: 40px 40px;
 }
