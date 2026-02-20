@@ -18,7 +18,7 @@ export default function Footer() {
             <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-3">Navigate</h4>
             <div className="space-y-2">
               <Link href="/sites" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">Data Platforms</Link>
-              <Link href="/blog" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">Articles</Link>
+              <Link href="/articles" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">Articles</Link>
               <Link href="/about" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">About</Link>
               <Link href="/contact" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">Contact</Link>
             </div>

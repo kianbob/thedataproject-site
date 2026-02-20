@@ -179,8 +179,12 @@ export const sites: Site[] = [
   { id: 187, name: "U.S. Fire Stations Directory", domain: "heritageindex.org", url: "https://www.heritageindex.org/fire-stations", records: 51964, category: "heritage" },
   { id: 163, name: "Museums in the United States", domain: "heritageindex.org", url: "https://www.heritageindex.org/museums", records: 30176, category: "heritage" },
 
+  // Government Transparency
+  { id: null, name: "OpenMedicaid", domain: "openmedicaid.org", url: "https://www.openmedicaid.org", records: null, category: "government" },
+  { id: null, name: "OpenFeds", domain: "openfeds.org", url: "https://www.openfeds.org", records: null, category: "government" },
+  { id: null, name: "OpenSpending", domain: "openspending.us", url: "https://www.openspending.us", records: null, category: "government" },
+
   // Standalone sites
-  { id: null, name: "OpenMedicaid", domain: "openmedicaid.org", url: "https://www.openmedicaid.org", records: null, category: "standalone" },
   { id: 43, name: "PPP Loan Lookup", domain: "ppploanlookup.com", url: "https://www.ppploanlookup.com", records: 11468299, category: "standalone" },
   { id: 41, name: "Free NPI Lookup & Registry Search", domain: "npi-lookup-db.com", url: "https://www.npi-lookup-db.com", records: 8361118, category: "standalone" },
   { id: 10, name: "Compare Dog Breeds", domain: "compare-dog-breeds.com", url: "https://www.compare-dog-breeds.com", records: 1846, category: "standalone" },

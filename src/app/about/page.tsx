@@ -12,9 +12,9 @@ export default function AboutPage() {
 
       <div className="space-y-8">
         <p className="text-lg text-gray-600 leading-relaxed">
-          TheDataProject.AI builds free, searchable data platforms from government and public data sources.
-          We believe public data should be truly public — not locked behind paywalls, clunky government
-          interfaces, or inaccessible file formats.
+          TheDataProject.AI builds free, searchable data platforms that make government and public data
+          truly accessible. We believe transparency is the foundation of accountability — and that public
+          data should never be locked behind paywalls, clunky interfaces, or inaccessible file formats.
         </p>
 
         <div>
@@ -22,9 +22,33 @@ export default function AboutPage() {
           <p className="text-gray-600 leading-relaxed">
             We take raw public datasets — from agencies like CMS, FEC, FDA, FAA, SEC, the Census Bureau,
             and many more — and transform them into fast, searchable, well-designed platforms that anyone can use.
-            Whether you&apos;re a journalist investigating campaign finance, a patient comparing hospitals, or a
-            researcher exploring genealogy records, our tools make the data accessible.
+            Our mission is to advance government transparency and accountability by putting powerful data tools
+            in the hands of journalists, researchers, watchdogs, and everyday citizens.
           </p>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-serif font-bold text-gray-900 mb-4">Flagship Platforms</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <a href="https://www.openmedicaid.org" target="_blank" rel="noopener noreferrer"
+              className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all group">
+              <div className="text-3xl mb-3">🏥</div>
+              <h3 className="font-bold text-gray-900 group-hover:text-teal-700 transition-colors">OpenMedicaid</h3>
+              <p className="text-gray-500 text-sm mt-2">Track $1.09 trillion in Medicaid provider payments across all 50 states. 227M+ records.</p>
+            </a>
+            <a href="https://www.openfeds.org" target="_blank" rel="noopener noreferrer"
+              className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all group">
+              <div className="text-3xl mb-3">🏛️</div>
+              <h3 className="font-bold text-gray-900 group-hover:text-teal-700 transition-colors">OpenFeds</h3>
+              <p className="text-gray-500 text-sm mt-2">The definitive federal workforce tracker. 2.07M employees across 128 agencies with DOGE impact analysis.</p>
+            </a>
+            <a href="https://www.openspending.us" target="_blank" rel="noopener noreferrer"
+              className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all group">
+              <div className="text-3xl mb-3">💰</div>
+              <h3 className="font-bold text-gray-900 group-hover:text-teal-700 transition-colors">OpenSpending</h3>
+              <p className="text-gray-500 text-sm mt-2">Follow $11.2 trillion in federal spending. Every contract, every grant, every agency.</p>
+            </a>
+          </div>
         </div>
 
         <div>
