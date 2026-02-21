@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://thedataproject.ai"),
   title: "TheDataProject.AI — Making Public Data Usable",
   description: "134 data platforms with 375M+ searchable records across healthcare, government, elections, genealogy, and more.",
   openGraph: {
