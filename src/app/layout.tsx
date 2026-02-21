@@ -31,6 +31,25 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script id="ga" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-HM4N11Q05Y');`}</Script>
       </head>
       <body className="bg-gray-50 text-gray-900 font-sans antialiased min-h-screen flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'TheDataProject.AI',
+              url: 'https://www.thedataproject.ai',
+              description:
+                '134 data platforms with 375M+ searchable records across healthcare, government, elections, genealogy, and more.',
+              sameAs: [
+                'https://x.com/thedataproject0',
+                'https://linkedin.com/company/thedataproject-ai',
+                'https://www.instagram.com/thedataproject.ai',
+                'https://www.facebook.com/people/Thedataprojectai/61577226522734/',
+              ],
+            }),
+          }}
+        />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

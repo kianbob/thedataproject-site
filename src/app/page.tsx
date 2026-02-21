@@ -1,6 +1,7 @@
 import Link from "next/link";
 import StatCounter from "@/components/StatCounter";
 import { categories, getCategoryStats, formatRecords } from "@/lib/data";
+import { articles } from "@/lib/articles";
 
 const dataSources = ["HHS", "CMS", "FEC", "FDA", "FAA", "NCES", "SEC", "Census Bureau", "BLS", "CFPB", "FDIC", "NPS", "NHTSA", "OPM"];
 
@@ -117,6 +118,38 @@ export default function Home() {
                 <span className="inline-block mt-3 bg-teal-50 text-teal-700 text-xs font-medium px-2.5 py-1 rounded-full">{s.records} records</span>
               </a>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Latest Articles */}
+      <section className="bg-white py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-gray-900 text-center mb-12">Latest Articles</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[...articles]
+              .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+              .slice(0, 3)
+              .map((article) => (
+                <Link
+                  key={article.slug}
+                  href={`/articles/${article.slug}`}
+                  className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all group"
+                >
+                  <p className="text-sm text-gray-400">
+                    {new Date(article.date).toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </p>
+                  <h3 className="mt-2 text-lg font-serif font-bold text-gray-900 group-hover:text-teal-700 transition-colors">
+                    {article.title}
+                  </h3>
+                  <p className="mt-2 text-gray-500 text-sm">{article.description}</p>
+                  <span className="inline-block mt-4 text-teal-700 text-sm font-medium">Read more →</span>
+                </Link>
+              ))}
           </div>
         </div>
       </section>

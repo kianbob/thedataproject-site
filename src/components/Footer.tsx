@@ -1,4 +1,9 @@
 import Link from "next/link";
+import { articles } from "@/lib/articles";
+
+const latestArticles = [...articles]
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  .slice(0, 3);
 
 export default function Footer() {
   return (
@@ -21,6 +26,13 @@ export default function Footer() {
               <Link href="/articles" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">Articles</Link>
               <Link href="/about" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">About</Link>
               <Link href="/contact" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">Contact</Link>
+              <div className="mt-4 space-y-2">
+                {latestArticles.map((a) => (
+                  <Link key={a.slug} href={`/articles/${a.slug}`} className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">
+                    {a.title}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
           <div>

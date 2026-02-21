@@ -22,8 +22,13 @@ export function generateStaticParams() {
   return categories.map((cat) => ({ category: cat.slug }));
 }
 
-export function generateMetadata({ params }: { params: { category: string } }) {
-  const cat = categories.find((c) => c.slug === params.category);
+interface Props {
+  params: Promise<{ category: string }>;
+}
+
+export async function generateMetadata({ params }: Props) {
+  const { category } = await params;
+  const cat = categories.find((c) => c.slug === category);
   if (!cat) return {};
   return {
     title: `${cat.name} — TheDataProject.AI`,
@@ -31,8 +36,9 @@ export function generateMetadata({ params }: { params: { category: string } }) {
   };
 }
 
-export default function CategoryPage({ params }: { params: { category: string } }) {
-  const cat = categories.find((c) => c.slug === params.category);
+export default async function CategoryPage({ params }: Props) {
+  const { category } = await params;
+  const cat = categories.find((c) => c.slug === category);
   if (!cat) notFound();
 
   const catSites = getCategorySites(cat.slug);

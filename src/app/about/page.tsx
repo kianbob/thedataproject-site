@@ -34,6 +34,13 @@ export default function AboutPage() {
         </div>
 
         <div>
+          <h2 className="text-2xl font-serif font-bold text-gray-900 mb-4">Our Story</h2>
+          <p className="text-gray-600 leading-relaxed">
+            What started as a single healthcare data project grew into a portfolio of 134 platforms. Using AI-assisted development, we can process massive government datasets and build searchable interfaces in days rather than months — putting the focus on making data useful rather than wrestling with infrastructure.
+          </p>
+        </div>
+
+        <div>
           <h2 className="text-2xl font-serif font-bold text-gray-900 mb-4">Flagship Platforms</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <a href="https://www.openmedicaid.org" target="_blank" rel="noopener noreferrer"

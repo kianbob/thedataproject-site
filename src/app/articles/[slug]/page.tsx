@@ -45,6 +45,29 @@ export default async function ArticlePage({ params }: Props) {
         className="prose prose-gray max-w-none"
         dangerouslySetInnerHTML={{ __html: article.content }}
       />
+
+      <div className="mt-12 pt-6 border-t border-gray-200">
+        <p className="text-sm text-gray-400 mb-2">Share this article</p>
+        <div className="flex items-center gap-2 text-sm">
+          <a
+            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(article.title)}&url=${encodeURIComponent(`https://www.thedataproject.ai/articles/${slug}`)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-teal-700 hover:underline"
+          >
+            Share on X
+          </a>
+          <span className="text-gray-300">·</span>
+          <a
+            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://www.thedataproject.ai/articles/${slug}`)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-teal-700 hover:underline"
+          >
+            Share on LinkedIn
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
