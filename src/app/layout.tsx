@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -24,6 +25,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+      <head>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-HM4N11Q05Y" strategy="afterInteractive" />
+        <Script id="ga" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-HM4N11Q05Y');`}</Script>
+      </head>
       <body className="bg-gray-50 text-gray-900 font-sans antialiased min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-1">{children}</main>
