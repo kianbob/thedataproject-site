@@ -2,7 +2,7 @@ import Link from "next/link";
 import StatCounter from "@/components/StatCounter";
 import { categories, getCategoryStats, formatRecords } from "@/lib/data";
 
-const dataSources = ["HHS", "CMS", "FEC", "FDA", "FAA", "NCES", "SEC", "Census Bureau", "BLS", "CFPB", "FDIC", "NPS", "NHTSA"];
+const dataSources = ["HHS", "CMS", "FEC", "FDA", "FAA", "NCES", "SEC", "Census Bureau", "BLS", "CFPB", "FDIC", "NPS", "NHTSA", "OPM"];
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       {/* Hero */}
       <section className="relative py-24 md:py-36 px-4 bg-white hero-pattern">
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-gray-900 leading-tight">
             Making Public Data <span className="text-teal-700">Usable</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-gray-500 max-w-2xl mx-auto">

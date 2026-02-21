@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contact — TheDataProject.AI",
@@ -8,6 +9,11 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <nav className="text-sm text-gray-400 mb-6">
+        <Link href="/" className="text-teal-700 hover:underline">Home</Link>
+        <span className="mx-1.5">&gt;</span>
+        <span>Contact</span>
+      </nav>
       <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Contact Us</h1>
       <p className="text-gray-500 mb-12">Have a question, feedback, or want to collaborate? We&apos;d love to hear from you.</p>
 

@@ -4,17 +4,22 @@ import { articles } from "@/lib/articles";
 
 export const metadata: Metadata = {
   title: "Articles — TheDataProject.AI",
-  description: "Research and insights from our flagship data platforms — OpenMedicaid, OpenFeds, and OpenSpending.",
+  description: "Research, analysis, and insights across our 134 data platforms.",
 };
 
 export default function ArticlesPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <nav className="text-sm text-gray-400 mb-6">
+        <Link href="/" className="text-teal-700 hover:underline">Home</Link>
+        <span className="mx-1.5">&gt;</span>
+        <span>Articles</span>
+      </nav>
       <h1 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-2">Articles</h1>
       <p className="text-gray-500 mb-12">Research, analysis, and insights from our data platforms.</p>
 
       <div className="space-y-8">
-        {articles.map((article) => (
+        {[...articles].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).map((article) => (
           <Link
             key={article.slug}
             href={`/articles/${article.slug}`}

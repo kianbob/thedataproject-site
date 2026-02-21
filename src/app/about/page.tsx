@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About — TheDataProject.AI",
@@ -8,6 +9,11 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <nav className="text-sm text-gray-400 mb-6">
+        <Link href="/" className="text-teal-700 hover:underline">Home</Link>
+        <span className="mx-1.5">&gt;</span>
+        <span>About</span>
+      </nav>
       <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">About TheDataProject</h1>
 
       <div className="space-y-8">
@@ -79,14 +85,8 @@ export default function AboutPage() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-serif font-bold text-gray-900 mb-4">Contact</h2>
-          <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm space-y-3 text-gray-600">
-            <p>📍 131 Continental Drive, Suite 305, Newark, DE 19713</p>
-            <p>📧 <a href="mailto:info@thedataproject.ai" className="text-teal-700 hover:underline">info@thedataproject.ai</a></p>
-            <p>📞 <a href="tel:+18055003255" className="text-teal-700 hover:underline">(805) 500-3255</a></p>
-            <p>🐦 <a href="https://x.com/thedataproject0" target="_blank" rel="noopener noreferrer" className="text-teal-700 hover:underline">@thedataproject0</a></p>
-            <p>💼 <a href="https://linkedin.com/company/thedataproject-ai" target="_blank" rel="noopener noreferrer" className="text-teal-700 hover:underline">LinkedIn</a></p>
-          </div>
+          <h2 className="text-2xl font-serif font-bold text-gray-900 mb-4">Get in Touch</h2>
+          <p className="text-gray-600">Have questions or want to collaborate? Visit our <a href="/contact" className="text-teal-700 hover:underline font-medium">Contact page</a>.</p>
         </div>
       </div>
     </div>

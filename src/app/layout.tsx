@@ -10,6 +10,15 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 export const metadata: Metadata = {
   title: "TheDataProject.AI — Making Public Data Usable",
   description: "134 data platforms with 375M+ searchable records across healthcare, government, elections, genealogy, and more.",
+  openGraph: {
+    title: "TheDataProject.AI — Making Public Data Usable",
+    description: "134 data platforms with 375M+ searchable records across healthcare, government, elections, genealogy, and more.",
+    siteName: "TheDataProject.AI",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

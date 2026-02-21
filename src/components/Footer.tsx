@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-gray-100 border-t border-gray-200 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
-          <div className="md:col-span-2">
+          <div>
             <h3 className="text-lg font-serif font-bold text-gray-900 mb-3">
               TheDataProject<span className="text-teal-700">.AI</span>
             </h3>
@@ -21,6 +21,14 @@ export default function Footer() {
               <Link href="/articles" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">Articles</Link>
               <Link href="/about" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">About</Link>
               <Link href="/contact" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">Contact</Link>
+            </div>
+          </div>
+          <div>
+            <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-3">Flagship Sites</h4>
+            <div className="space-y-2">
+              <a href="https://www.openmedicaid.org" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenMedicaid</a>
+              <a href="https://www.openfeds.org" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenFeds</a>
+              <a href="https://www.openspending.us" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenSpending</a>
             </div>
           </div>
           <div>

@@ -25,6 +25,11 @@ export default function SitesPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <nav className="text-sm text-gray-400 mb-6">
+        <a href="/" className="text-teal-700 hover:underline">Home</a>
+        <span className="mx-1.5">&gt;</span>
+        <span>Data Platforms</span>
+      </nav>
       <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">All Sites</h1>
       <p className="text-gray-500 mb-8">Browse and search all 134 data platforms</p>
 

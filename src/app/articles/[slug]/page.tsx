@@ -28,9 +28,13 @@ export default async function ArticlePage({ params }: Props) {
 
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <Link href="/articles" className="text-teal-700 hover:underline text-sm font-medium mb-8 inline-block">
-        ← Back to Articles
-      </Link>
+      <nav className="text-sm text-gray-400 mb-6">
+        <Link href="/" className="text-teal-700 hover:underline">Home</Link>
+        <span className="mx-1.5">&gt;</span>
+        <Link href="/articles" className="text-teal-700 hover:underline">Articles</Link>
+        <span className="mx-1.5">&gt;</span>
+        <span>{article.title}</span>
+      </nav>
       <time className="block text-sm text-gray-400 mb-2">
         {new Date(article.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
       </time>
