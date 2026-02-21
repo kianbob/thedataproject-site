@@ -11,7 +11,7 @@ export const articles: Article[] = [
     slug: "tracking-medicaid-spending",
     title: "How We Track $1.09 Trillion in Medicaid Spending",
     description: "Inside OpenMedicaid — the platform turning HHS provider payment data into fraud detection insights across all 50 states.",
-    date: "2025-02-20",
+    date: "2026-02-20",
     content: `
       <p class="text-lg text-gray-600 mb-8">Medicaid is the largest source of federal funding to states, covering over 90 million Americans. In fiscal year 2023, the program distributed <strong>$1.09 trillion</strong> in provider payments. Yet until now, there has been no single, searchable public platform to explore where that money goes. That's why we built <a href="https://www.openmedicaid.org" class="text-teal-700 hover:underline font-medium">OpenMedicaid</a>.</p>
 
@@ -63,7 +63,7 @@ export const articles: Article[] = [
     slug: "federal-brain-drain",
     title: "The Federal Brain Drain: What OPM Data Reveals",
     description: "How OpenFeds tracks 2.07 million federal employees, the DOGE impact, and the looming retirement cliff across 128 agencies.",
-    date: "2025-02-18",
+    date: "2026-02-18",
     content: `
       <p class="text-lg text-gray-600 mb-8">The federal workforce is experiencing a seismic shift. Mass layoffs, hiring freezes, early retirement incentives, and political restructuring are reshaping the government at an unprecedented pace. <a href="https://www.openfeds.org" class="text-teal-700 hover:underline font-medium">OpenFeds</a> tracks it all — <strong>2.07 million employees</strong> across <strong>128 agencies</strong> — using data from the Office of Personnel Management (OPM).</p>
 
@@ -115,7 +115,7 @@ export const articles: Article[] = [
     slug: "federal-spending-breakdown",
     title: "Where $11.2 Trillion in Federal Spending Actually Goes",
     description: "OpenSpending tracks every contract, grant, and agency expenditure — revealing contractor monopolies, the DOGE reality check, and where your tax dollars end up.",
-    date: "2025-02-16",
+    date: "2026-02-16",
     content: `
       <p class="text-lg text-gray-600 mb-8">The federal government spent <strong>$11.2 trillion</strong> in recent fiscal years. That number is so large it loses meaning. <a href="https://www.openspending.us" class="text-teal-700 hover:underline font-medium">OpenSpending</a> breaks it down into something you can actually understand — every contract, every grant, every agency, searchable and explorable.</p>
 
@@ -166,7 +166,7 @@ export const articles: Article[] = [
     slug: "building-with-ai",
     title: "Building 134 Data Platforms with AI",
     description: "How TheDataProject.AI uses Claude, Python, and Next.js to turn massive government datasets into free, searchable platforms at unprecedented scale.",
-    date: "2025-02-15",
+    date: "2026-02-15",
     content: `
       <p class="text-lg text-gray-600 mb-8">TheDataProject.AI operates <strong>134 data platforms</strong> across <strong>17 domains</strong>, containing over <strong>375 million searchable records</strong>. Building this at any traditional pace would require years and a large engineering team. We did it with AI.</p>
 
@@ -220,7 +220,7 @@ export const articles: Article[] = [
     slug: "healthcare-data",
     title: "Mapping America's Healthcare Infrastructure: 1.5M+ Clinicians and Counting",
     description: "How NationalHealthRatings.com turns fragmented CMS and HHS data into searchable profiles for every doctor, hospital, nursing home, and treatment facility in the country.",
-    date: "2025-02-20",
+    date: "2026-02-20",
     content: `
       <p class="text-lg text-gray-600 mb-8">Where is the nearest dialysis center? Which nursing homes in your county have the best quality ratings? How many substance treatment facilities exist in your state? These are questions that should be easy to answer — but until now, the data was scattered across dozens of federal and state websites, each with its own interface, its own format, and its own limitations. <a href="https://www.nationalhealthratings.com" class="text-teal-700 hover:underline font-medium">NationalHealthRatings.com</a> brings it all together into a single, searchable platform spanning <strong>18 sites</strong> and hundreds of thousands of healthcare facilities.</p>
 
@@ -271,7 +271,7 @@ export const articles: Article[] = [
     slug: "government-salaries",
     title: "15 Million Government Salary Records, Fully Searchable",
     description: "GovernmentSalaries.org opens the books on public employee compensation — from federal GS scales to every city payroll in New York, California, and beyond.",
-    date: "2025-02-20",
+    date: "2026-02-20",
     content: `
       <p class="text-lg text-gray-600 mb-8">How much does a New York City firefighter earn? What's the highest-paid position in the California state government? How do federal salaries compare across agencies? These questions have answers buried in public payroll data — but until now, finding them required FOIA requests, data wrangling, or expensive premium databases. <a href="https://www.governmentsalaries.org" class="text-teal-700 hover:underline font-medium">GovernmentSalaries.org</a> makes <strong>15 million+ salary records</strong> instantly searchable across <strong>21 dedicated sites</strong>.</p>
 
@@ -320,7 +320,7 @@ export const articles: Article[] = [
     slug: "food-agriculture",
     title: "From Nutrition Labels to FDA Recalls: Inside America's Food Data",
     description: "FoodInsider.org puts 2 million+ nutrition records, restaurant grades, FDA recalls, and agricultural data at your fingertips across 9 specialized sites.",
-    date: "2025-02-20",
+    date: "2026-02-20",
     content: `
       <p class="text-lg text-gray-600 mb-8">What's actually in the food you eat? Which restaurants in your neighborhood have health code violations? Has a product you bought been recalled by the FDA? The answers exist in federal databases — but good luck finding them. <a href="https://www.foodinsider.org" class="text-teal-700 hover:underline font-medium">FoodInsider.org</a> consolidates data from the USDA, FDA, and local health departments into <strong>9 searchable platforms</strong> covering everything from nutrition facts to farmers markets.</p>
 
@@ -367,7 +367,7 @@ export const articles: Article[] = [
     slug: "transportation-data",
     title: "185K+ Vehicle Recalls and the Data Behind America's Transportation Systems",
     description: "DriveData.org tracks aircraft registrations, vehicle recalls, EV charging stations, fuel economy, and car safety ratings across 13 specialized platforms.",
-    date: "2025-02-20",
+    date: "2026-02-20",
     content: `
       <p class="text-lg text-gray-600 mb-8">Every day, millions of Americans get behind the wheel, board a plane, or charge an electric vehicle — trusting that the systems around them are safe, inspected, and properly maintained. The data behind that trust exists in federal databases scattered across the FAA, NHTSA, DOE, and CPSC. <a href="https://www.drivedata.org" class="text-teal-700 hover:underline font-medium">DriveData.org</a> brings it all together across <strong>13 dedicated platforms</strong> covering everything from aircraft tail numbers to EV charging networks.</p>
 
@@ -415,7 +415,7 @@ export const articles: Article[] = [
     slug: "business-finance",
     title: "1.8M Nonprofits, 2.4M SEC Filings, and the Business Data You Didn't Know Was Public",
     description: "CompanyInsights.org decodes SEC Form D filings, nonprofit financials, H-1B data, and venture capital activity across 13 specialized platforms.",
-    date: "2025-02-20",
+    date: "2026-02-20",
     content: `
       <p class="text-lg text-gray-600 mb-8">Every private securities offering filed with the SEC. Every nonprofit's financial disclosures. Every company that sponsored an H-1B visa. This data is public — required by law to be disclosed — yet it sits in formats and systems that make it nearly impossible for the average person to access. <a href="https://www.companyinsights.org" class="text-teal-700 hover:underline font-medium">CompanyInsights.org</a> changes that, organizing business and finance data across <strong>13 searchable platforms</strong> with millions of records.</p>
 
@@ -468,7 +468,7 @@ export const articles: Article[] = [
     slug: "genealogy-records",
     title: "87 Million Vital Records: The Largest Free Genealogy Database Online",
     description: "VitalRecordsIndex.com provides free access to 87M+ death records, marriage indexes, birth records, and historical data that commercial genealogy sites charge hundreds for.",
-    date: "2025-02-20",
+    date: "2026-02-20",
     content: `
       <p class="text-lg text-gray-600 mb-8">Genealogy is one of America's most popular hobbies — and one of its most expensive. Commercial platforms charge $200 or more per year for access to vital records that are, by law, public data. <a href="https://www.vitalrecordsindex.com" class="text-teal-700 hover:underline font-medium">VitalRecordsIndex.com</a> offers a free alternative: <strong>87 million+ vital records</strong> across <strong>12 searchable databases</strong>, covering death records, marriages, births, and historical events spanning more than 150 years.</p>
 
@@ -520,7 +520,7 @@ export const articles: Article[] = [
     slug: "housing-finance",
     title: "8.3 Million Consumer Complaints and the Data Behind America's Financial System",
     description: "CredioHub.com makes CFPB complaints, FDIC bank data, affordable housing inventories, and public pension data searchable across 7 specialized platforms.",
-    date: "2025-02-20",
+    date: "2026-02-20",
     content: `
       <p class="text-lg text-gray-600 mb-8">When a bank wrongly forecloses on a home, when a credit card company charges unauthorized fees, when a mortgage servicer loses your paperwork — the Consumer Financial Protection Bureau (CFPB) is where Americans file complaints. Those complaints, along with bank data, housing records, and pension information, are public. <a href="https://www.crediohub.com" class="text-teal-700 hover:underline font-medium">CredioHub.com</a> makes all of it searchable across <strong>7 specialized platforms</strong> containing millions of records about America's financial system.</p>
 
@@ -565,7 +565,7 @@ export const articles: Article[] = [
     slug: "elections-political-money",
     title: "Following the Money: 26M+ Individual Contributions in American Elections",
     description: "DonorSecrets.com traces every dollar in federal politics — from individual donors and employer networks to campaign committees and vendor payments across 9 specialized platforms.",
-    date: "2025-02-20",
+    date: "2026-02-20",
     content: `
       <p class="text-lg text-gray-600 mb-8">American elections run on money. In every cycle, billions of dollars flow from individual donors to campaigns, from PACs to super PACs, and from campaign committees to vendors who produce ads, run phone banks, and organize rallies. This money is disclosed — the Federal Election Commission requires it — but the raw FEC data is notoriously difficult to navigate. <a href="https://www.donorsecrets.com" class="text-teal-700 hover:underline font-medium">DonorSecrets.com</a> transforms this data into <strong>9 searchable platforms</strong> that make political money transparent, traceable, and understandable.</p>
 
@@ -613,7 +613,7 @@ export const articles: Article[] = [
     slug: "software-reviews",
     title: "Comparing 844 Software Products Across 13 Categories",
     description: "TopSoftwareProducts.com provides unbiased, data-driven comparisons of business software — from cybersecurity and marketing tools to AI writing assistants and CRM platforms.",
-    date: "2025-02-20",
+    date: "2026-02-20",
     content: `
       <p class="text-lg text-gray-600 mb-8">Choosing the right software for your business shouldn't require wading through sponsored blog posts, affiliate-driven "reviews," and comparison sites that rank products based on who pays the most. <a href="https://www.topsoftwareproducts.com" class="text-teal-700 hover:underline font-medium">TopSoftwareProducts.com</a> takes a different approach — organizing software across <strong>13 categories</strong> with structured, data-driven comparisons that help businesses make informed decisions based on features, pricing, and capabilities rather than marketing budgets.</p>
 
@@ -667,7 +667,7 @@ export const articles: Article[] = [
     slug: "education-data",
     title: "6,000+ Colleges and 229K Fields of Study: America's Education Data, Searchable",
     description: "ExploreBestColleges.com turns Department of Education data into searchable platforms for colleges, degree programs, and K-12 public schools across 3 specialized sites.",
-    date: "2025-02-20",
+    date: "2026-02-20",
     content: `
       <p class="text-lg text-gray-600 mb-8">Choosing a college is one of the highest-stakes decisions a young person makes — and one of the most data-poor. Glossy brochures and campus tours tell you what a school wants you to see. Federal data tells you what actually happens after students enroll: graduation rates, loan default rates, earning outcomes, and how programs compare to peers across the country. <a href="https://www.explorebestcolleges.com" class="text-teal-700 hover:underline font-medium">ExploreBestColleges.com</a> turns this data into <strong>3 searchable platforms</strong> that give students, parents, and educators the facts they need.</p>
 
@@ -702,7 +702,7 @@ export const articles: Article[] = [
     slug: "heritage-infrastructure",
     title: "100K+ Historic Places and the Infrastructure Data Hiding in Plain Sight",
     description: "HeritageIndex.org maps America's historic places, dams, fire stations, and museums — turning overlooked federal infrastructure datasets into searchable public tools across 5 platforms.",
-    date: "2025-02-20",
+    date: "2026-02-20",
     content: `
       <p class="text-lg text-gray-600 mb-8">There are over 100,000 places in the United States listed on the National Register of Historic Places — yet most Americans couldn't name five of them outside their own state. There are 88,000 dams across the country, many of them aging and in need of repair, but the data about their condition is buried in Army Corps of Engineers databases that few people know exist. <a href="https://www.heritageindex.org" class="text-teal-700 hover:underline font-medium">HeritageIndex.org</a> brings these overlooked infrastructure and heritage datasets into the open across <strong>5 searchable platforms</strong>.</p>
 
@@ -740,7 +740,7 @@ export const articles: Article[] = [
     slug: "ppp-loan-lookup",
     title: "11.4 Million PPP Loans: Where Pandemic Relief Money Actually Went",
     description: "PPPLoanLookup.com makes every Paycheck Protection Program loan searchable — revealing how $800 billion in emergency funds were distributed across American businesses.",
-    date: "2025-02-20",
+    date: "2026-02-20",
     content: `
       <p class="text-lg text-gray-600 mb-8">In 2020 and 2021, the federal government distributed over <strong>$800 billion</strong> through the Paycheck Protection Program (PPP), the largest emergency business lending program in American history. The program was designed to keep workers on payroll during COVID-19 shutdowns — but the speed of distribution, the volume of applications, and the limited oversight created conditions ripe for fraud, misallocation, and abuse. <a href="https://www.ppploanlookup.com" class="text-teal-700 hover:underline font-medium">PPPLoanLookup.com</a> makes all <strong>11.4 million+ PPP loan records</strong> searchable, giving the public the tools to see where the money went.</p>
 
@@ -781,7 +781,7 @@ export const articles: Article[] = [
     slug: "california-unclaimed-property",
     title: "82 Million Unclaimed Property Records: Is California Holding Your Money?",
     description: "CAUnclaimedProperty.com indexes 82M+ unclaimed property records from the California State Controller — helping residents find forgotten bank accounts, insurance payments, and other assets.",
-    date: "2025-02-20",
+    date: "2026-02-20",
     content: `
       <p class="text-lg text-gray-600 mb-8">Right now, the State of California is holding over <strong>$10 billion</strong> in unclaimed property — forgotten bank accounts, uncashed checks, insurance payouts, security deposits, stock dividends, and other financial assets that have been turned over to the state because their rightful owners couldn't be located. <a href="https://www.caunclaimedproperty.com" class="text-teal-700 hover:underline font-medium">CAUnclaimedProperty.com</a> indexes <strong>82 million+ records</strong> from the California State Controller's Office, making it dramatically easier to search for property that might belong to you or your family.</p>
 
