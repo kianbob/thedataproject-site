@@ -1,7 +1,7 @@
 import { articles } from "@/lib/articles";
 
 export async function GET() {
-  const base = "https://thedataproject.ai";
+  const base = "https://www.thedataproject.ai";
   const sorted = [...articles].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   const items = sorted

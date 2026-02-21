@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { articles } from "@/lib/articles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://thedataproject.ai";
+  const base = "https://www.thedataproject.ai";
   const date = "2025-02-20";
 
   const staticPages = [
