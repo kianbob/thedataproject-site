@@ -8,6 +8,58 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "launching-openmedicare",
+    title: "Launching OpenMedicare: AI-Powered Medicare Fraud Detection Across $854B in Payments",
+    description: "How we built a machine learning pipeline to analyze 96 million Medicare payment records, flag 500 high-risk providers, and uncover $2.8B in COVID-era anomalies.",
+    date: "2026-02-23",
+    content: `
+      <p class="text-lg text-gray-600 mb-8">Today we're launching <a href="https://www.openmedicare.us" class="text-teal-700 hover:underline font-medium">OpenMedicare</a> — a free, searchable platform covering <strong>ten years of Medicare physician payment data</strong> from the Centers for Medicare &amp; Medicaid Services. The dataset spans 2014–2023, encompasses <strong>96 million rows</strong> of provider-level payment records, and represents <strong>$854.8 billion</strong> in total Medicare spending. For the first time, anyone can explore where Medicare dollars go, compare providers, and see which ones our fraud model flags as high-risk.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">The Scale of Medicare Spending</h2>
+      <p class="text-gray-600 mb-4">Medicare is the federal health insurance program covering 65 million Americans — primarily seniors and people with disabilities. The physician payment data we've indexed reveals striking patterns in how that money flows.</p>
+      <p class="text-gray-600 mb-4">Across the decade, <strong>1.72 million unique providers</strong> billed Medicare. The average markup ratio — what Medicare paid versus what providers charged — stands at <strong>3.77x</strong>, meaning providers routinely charge nearly four times what they actually receive. While this is standard practice in medical billing, the variation across providers and specialties tells a more nuanced story.</p>
+      <p class="text-gray-600 mb-4">Our analysis also identified <strong>4,636 "impossible" providers</strong> — practitioners whose billing patterns defy normal medical practice. These include providers billing for an implausible number of patients per day, billing across incompatible specialties simultaneously, or showing geographic patterns inconsistent with a single practice location.</p>
+
+      <div class="bg-teal-50 border-l-4 border-teal-700 p-6 my-8 rounded-r-lg">
+        <p class="text-2xl font-bold text-teal-800">$854.8 billion in payments analyzed</p>
+        <p class="text-teal-700">96 million records across 1.72 million providers over ten years — every dollar searchable and explorable.</p>
+      </div>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Machine Learning Fraud Detection</h2>
+      <p class="text-gray-600 mb-4">The centerpiece of OpenMedicare is our ML fraud detection model. We trained a classifier using the HHS Office of Inspector General's <strong>List of Excluded Individuals and Entities (LEIE)</strong> — a database of providers who have been officially sanctioned for fraud, abuse, or other misconduct.</p>
+      <p class="text-gray-600 mb-4">By matching <strong>8,300+ confirmed fraudsters</strong> from the LEIE against their historical Medicare billing patterns, we built a model that learns what fraudulent billing looks like: unusually high volumes, suspicious procedure mixes, billing spikes, and geographic anomalies.</p>
+      <p class="text-gray-600 mb-4">The model achieves an <strong>AUC of 0.83</strong> — meaning it correctly distinguishes between fraudulent and legitimate providers 83% of the time. Applied to the full Medicare dataset, it has flagged <strong>approximately 500 providers</strong> as high-risk for potential fraud, waste, or abuse. Each flagged provider's profile on OpenMedicare includes the risk score and the contributing factors.</p>
+      <p class="text-gray-600 mb-4">To be clear: a fraud flag is not an accusation. It indicates statistical patterns consistent with known fraud cases and warrants further investigation. Our goal is to surface leads, not render verdicts.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Key Findings</h2>
+      <p class="text-gray-600 mb-4">Beyond the fraud model, our analysis of ten years of Medicare data has surfaced several significant patterns:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><strong>$2.8 billion in COVID-era anomalies:</strong> During 2020–2021, certain providers and specialties showed dramatic billing spikes inconsistent with their historical patterns — some legitimate (telehealth expansion), others suspicious (billing for services unlikely to have been delivered during lockdowns).</li>
+        <li><strong>$5.5 billion wound care cluster:</strong> A concentrated group of wound care providers collectively billed $5.5 billion, with billing patterns that diverge sharply from the specialty's norms. Wound care has been flagged by the OIG as a high-fraud specialty, and our data confirms the concern at scale.</li>
+        <li><strong>3.77x average markup ratio:</strong> While standard in medical billing, the variance is enormous — some providers charge 10x or more what Medicare pays, raising questions about list pricing practices.</li>
+        <li><strong>4,636 impossible providers:</strong> Billing patterns that defy the constraints of time, geography, or medical plausibility — strong candidates for further investigation.</li>
+      </ul>
+
+      <div class="bg-teal-50 border-l-4 border-teal-700 p-6 my-8 rounded-r-lg">
+        <p class="text-2xl font-bold text-teal-800">500 providers flagged by ML model</p>
+        <p class="text-teal-700">Trained on 8,300+ LEIE-confirmed fraudsters with an AUC of 0.83 — surfacing high-risk billing patterns for further investigation.</p>
+      </div>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Part of TheDataProject Portfolio</h2>
+      <p class="text-gray-600 mb-4">OpenMedicare joins our growing suite of government transparency platforms:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><a href="https://www.openmedicaid.org" class="text-teal-700 hover:underline font-medium">OpenMedicaid</a> — $1.09 trillion in Medicaid provider payments across all 50 states</li>
+        <li><a href="https://www.openfeds.org" class="text-teal-700 hover:underline font-medium">OpenFeds</a> — 2.07 million federal employees, DOGE tracking, brain drain analysis</li>
+        <li><a href="https://www.openspending.us" class="text-teal-700 hover:underline font-medium">OpenSpending</a> — $11.2 trillion in federal contracts, grants, and agency expenditures</li>
+      </ul>
+      <p class="text-gray-600 mb-4">Together, these platforms represent the most comprehensive open-access window into federal healthcare and government spending available anywhere. Medicare and Medicaid alone account for over $1.9 trillion annually — nearly a third of all federal spending. Making this data searchable and analyzable isn't just a technical project; it's an accountability project.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Explore OpenMedicare</h2>
+      <p class="text-gray-600 mb-4">Visit <a href="https://www.openmedicare.us" class="text-teal-700 hover:underline font-medium">openmedicare.us</a> to search any Medicare provider, view their billing history and peer comparisons, check fraud risk scores, and explore ten years of payment data. Everything is free, open, and requires no account.</p>
+      <p class="text-gray-600">OpenMedicare is built by <a href="/" class="text-teal-700 hover:underline font-medium">TheDataProject.AI</a> — making public data usable, searchable, and accessible to everyone.</p>
+    `,
+  },
+  {
     slug: "tracking-medicaid-spending",
     title: "How We Track $1.09 Trillion in Medicaid Spending",
     description: "Inside OpenMedicaid — the platform turning HHS provider payment data into fraud detection insights across all 50 states.",

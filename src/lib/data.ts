@@ -180,6 +180,7 @@ export const sites: Site[] = [
   { id: 163, name: "Museums in the United States", domain: "heritageindex.org", url: "https://www.heritageindex.org/museums", records: 30176, category: "heritage" },
 
   // Government Transparency
+  { id: null, name: "OpenMedicare", domain: "openmedicare.us", url: "https://www.openmedicare.us", records: null, category: "government" },
   { id: null, name: "OpenMedicaid", domain: "openmedicaid.org", url: "https://www.openmedicaid.org", records: null, category: "government" },
   { id: null, name: "OpenFeds", domain: "openfeds.org", url: "https://www.openfeds.org", records: null, category: "government" },
   { id: null, name: "OpenSpending", domain: "openspending.us", url: "https://www.openspending.us", records: null, category: "government" },
