@@ -875,6 +875,75 @@ export const articles: Article[] = [
       <p class="text-gray-600">CAUnclaimedProperty is one of the public records platforms built by <a href="/" class="text-teal-700 hover:underline font-medium">TheDataProject.AI</a> — making government-held data free, searchable, and accessible to everyone.</p>
     `,
   },
+  {
+    slug: "launching-openlobby",
+    title: "Launching OpenLobby: $37.7 Billion in Federal Lobbying, Exposed",
+    description: "We built the most comprehensive free lobbying database on the internet. 726,000+ Senate filings, 46,000 clients, 240 government agencies, and 25 original investigations — all searchable and open.",
+    date: "2026-02-25",
+    content: `
+      <p class="text-lg text-gray-600 mb-8">Today we're launching <a href="https://www.openlobby.us" class="text-teal-700 hover:underline font-medium">OpenLobby</a> — a free, searchable platform that tracks <strong>$37.7 billion in federal lobbying spending</strong> across eight years of Senate Lobbying Disclosure Act filings. Every client, every firm, every lobbyist, every dollar — all from public records, all open to everyone.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">The Scale of Lobbying in America</h2>
+      <p class="text-gray-600 mb-4">Federal lobbying is a massive industry hiding in plain sight. The data is technically public — filed quarterly with the Senate Office of Public Records — but it's buried in PDFs and clunky government interfaces that make meaningful analysis nearly impossible for ordinary people.</p>
+      <p class="text-gray-600 mb-4">We changed that. OpenLobby processes <strong>726,268 filings</strong> spanning 2018 through 2025, covering:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><strong>46,145 lobbying clients</strong> — from Fortune 500 companies to trade associations to foreign governments</li>
+        <li><strong>7,757 lobbying firms</strong> — the K Street firms that sell access to power</li>
+        <li><strong>23,545 individual lobbyists</strong> — including thousands of former government officials</li>
+        <li><strong>240 government agencies</strong> targeted by lobbying activity</li>
+        <li><strong>79 issue categories</strong> — from healthcare to defense to cryptocurrency</li>
+      </ul>
+
+      <div class="bg-teal-50 border-l-4 border-teal-700 p-6 my-8 rounded-r-lg">
+        <p class="text-2xl font-bold text-teal-800">$37.7 billion in lobbying spending tracked</p>
+        <p class="text-teal-700">726K+ filings across 46K clients — every dollar searchable, every connection mapped.</p>
+      </div>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">What Makes OpenLobby Different</h2>
+      <p class="text-gray-600 mb-4">There are other lobbying databases out there. What makes OpenLobby unique is what we do with the data:</p>
+      <p class="text-gray-600 mb-4"><strong>Cross-dataset intelligence.</strong> We link lobbying filings to federal contracts, Medicare spending, and government workforce data. When a defense contractor spends $2 million lobbying and receives $4.4 billion in contracts, we show you that connection. Nobody else does this.</p>
+      <p class="text-gray-600 mb-4"><strong>ROI calculations.</strong> We calculated the actual return on lobbying investment. The results are staggering — academic research suggests a 22,000% ROI on lobbying, and our data confirms it. Our <a href="https://www.openlobby.us/investigations/the-22000-percent-roi" class="text-teal-700 hover:underline">ROI investigation</a> breaks it down.</p>
+      <p class="text-gray-600 mb-4"><strong>Revolving door tracking.</strong> Over 5,000 former government officials are now registered lobbyists. Our <a href="https://www.openlobby.us/revolving-door" class="text-teal-700 hover:underline">Revolving Door tracker</a> shows who they are, where they came from, and how much more they charge compared to lobbyists without government experience.</p>
+      <p class="text-gray-600 mb-4"><strong>Government agency pressure analysis.</strong> Every lobbying filing discloses which agencies were contacted. Our <a href="https://www.openlobby.us/agencies" class="text-teal-700 hover:underline">agency pressure page</a> reveals which parts of government face the most lobbying — the White House Office alone appears in 109,000+ lobbying activities.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">25 Original Investigations</h2>
+      <p class="text-gray-600 mb-4">OpenLobby isn't just a database — it's a platform for data-driven journalism. We've published 25 original investigations, including:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><a href="https://www.openlobby.us/investigations/the-22000-percent-roi" class="text-teal-700 hover:underline"><strong>The 22,000% ROI</strong></a> — How lobbying became America's best investment</li>
+        <li><a href="https://www.openlobby.us/investigations/doge-vs-lobbying" class="text-teal-700 hover:underline"><strong>DOGE vs. The Lobbying Machine</strong></a> — $5.2 billion in lobbying fights government efficiency efforts</li>
+        <li><a href="https://www.openlobby.us/investigations/big-pharma-lobbying" class="text-teal-700 hover:underline"><strong>Big Pharma's Lobbying Empire</strong></a> — The healthcare industry's multi-billion dollar influence operation</li>
+        <li><a href="https://www.openlobby.us/investigations/tariff-lobbying-surge" class="text-teal-700 hover:underline"><strong>The Tariff Lobbying Surge</strong></a> — A 560% spike as companies scramble for exemptions</li>
+        <li><a href="https://www.openlobby.us/investigations/defense-contractor-lobbying" class="text-teal-700 hover:underline"><strong>Defense Contractor Lobbying</strong></a> — How $2M in lobbying turns into $4.4B in contracts</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Key Findings</h2>
+      <p class="text-gray-600 mb-4">Our analysis of eight years of lobbying data has surfaced several striking patterns:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><strong>2025 is on track to shatter records:</strong> With $6.0 billion already reported, lobbying spending is surging — driven by tariff fights, AI regulation battles, and government restructuring.</li>
+        <li><strong>The US Chamber of Commerce dominates:</strong> At $607.9 million in lobbying spend, the Chamber outpaces every other client by a factor of three.</li>
+        <li><strong>The revolving door commands a premium:</strong> Former government officials charge significantly more as lobbyists than those without government experience. Access has a price.</li>
+        <li><strong>Congress gets lobbied the most (by far):</strong> The House and Senate appear in over 1.2 million lobbying activities each. But the White House Office is the most-targeted executive branch entity.</li>
+        <li><strong>Healthcare leads all issue areas:</strong> More lobbying dollars flow to healthcare than any other category — driven by pharmaceutical companies, hospital systems, and insurance giants.</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Interactive Tools</h2>
+      <p class="text-gray-600 mb-4">Beyond browsing and searching, OpenLobby includes several interactive analysis tools:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><strong>Lobbying ROI Calculator</strong> — Compare what companies spend on lobbying vs. what they receive in federal contracts</li>
+        <li><strong>Influence Score</strong> — Our composite ranking of the most influential lobbying clients across 5 dimensions</li>
+        <li><strong>Spending Trend Analysis</strong> — Track how lobbying spending has evolved year by year</li>
+        <li><strong>Compare Tool</strong> — Put any two clients or firms side by side</li>
+        <li><strong>Lookup Your Rep</strong> — See which companies are lobbying from your state</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Free, Open, No Strings</h2>
+      <p class="text-gray-600 mb-4">OpenLobby has no paywall, no login requirement, and no ads. The data comes from the Senate Office of Public Records and is processed entirely by our own pipeline. We believe transparency about who's lobbying your government shouldn't cost anything.</p>
+      <p class="text-gray-600 mb-4">The platform also includes downloadable data exports, embeddable widgets for journalists, and an RSS feed of our latest investigations.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Explore OpenLobby</h2>
+      <p class="text-gray-600">Visit <a href="https://www.openlobby.us" class="text-teal-700 hover:underline font-medium">openlobby.us</a> to search clients, firms, and lobbyists — or start with our <a href="https://www.openlobby.us/investigations" class="text-teal-700 hover:underline font-medium">investigations</a> to see what the data reveals. OpenLobby is part of the <a href="/" class="text-teal-700 hover:underline font-medium">TheDataProject.AI</a> family of free public data platforms.</p>
+    `,
+  },
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {

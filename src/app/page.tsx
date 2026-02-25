@@ -16,7 +16,7 @@ export default function Home() {
           </h1>
           <p className="mt-6 text-lg md:text-xl text-gray-500 max-w-2xl mx-auto">
             We build searchable, free data platforms from government and public sources.
-            134 sites. 375M+ records. 17 domains. All open to everyone.
+            136 sites. 378M+ records. 19 domains. All open to everyone.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link href="/sites" className="bg-teal-700 hover:bg-teal-800 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
@@ -32,9 +32,9 @@ export default function Home() {
       {/* Stats */}
       <section className="py-16 px-4 border-y border-gray-200 bg-white">
         <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
-          <StatCounter end={134} label="Data Platforms" />
-          <StatCounter end={375} suffix="M+" label="Searchable Records" />
-          <StatCounter end={17} label="Domains" />
+          <StatCounter end={136} label="Data Platforms" />
+          <StatCounter end={378} suffix="M+" label="Searchable Records" />
+          <StatCounter end={19} label="Domains" />
           <StatCounter end={50} label="States Covered" />
         </div>
       </section>
@@ -43,7 +43,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-gray-900 text-center mb-12">Featured Platforms</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <a href="https://www.openmedicare.us" target="_blank" rel="noopener noreferrer"
               className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group">
               <div className="text-4xl mb-4">💊</div>
@@ -58,9 +58,23 @@ export default function Home() {
               <p className="text-gray-500 mt-2">Track $1.09 trillion in Medicaid provider payments. Fraud detection, provider profiles, procedure analysis across all 50 states. 227M+ records.</p>
               <span className="inline-block mt-4 text-teal-700 text-sm font-medium">openmedicaid.org →</span>
             </a>
-            <a href="https://www.openfeds.org" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.openlobby.us" target="_blank" rel="noopener noreferrer"
               className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group">
               <div className="text-4xl mb-4">🏛️</div>
+              <h3 className="text-xl font-bold text-gray-900 group-hover:text-teal-700 transition-colors">OpenLobby</h3>
+              <p className="text-gray-500 mt-2">Follow $37.7 billion in federal lobbying. 726K+ Senate filings, 46K clients, 240 government agencies targeted, revolving door tracking, and ROI analysis.</p>
+              <span className="inline-block mt-4 text-teal-700 text-sm font-medium">openlobby.us →</span>
+            </a>
+            <a href="https://www.vaccinewatch.org" target="_blank" rel="noopener noreferrer"
+              className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group">
+              <div className="text-4xl mb-4">💉</div>
+              <h3 className="text-xl font-bold text-gray-900 group-hover:text-teal-700 transition-colors">VaccineWatch</h3>
+              <p className="text-gray-500 mt-2">Explore 1.98 million VAERS adverse event reports. 104 vaccines, 85K+ pages, interactive tools, side-effect guides, and in-depth safety analysis.</p>
+              <span className="inline-block mt-4 text-teal-700 text-sm font-medium">vaccinewatch.org →</span>
+            </a>
+            <a href="https://www.openfeds.org" target="_blank" rel="noopener noreferrer"
+              className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group">
+              <div className="text-4xl mb-4">👔</div>
               <h3 className="text-xl font-bold text-gray-900 group-hover:text-teal-700 transition-colors">OpenFeds</h3>
               <p className="text-gray-500 mt-2">The definitive federal workforce tracker. 2.07M employees across 128 agencies. DOGE impact, brain drain analysis, salary explorer, and workforce trends.</p>
               <span className="inline-block mt-4 text-teal-700 text-sm font-medium">openfeds.org →</span>

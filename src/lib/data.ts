@@ -184,6 +184,8 @@ export const sites: Site[] = [
   { id: null, name: "OpenMedicaid", domain: "openmedicaid.org", url: "https://www.openmedicaid.org", records: null, category: "government" },
   { id: null, name: "OpenFeds", domain: "openfeds.org", url: "https://www.openfeds.org", records: null, category: "government" },
   { id: null, name: "OpenSpending", domain: "openspending.us", url: "https://www.openspending.us", records: null, category: "government" },
+  { id: null, name: "OpenLobby", domain: "openlobby.us", url: "https://www.openlobby.us", records: 726268, category: "government" },
+  { id: null, name: "VaccineWatch", domain: "vaccinewatch.org", url: "https://www.vaccinewatch.org", records: 1983260, category: "healthcare" },
 
   // Standalone sites
   { id: 43, name: "PPP Loan Lookup", domain: "ppploanlookup.com", url: "https://www.ppploanlookup.com", records: 11468299, category: "standalone" },

@@ -39,6 +39,9 @@ export default function Footer() {
             <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-3">Flagship Sites</h4>
             <div className="space-y-2">
               <a href="https://www.openmedicaid.org" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenMedicaid</a>
+              <a href="https://www.openmedicare.us" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenMedicare</a>
+              <a href="https://www.openlobby.us" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenLobby</a>
+              <a href="https://www.vaccinewatch.org" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">VaccineWatch</a>
               <a href="https://www.openfeds.org" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenFeds</a>
               <a href="https://www.openspending.us" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenSpending</a>
             </div>
