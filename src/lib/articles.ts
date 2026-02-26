@@ -944,6 +944,57 @@ export const articles: Article[] = [
       <p class="text-gray-600">Visit <a href="https://www.openlobby.us" class="text-teal-700 hover:underline font-medium">openlobby.us</a> to search clients, firms, and lobbyists — or start with our <a href="https://www.openlobby.us/investigations" class="text-teal-700 hover:underline font-medium">investigations</a> to see what the data reveals. OpenLobby is part of the <a href="/" class="text-teal-700 hover:underline font-medium">TheDataProject.AI</a> family of free public data platforms.</p>
     `,
   },
+  {
+    slug: "launching-vaccinewatch",
+    title: "Launching VaccineWatch: 1.98 Million VAERS Reports, Exposed and Explained",
+    description: "We built the most comprehensive free VAERS analysis platform on the internet. 1.98M reports, 104 vaccines, signal detection, reporting rate calculators, and 23 original analysis articles.",
+    date: "2026-02-25",
+    content: `
+      <p class="text-lg text-gray-600 mb-8">Today we're launching <a href="https://www.vaccinewatch.org" class="text-teal-700 hover:underline font-medium">VaccineWatch</a> — a free, transparent platform for exploring vaccine adverse event data from the CDC/FDA's VAERS database. <strong>1,983,260 reports</strong> spanning 35 years, 104 vaccines, and 500+ symptoms — all searchable, all contextualized, all open to everyone.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Why We Built This</h2>
+      <p class="text-gray-600 mb-4">VAERS (Vaccine Adverse Event Reporting System) is the nation's early warning system for vaccine safety. The raw data is publicly available, but it's notoriously difficult to access, understand, and interpret correctly. Existing tools are either outdated, academically hostile, or lack the context needed to understand what the numbers actually mean.</p>
+      <p class="text-gray-600 mb-4">VaccineWatch fills that gap. We're neither pro-vaccine nor anti-vaccine — we're pro-transparency. Our goal is to make vaccine safety data accessible, understandable, and properly contextualized so researchers, journalists, and the public can make informed decisions.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">What's Inside</h2>
+      <p class="text-gray-600 mb-4">VaccineWatch processes every VAERS report from 1990 through February 2026:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-6 space-y-1">
+        <li><strong>1,983,260</strong> total adverse event reports</li>
+        <li><strong>104</strong> vaccine types tracked</li>
+        <li><strong>500+</strong> symptom categories</li>
+        <li><strong>27,732</strong> death reports (with extensive context on what this means)</li>
+        <li><strong>143,653</strong> hospitalization reports</li>
+        <li><strong>65</strong> jurisdictions (all 50 states + territories)</li>
+        <li><strong>46</strong> manufacturers</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">What Makes VaccineWatch Different</h2>
+      <p class="text-gray-600 mb-4">There are other VAERS tools out there. Here's what sets VaccineWatch apart:</p>
+      <p class="text-gray-600 mb-4"><strong>Reporting Rate Calculator.</strong> The single most important context missing from raw VAERS numbers — how many adverse events per million doses administered. We combine VAERS data with CDC dose estimates for <a href="https://www.vaccinewatch.org/tools/reporting-rates" class="text-teal-700 hover:underline">16 vaccine types</a>. No other public VAERS tool offers this.</p>
+      <p class="text-gray-600 mb-4"><strong>Signal Detection Dashboard.</strong> FDA-style Proportional Reporting Ratio (PRR) analysis across all 1.98M reports. We detected <a href="https://www.vaccinewatch.org/tools/signal-detection" class="text-teal-700 hover:underline">5,225 safety signals</a> — and the analysis validates known signals like myocarditis after mRNA vaccines and intussusception after rotavirus vaccines.</p>
+      <p class="text-gray-600 mb-4"><strong>Context everywhere.</strong> Every data page includes disclaimers, methodology notes, and explanations of what VAERS data can and cannot tell you. We lead with <a href="https://www.vaccinewatch.org/analysis/denominator-problem" class="text-teal-700 hover:underline">The Denominator Problem</a> — the most critical limitation most people miss.</p>
+      <p class="text-gray-600 mb-4"><strong>15 interactive tools.</strong> From onset timing calculators to lot number lookups, dose comparison tools, age explorers, and severity profiles — all built to help users explore the data responsibly.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">23 Original Analysis Articles</h2>
+      <p class="text-gray-600 mb-4">VaccineWatch isn't just a database — it's a platform for data-driven health journalism:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-6 space-y-1">
+        <li><a href="https://www.vaccinewatch.org/analysis/denominator-problem" class="text-teal-700 hover:underline"><strong>The Denominator Problem</strong></a> — Why raw VAERS numbers are meaningless without dose context</li>
+        <li><a href="https://www.vaccinewatch.org/analysis/covid-impact" class="text-teal-700 hover:underline"><strong>The COVID-19 Impact</strong></a> — How the pandemic changed vaccine reporting forever</li>
+        <li><a href="https://www.vaccinewatch.org/analysis/myocarditis" class="text-teal-700 hover:underline"><strong>Myocarditis Deep Dive</strong></a> — The confirmed signal, who's at risk, and what outcomes look like</li>
+        <li><a href="https://www.vaccinewatch.org/analysis/death-reports" class="text-teal-700 hover:underline"><strong>Death Reports in Context</strong></a> — What 27,732 death reports actually mean</li>
+        <li><a href="https://www.vaccinewatch.org/analysis/reporting-bias" class="text-teal-700 hover:underline"><strong>Reporting Bias</strong></a> — Understanding the limitations of voluntary reporting</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">14 Vaccine Side Effects Guides</h2>
+      <p class="text-gray-600 mb-4">Dedicated pages for the most-searched vaccines — <a href="https://www.vaccinewatch.org/side-effects/covid" class="text-teal-700 hover:underline">COVID-19</a>, <a href="https://www.vaccinewatch.org/side-effects/flu" class="text-teal-700 hover:underline">Flu</a>, <a href="https://www.vaccinewatch.org/side-effects/mmr" class="text-teal-700 hover:underline">MMR</a>, <a href="https://www.vaccinewatch.org/side-effects/hpv" class="text-teal-700 hover:underline">HPV</a>, <a href="https://www.vaccinewatch.org/side-effects/shingles" class="text-teal-700 hover:underline">Shingles</a>, and more — each with VAERS data breakdowns, manufacturer comparisons, and medical context.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Free and Open</h2>
+      <p class="text-gray-600 mb-4">VaccineWatch has no paywall, no login requirement, and no ads. The data comes directly from the CDC/FDA VAERS public data files and is updated quarterly. We believe transparent access to vaccine safety data shouldn't cost anything.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Explore VaccineWatch</h2>
+      <p class="text-gray-600">Visit <a href="https://www.vaccinewatch.org" class="text-teal-700 hover:underline font-medium">vaccinewatch.org</a> to explore vaccines, symptoms, and safety signals — or start with our <a href="https://www.vaccinewatch.org/analysis" class="text-teal-700 hover:underline font-medium">analysis articles</a> to see what the data reveals. VaccineWatch is part of the <a href="/" class="text-teal-700 hover:underline font-medium">TheDataProject.AI</a> family of free public data platforms.</p>
+    `,
+  },
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {

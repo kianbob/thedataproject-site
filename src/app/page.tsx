@@ -65,6 +65,13 @@ export default function Home() {
               <p className="text-gray-500 mt-2">Follow $37.7 billion in federal lobbying. 726K+ Senate filings, 46K clients, 240 government agencies targeted, revolving door tracking, and ROI analysis.</p>
               <span className="inline-block mt-4 text-teal-700 text-sm font-medium">openlobby.us →</span>
             </a>
+            <a href="https://www.vaccinewatch.org" target="_blank" rel="noopener noreferrer"
+              className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group">
+              <div className="text-4xl mb-4">🛡️</div>
+              <h3 className="text-xl font-bold text-gray-900 group-hover:text-teal-700 transition-colors">VaccineWatch</h3>
+              <p className="text-gray-500 mt-2">Transparent VAERS data analysis — 1.98M adverse event reports, 104 vaccines, signal detection, reporting rate calculators, and 23 original analysis articles.</p>
+              <span className="inline-block mt-4 text-teal-700 text-sm font-medium">vaccinewatch.org →</span>
+            </a>
             <a href="https://www.openfeds.org" target="_blank" rel="noopener noreferrer"
               className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group">
               <div className="text-4xl mb-4">👔</div>
