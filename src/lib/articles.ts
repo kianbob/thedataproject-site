@@ -995,6 +995,88 @@ export const articles: Article[] = [
       <p class="text-gray-600">Visit <a href="https://www.vaccinewatch.org" class="text-teal-700 hover:underline font-medium">vaccinewatch.org</a> to explore vaccines, symptoms, and safety signals — or start with our <a href="https://www.vaccinewatch.org/analysis" class="text-teal-700 hover:underline font-medium">analysis articles</a> to see what the data reveals. VaccineWatch is part of the <a href="/" class="text-teal-700 hover:underline font-medium">TheDataProject.AI</a> family of free public data platforms.</p>
     `,
   },
+  {
+    slug: "launching-openimmigration",
+    title: "Launching OpenImmigration: 9.6 Million Court Cases, 1,409 Judges, and the Full Picture of U.S. Immigration",
+    description: "How we turned 4.2GB of DOJ immigration court records into a free, searchable platform covering the full spectrum — from border encounters to court outcomes to deportation.",
+    date: "2026-02-26",
+    content: `
+      <p class="text-lg text-gray-600 mb-8">Today we're launching <a href="https://www.openimmigration.us" class="text-teal-700 hover:underline font-medium">OpenImmigration</a> — a free platform that makes U.S. immigration data accessible to everyone. Built on <strong>4.2GB of DOJ Executive Office for Immigration Review (EOIR) data</strong>, supplemented by CBP border encounter records, ICE enforcement data, and USCIS statistics, OpenImmigration covers the full immigration spectrum: <strong>9.6 million court cases</strong>, <strong>16.2 million proceedings</strong>, <strong>12 million border encounters</strong>, and much more.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Why Immigration Data Matters</h2>
+      <p class="text-gray-600 mb-4">Immigration is one of the most debated topics in America, but the underlying data is scattered across government agencies, buried in dense FOIA downloads, and almost impossible for a normal person to explore. TRAC at Syracuse University has done important work here, but their tools are dated and paywalled for most features.</p>
+      <p class="text-gray-600 mb-4">We built OpenImmigration to change that. Every number on the site links back to its source. Every chart is interactive. Every court, nationality, and judge has a dedicated detail page you can explore.</p>
+
+      <div class="bg-teal-50 border-l-4 border-teal-700 p-6 my-8 rounded-r-lg">
+        <p class="text-2xl font-bold text-teal-800">1.9 million cases pending</p>
+        <p class="text-teal-700">The immigration court backlog has reached historic levels — with some courts averaging over 1,000 days per case.</p>
+      </div>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">What's Inside</h2>
+      <p class="text-gray-600 mb-4">OpenImmigration isn't just court data. It covers the full journey:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><strong>Border Encounters:</strong> 12 million CBP encounters (FY2020–2026), broken down by nationality, region, and encounter type.</li>
+        <li><strong>Immigration Courts:</strong> 88 courts with case volumes, asylum grant rates, top nationalities, and average wait times.</li>
+        <li><strong>1,409 Judges:</strong> Individual profiles showing decision patterns, grant rates, and caseloads — revealing dramatic variation in outcomes.</li>
+        <li><strong>258 Nationalities:</strong> How cases play out differently for people from different countries.</li>
+        <li><strong>ICE Enforcement:</strong> Deportation and removal data from FY2014 through FY2026.</li>
+        <li><strong>Drug Seizures:</strong> 1.9 million pounds seized at the border, including 65,000 lbs of fentanyl.</li>
+        <li><strong>Legal Pathways:</strong> Green cards, naturalization, refugees, DACA, TPS, and visa overstays.</li>
+        <li><strong>Appeals &amp; Bonds:</strong> 1.46 million BIA appeals and 1.59 million bond hearings with outcome analysis.</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Key Findings</h2>
+      <p class="text-gray-600 mb-4">Processing 9.6 million cases reveals patterns that rarely make the headlines:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><strong>Judge roulette is real:</strong> Asylum grant rates vary from under 5% to over 80% depending on the judge assigned — same case, wildly different odds.</li>
+        <li><strong>Representation changes everything:</strong> Immigrants with legal representation are far more likely to win their cases, yet the majority go unrepresented.</li>
+        <li><strong>Geography is destiny:</strong> Where your case is heard matters as much as the facts. Some courts grant asylum at 5x the rate of others.</li>
+        <li><strong>The backlog compounds:</strong> 1.9 million pending cases, with average wait times approaching 400 days — and some courts over 1,000.</li>
+        <li><strong>Fentanyl dominates seizures:</strong> 65,000 lbs of fentanyl seized at the border since FY2023, overwhelmingly at ports of entry.</li>
+      </ul>
+
+      <div class="bg-teal-50 border-l-4 border-teal-700 p-6 my-8 rounded-r-lg">
+        <p class="text-2xl font-bold text-teal-800">1,800+ pages of immigration data</p>
+        <p class="text-teal-700">Every court, nationality, and judge gets a dedicated profile page with charts, stats, and cross-references.</p>
+      </div>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">14 Data-Driven Analysis Articles</h2>
+      <p class="text-gray-600 mb-4">Beyond the raw data, we published 14 original analysis articles exploring the system's biggest questions:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><a href="https://www.openimmigration.us/analysis/backlog-crisis" class="text-teal-700 hover:underline">The Immigration Court Backlog Crisis</a></li>
+        <li><a href="https://www.openimmigration.us/analysis/judge-variation" class="text-teal-700 hover:underline">Judge Roulette: How Your Judge Determines Your Fate</a></li>
+        <li><a href="https://www.openimmigration.us/analysis/fentanyl-pipeline" class="text-teal-700 hover:underline">The Fentanyl Pipeline: What Border Seizure Data Really Shows</a></li>
+        <li><a href="https://www.openimmigration.us/analysis/representation-gap" class="text-teal-700 hover:underline">The Representation Gap</a></li>
+        <li><a href="https://www.openimmigration.us/analysis/bond-system" class="text-teal-700 hover:underline">The Price of Freedom: Inside the Bond System</a></li>
+        <li>...and 9 more covering asylum patterns, deportation, children in court, geographic disparities, and the TPS system.</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Interactive Tools</h2>
+      <p class="text-gray-600 mb-4">OpenImmigration includes tools that go beyond static charts:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><strong>Compare Courts &amp; Judges:</strong> Select up to 5 courts or judges for side-by-side comparison with bar charts and data tables.</li>
+        <li><strong>Search:</strong> Full-text search across all courts, nationalities, and judges — with keyboard shortcut (press /).</li>
+        <li><strong>Statistics at a Glance:</strong> Every key number in one page with 7 data sections.</li>
+        <li><strong>Glossary:</strong> 34 immigration court terms defined, with structured data for search engines.</li>
+        <li><strong>Downloads:</strong> 18 free JSON datasets for researchers and journalists.</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Part of TheDataProject Portfolio</h2>
+      <p class="text-gray-600 mb-4">OpenImmigration is the eighth platform in our growing family of free government data tools:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><a href="https://www.openmedicaid.org" class="text-teal-700 hover:underline">OpenMedicaid</a> — $1.09 trillion in Medicaid payments</li>
+        <li><a href="https://www.openmedicare.us" class="text-teal-700 hover:underline">OpenMedicare</a> — $854.8 billion in Medicare payments with ML fraud detection</li>
+        <li><a href="https://www.openspending.us" class="text-teal-700 hover:underline">OpenSpending</a> — $6.75 trillion in federal contracts</li>
+        <li><a href="https://www.openfeds.org" class="text-teal-700 hover:underline">OpenFeds</a> — 2 million federal employees</li>
+        <li><a href="https://www.openlobby.us" class="text-teal-700 hover:underline">OpenLobby</a> — $37.7 billion in lobbying data</li>
+        <li><a href="https://www.vaccinewatch.org" class="text-teal-700 hover:underline">VaccineWatch</a> — 1.98 million VAERS reports</li>
+        <li><strong>OpenImmigration</strong> — 9.6 million immigration court cases</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Explore OpenImmigration</h2>
+      <p class="text-gray-600">Visit <a href="https://www.openimmigration.us" class="text-teal-700 hover:underline font-medium">openimmigration.us</a> to explore courts, judges, nationalities, border data, and more — or start with our <a href="https://www.openimmigration.us/analysis" class="text-teal-700 hover:underline font-medium">14 analysis articles</a> for data-driven insights into the U.S. immigration system. OpenImmigration is part of the <a href="/" class="text-teal-700 hover:underline font-medium">TheDataProject.AI</a> family of free public data platforms.</p>
+    `,
+  },
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {
