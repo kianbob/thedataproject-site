@@ -1077,6 +1077,47 @@ export const articles: Article[] = [
       <p class="text-gray-600">Visit <a href="https://www.openimmigration.us" class="text-teal-700 hover:underline font-medium">openimmigration.us</a> to explore courts, judges, nationalities, border data, and more — or start with our <a href="https://www.openimmigration.us/analysis" class="text-teal-700 hover:underline font-medium">14 analysis articles</a> for data-driven insights into the U.S. immigration system. OpenImmigration is part of the <a href="/" class="text-teal-700 hover:underline font-medium">TheDataProject.AI</a> family of free public data platforms.</p>
     `,
   },
+  {
+    slug: "launching-opensubsidies",
+    title: "Launching OpenSubsidies: $40 Billion in Farm Subsidies — Every Dollar, Every Recipient",
+    description: "We processed 8.1 million USDA payment records to build the most accessible farm subsidy database on the internet. Here's what the data reveals.",
+    date: "2026-02-27",
+    content: `
+      <p class="text-lg text-gray-600 mb-8">Today we're launching <a href="https://www.opensubsidies.us" class="text-teal-700 hover:underline font-medium">OpenSubsidies</a> — a free, searchable platform tracking <strong>$40 billion in USDA farm subsidy payments</strong> across every state, county, and program. Built from <strong>8.1 million payment records</strong> spanning 2023–2025, OpenSubsidies makes it easy to see exactly where taxpayer dollars go in American agriculture.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">The Scale of Farm Subsidies</h2>
+      <p class="text-gray-600 mb-4">The federal government distributes billions every year through the USDA Farm Service Agency — payments for crop insurance, conservation, disaster relief, commodity support, and more. But <strong>69% of American farms receive zero federal subsidy payments</strong>. The money that does flow is staggeringly concentrated among the largest operations.</p>
+      <p class="text-gray-600 mb-4">Our dataset covers <strong>107 distinct programs</strong>, <strong>59 states and territories</strong>, and <strong>21,895 counties</strong>. The largest single program is the Emergency Commodity Assistance Program at $9.36 billion — nearly a quarter of all farm subsidies in our dataset.</p>
+
+      <div class="bg-teal-50 border-l-4 border-teal-700 p-6 my-8 rounded-r-lg">
+        <p class="text-2xl font-bold text-teal-800">$40 billion across 8.1 million payments</p>
+        <p class="text-teal-700">107 programs, 59 states, 21,895 counties — every dollar searchable and explorable.</p>
+      </div>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Geographic Concentration</h2>
+      <p class="text-gray-600 mb-4">Texas leads all states with <strong>$3.81 billion</strong> in farm subsidies, followed by Iowa ($2.97B), Kansas ($2.81B), Minnesota ($2.61B), and Nebraska ($2.34B). But the per-capita view tells a different story: North Dakota receives over <strong>$6,000 per person</strong> in farm subsidies, while California receives under $100.</p>
+      <p class="text-gray-600 mb-4">This geographic concentration reflects the structure of American agriculture — corn, soybeans, wheat, and cotton attract the most subsidy dollars, and the states that grow them dominate the funding.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Emergency Spending Dominates</h2>
+      <p class="text-gray-600 mb-4">Perhaps the most striking finding is that <strong>emergency and disaster programs now account for the majority of farm spending</strong>. What were designed as safety nets have become the primary mechanism for federal agricultural support. With climate change increasing extreme weather events, this trend shows no signs of reversing.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">What You Can Explore</h2>
+      <ul class="list-disc pl-6 text-gray-600 mb-4">
+        <li>Every state's subsidy totals with county-level breakdowns and top recipients</li>
+        <li>All 107 USDA programs ranked by spending with per-state distribution</li>
+        <li>Top 1,000 individual recipients with amounts and locations</li>
+        <li>Interactive dashboard with yearly trends and charts</li>
+        <li>6 data-driven analysis articles on concentration, disaster spending, geography, and more</li>
+        <li>Downloadable JSON datasets for your own analysis</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">The Accountability Question</h2>
+      <p class="text-gray-600 mb-4">Farm subsidies are one of the largest categories of federal spending, yet they receive far less scrutiny than defense or healthcare budgets. The data raises legitimate questions: Are payment limits working? Is emergency spending being abused? Are subsidies supporting family farms or accelerating consolidation?</p>
+      <p class="text-gray-600 mb-4">OpenSubsidies doesn't answer these questions — it provides the data so citizens, journalists, and policymakers can answer them for themselves.</p>
+
+      <p class="text-gray-600">Visit <a href="https://www.opensubsidies.us" class="text-teal-700 hover:underline font-medium">opensubsidies.us</a> to explore the data, or start with our <a href="https://www.opensubsidies.us/analysis" class="text-teal-700 hover:underline font-medium">analysis articles</a>. OpenSubsidies is part of the <a href="/" class="text-teal-700 hover:underline font-medium">TheDataProject.AI</a> family of free public data platforms.</p>
+    `,
+  },
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {
