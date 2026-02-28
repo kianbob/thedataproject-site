@@ -1077,6 +1077,71 @@ export const articles: Article[] = [
       <p class="text-gray-600">Visit <a href="https://www.openimmigration.us" class="text-teal-700 hover:underline font-medium">openimmigration.us</a> to explore courts, judges, nationalities, border data, and more — or start with our <a href="https://www.openimmigration.us/analysis" class="text-teal-700 hover:underline font-medium">14 analysis articles</a> for data-driven insights into the U.S. immigration system. OpenImmigration is part of the <a href="/" class="text-teal-700 hover:underline font-medium">TheDataProject.AI</a> family of free public data platforms.</p>
     `,
   },
+  {
+    slug: "launching-opensubsidies",
+    title: "Launching OpenSubsidies: $147 Billion in Farm Subsidies, Exposed",
+    description: "How we processed 82 USDA Excel files into a free, searchable platform covering 31.8 million farm subsidy payments across 157 programs, every state, and 28,875 counties.",
+    date: "2026-02-27",
+    content: `
+      <p class="text-lg text-gray-600 mb-8">Today we're launching <a href="https://www.opensubsidies.org" class="text-teal-700 hover:underline font-medium">OpenSubsidies</a> — a free platform that lets anyone explore <strong>$147 billion in USDA Farm Service Agency payments</strong> from 2017 to 2025. With <strong>31.8 million payment records</strong> across 157 programs, 59 states and territories, and 28,875 counties, it's the most comprehensive open-access farm subsidy explorer available.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Why Farm Subsidies Matter</h2>
+      <p class="text-gray-600 mb-4">The federal government spends roughly $16 billion per year on farm subsidies — more than the budgets of many federal agencies. Yet most Americans have no idea where this money goes, who receives it, or which programs it funds. The data exists in USDA Excel spreadsheets, but until now there's been no modern, free way to explore it.</p>
+      <p class="text-gray-600 mb-4">The main existing resource — the Environmental Working Group's farm subsidy database — runs on aging infrastructure with a clunky interface and limited analytical tools. We built OpenSubsidies to fill that gap with modern UX, deeper analysis, and interactive tools.</p>
+
+      <div class="bg-green-50 border-l-4 border-green-700 p-6 my-8 rounded-r-lg">
+        <p class="text-2xl font-bold text-green-800">$147.3 billion tracked</p>
+        <p class="text-green-700">31.8 million payments across 157 programs, 59 states, and 28,875 counties — every dollar searchable.</p>
+      </div>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">What We Found</h2>
+      <p class="text-gray-600 mb-4">Processing nine years of FSA payment data revealed patterns that challenge conventional narratives about farm subsidies:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><strong>COVID changed everything:</strong> In 2020, farm subsidies hit $38.7 billion — more than double the previous peak — driven by emergency CFAP payments. The emergency spending reshaped the entire subsidy landscape.</li>
+        <li><strong>46 zombie programs:</strong> Dozens of programs that made a handful of payments years ago still technically exist in the system, consuming administrative overhead.</li>
+        <li><strong>Extreme concentration:</strong> The top 1% of recipients collect a disproportionate share of total payments, while 69% of American farms receive nothing at all.</li>
+        <li><strong>Geographic disparities:</strong> Texas leads at $14.5 billion, while some states receive less per capita than others spend on a single program.</li>
+        <li><strong>157 programs:</strong> From the well-known Conservation Reserve Program ($15.7B) to obscure livestock disaster programs — the system is far more complex than most people realize.</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">What You Can Do</h2>
+      <p class="text-gray-600 mb-4">OpenSubsidies isn't just a lookup tool. We built <strong>10 interactive tools</strong> and <strong>22 original analysis articles</strong> to help you understand the data:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><strong>Subsidy Quiz:</strong> Test your knowledge of farm subsidy facts</li>
+        <li><strong>County Finder:</strong> See exactly what your county receives</li>
+        <li><strong>Taxpayer Calculator:</strong> How much of your taxes go to farm subsidies</li>
+        <li><strong>State Comparison:</strong> Compare any two states side-by-side</li>
+        <li><strong>Program Explorer:</strong> Drill into any of 157 FSA programs</li>
+        <li><strong>Timeline Explorer:</strong> Watch how subsidies shifted from trade wars to COVID to disaster spending</li>
+      </ul>
+      <p class="text-gray-600 mb-4">Our analysis articles cover everything from <a href="https://www.opensubsidies.org/analysis/covid-spending" class="text-teal-700 hover:underline">how COVID reshaped farm spending</a> to <a href="https://www.opensubsidies.org/analysis/zombie-programs" class="text-teal-700 hover:underline">zombie programs still on the books</a> to <a href="https://www.opensubsidies.org/doge-farm-subsidies" class="text-teal-700 hover:underline">what a DOGE-style efficiency review would find</a>.</p>
+
+      <div class="bg-green-50 border-l-4 border-green-700 p-6 my-8 rounded-r-lg">
+        <p class="text-2xl font-bold text-green-800">8,000+ explorable pages</p>
+        <p class="text-green-700">Every state, county, program, and top recipient has a dedicated detail page with charts, insights, and cross-links.</p>
+      </div>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">The Data Pipeline</h2>
+      <p class="text-gray-600 mb-4">Building OpenSubsidies required processing <strong>82 Excel files</strong> from USDA's Farm Service Agency — totaling over 678MB of raw data. The files span 2017 through 2025, with some files exceeding 35MB each.</p>
+      <p class="text-gray-600 mb-4">Standard libraries couldn't handle files this large on our 16GB development machine, so we built a custom streaming XML parser that processes Excel files without loading them entirely into memory. The pipeline extracts payment records, normalizes program names, assigns FIPS codes to counties, and generates the JSON files that power the site.</p>
+      <p class="text-gray-600 mb-4">The result: 5,000 recipient detail files, 3,087 county detail files, 59 state detail files, 157 program pages, and 9 year-over-year trend pages — all generated from a single data pipeline.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Part of TheDataProject Portfolio</h2>
+      <p class="text-gray-600 mb-4">OpenSubsidies is our ninth platform, joining:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><a href="https://www.openmedicare.us" class="text-teal-700 hover:underline font-medium">OpenMedicare</a> — $854B in Medicare payments with ML fraud detection</li>
+        <li><a href="https://www.openmedicaid.org" class="text-teal-700 hover:underline font-medium">OpenMedicaid</a> — $1.09 trillion in Medicaid provider payments</li>
+        <li><a href="https://www.openlobby.us" class="text-teal-700 hover:underline font-medium">OpenLobby</a> — $37.7B in federal lobbying, 726K+ filings</li>
+        <li><a href="https://www.vaccinewatch.org" class="text-teal-700 hover:underline font-medium">VaccineWatch</a> — 1.98M VAERS reports, signal detection tools</li>
+        <li><a href="https://www.openimmigration.us" class="text-teal-700 hover:underline font-medium">OpenImmigration</a> — 9.6M immigration court cases, full spectrum data</li>
+        <li><a href="https://www.openfeds.org" class="text-teal-700 hover:underline font-medium">OpenFeds</a>, <a href="https://www.openspending.us" class="text-teal-700 hover:underline font-medium">OpenSpending</a> — Federal workforce and spending data</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Explore OpenSubsidies</h2>
+      <p class="text-gray-600 mb-4">Visit <a href="https://www.opensubsidies.org" class="text-teal-700 hover:underline font-medium">opensubsidies.org</a> to search any recipient, explore your state's subsidies, compare programs, and see where $147 billion in farm payments really goes. Everything is free, open, and requires no account.</p>
+      <p class="text-gray-600">OpenSubsidies is built by <a href="/" class="text-teal-700 hover:underline font-medium">TheDataProject.AI</a> — making public data usable, searchable, and accessible to everyone.</p>
+    `,
+  },
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {

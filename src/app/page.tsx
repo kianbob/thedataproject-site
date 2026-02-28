@@ -86,6 +86,20 @@ export default function Home() {
               <p className="text-gray-500 mt-2">Follow $11.2 trillion in federal spending. Every contract, every grant, every agency. DOGE reality check, contractor monopoly analysis, and interactive tax calculator.</p>
               <span className="inline-block mt-4 text-teal-700 text-sm font-medium">openspending.us →</span>
             </a>
+            <a href="https://www.openimmigration.us" target="_blank" rel="noopener noreferrer"
+              className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group">
+              <div className="text-4xl mb-4">⚖️</div>
+              <h3 className="text-xl font-bold text-gray-900 group-hover:text-teal-700 transition-colors">OpenImmigration</h3>
+              <p className="text-gray-500 mt-2">The most comprehensive immigration court data explorer. 9.6M cases, 1.9M pending backlog, 1,269 judges, asylum outcomes, CBP border encounters, and ICE enforcement data.</p>
+              <span className="inline-block mt-4 text-teal-700 text-sm font-medium">openimmigration.us →</span>
+            </a>
+            <a href="https://www.opensubsidies.org" target="_blank" rel="noopener noreferrer"
+              className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group">
+              <div className="text-4xl mb-4">🌾</div>
+              <h3 className="text-xl font-bold text-gray-900 group-hover:text-teal-700 transition-colors">OpenSubsidies</h3>
+              <p className="text-gray-500 mt-2">Track $147 billion in USDA farm subsidies. 31.8M payment records, 157 programs, every state and county. Entity analysis, zombie programs, DOGE reform angles.</p>
+              <span className="inline-block mt-4 text-teal-700 text-sm font-medium">opensubsidies.org →</span>
+            </a>
           </div>
         </div>
       </section>
