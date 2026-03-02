@@ -58,6 +58,13 @@ export default function Home() {
               <p className="text-gray-500 mt-2">Track $1.09 trillion in Medicaid provider payments. Fraud detection, provider profiles, procedure analysis across all 50 states. 227M+ records.</p>
               <span className="inline-block mt-4 text-teal-700 text-sm font-medium">openmedicaid.org →</span>
             </a>
+            <a href="https://www.openprescriber.org" target="_blank" rel="noopener noreferrer"
+              className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group">
+              <div className="text-4xl mb-4">💊</div>
+              <h3 className="text-xl font-bold text-gray-900 group-hover:text-teal-700 transition-colors">OpenPrescriber</h3>
+              <p className="text-gray-500 mt-2">Every Medicare Part D prescriber analyzed. 1.38M providers, $275.6B in drug costs, fraud risk scoring, ML detection, opioid tracking. 20,000+ pages of data.</p>
+              <span className="inline-block mt-4 text-teal-700 text-sm font-medium">openprescriber.org →</span>
+            </a>
             <a href="https://www.openlobby.us" target="_blank" rel="noopener noreferrer"
               className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group">
               <div className="text-4xl mb-4">🏛️</div>

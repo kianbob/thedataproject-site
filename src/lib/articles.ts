@@ -8,6 +8,64 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "launching-openprescriber",
+    title: "Launching OpenPrescriber: 1.38 Million Medicare Prescribers, $275.6 Billion in Drug Costs, Every Pill Tracked",
+    description: "We built a free platform analyzing every Medicare Part D prescriber in America — with fraud risk scoring, machine learning detection, opioid tracking, and cost transparency across 20,000+ pages.",
+    date: "2026-03-02",
+    content: `
+      <p class="text-lg text-gray-600 mb-8">Today we're launching <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline font-medium">OpenPrescriber</a> — a free, open-data platform that makes Medicare Part D prescribing data accessible, searchable, and analyzable. The site covers <strong>1,380,665 prescribers</strong>, <strong>$275.6 billion</strong> in drug costs, and includes something no other public tool offers: <strong>specialty-adjusted fraud risk scoring</strong> and <strong>machine learning detection</strong> trained on confirmed fraud cases.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Why This Matters</h2>
+      <p class="text-gray-600 mb-4">Medicare Part D is the federal prescription drug benefit covering approximately 52 million Americans. In 2023 alone, the program spent $275.6 billion on prescription drugs through 1.38 million healthcare providers — that's over 1.6 billion individual prescriptions. Despite this enormous scale, the existing tools for exploring this data are either outdated (ProPublica's Prescriber Checkup is stuck on 2016 data) or locked behind paywalls.</p>
+      <p class="text-gray-600 mb-4">OpenPrescriber changes that. We process the complete CMS public use files — the same data the government uses — and make it explorable from every angle: by provider, drug, state, specialty, or risk profile.</p>
+
+      <div class="bg-teal-50 border-l-4 border-teal-700 p-6 my-8 rounded-r-lg">
+        <p class="text-2xl font-bold text-teal-800">1.38M prescribers. $275.6B in costs. 233 high-risk flagged.</p>
+        <p class="text-teal-700">The most comprehensive open analysis of Medicare Part D prescribing data available — with 2023 data, while competitors remain stuck on 2016.</p>
+      </div>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">What's on the Platform</h2>
+      <p class="text-gray-600 mb-4">OpenPrescriber is built for depth. The platform includes:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><strong>19,400+ individual provider profiles</strong> — Detailed prescribing data for the highest-volume Medicare prescribers, with risk scores, peer comparisons, and top drugs prescribed</li>
+        <li><strong>500 drug profiles</strong> — Every major drug ranked by cost, with prescriber data and cost-per-claim analysis</li>
+        <li><strong>62 state & territory pages</strong> — State-level analysis with opioid rates, cost trends, and 5-year trend charts</li>
+        <li><strong>205 specialty breakdowns</strong> — How prescribing patterns vary across medical specialties</li>
+        <li><strong>29 in-depth analysis articles</strong> — Data journalism covering opioid crisis, fraud patterns, drug costs, geographic disparities, and more</li>
+        <li><strong>8 interactive tools</strong> — Risk calculator, drug lookup, state report card, provider comparison, savings calculator, and more</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">The Risk Scoring Model</h2>
+      <p class="text-gray-600 mb-4">What makes OpenPrescriber unique is the risk analysis layer. We built a <strong>10-component statistical model</strong> that evaluates every prescriber across multiple dimensions:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><strong>Specialty-adjusted opioid analysis</strong> — We compare each provider against their own specialty peers using z-scores. A pain specialist prescribing opioids isn't the same as a dermatologist doing so.</li>
+        <li><strong>Cost and brand-name patterns</strong> — Providers who consistently prescribe expensive brand-name drugs when generics exist receive elevated scores.</li>
+        <li><strong>OIG exclusion cross-reference</strong> — We match all 1.38 million providers against the OIG's List of Excluded Individuals/Entities. We found <strong>372 excluded providers</strong> who appear in active prescribing data.</li>
+        <li><strong>Machine learning detection</strong> — A model trained on 281 confirmed fraud cases identifies 4,100+ providers with similar prescribing patterns that rule-based systems miss.</li>
+      </ul>
+      <p class="text-gray-600 mb-4">The result: <strong>233 providers</strong> flagged as high-risk (score ≥50), <strong>6,473</strong> at elevated risk, and thousands more with individual risk factors worth monitoring. Every score comes with an explanation of what triggered it.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Key Findings</h2>
+      <p class="text-gray-600 mb-4">Some of what the data reveals:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><strong>450,343 providers prescribed opioids</strong> — one in three Medicare prescribers. 113,169 have rates above 20%.</li>
+        <li><strong>Drug costs grew 50% in 5 years</strong> — from $183B (2019) to $275.6B (2023). GLP-1 drugs like Ozempic are a major driver.</li>
+        <li><strong>Brand drugs are 13.4% of prescriptions but 67% of costs</strong> — the brand-generic gap costs taxpayers billions annually.</li>
+        <li><strong>Nurse practitioners are 19% of prescribers but 49% of flagged providers</strong> — structural factors in scope-of-practice laws and supervision contribute to this disproportionate representation.</li>
+        <li><strong>6,149 providers co-prescribe opioids with benzodiazepines</strong> — a combination the FDA explicitly warns against due to respiratory depression risk.</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">The Portfolio Grows</h2>
+      <p class="text-gray-600 mb-4">OpenPrescriber is the 10th platform in <a href="https://thedataproject.ai" class="text-teal-700 hover:underline font-medium">TheDataProject.ai</a> portfolio, joining <a href="https://www.openmedicaid.org" class="text-teal-700 hover:underline">OpenMedicaid</a>, <a href="https://www.openmedicare.us" class="text-teal-700 hover:underline">OpenMedicare</a>, <a href="https://www.openfeds.org" class="text-teal-700 hover:underline">OpenFeds</a>, <a href="https://www.openspending.us" class="text-teal-700 hover:underline">OpenSpending</a>, <a href="https://www.openlobby.us" class="text-teal-700 hover:underline">OpenLobby</a>, <a href="https://www.vaccinewatch.org" class="text-teal-700 hover:underline">VaccineWatch</a>, <a href="https://www.openimmigration.us" class="text-teal-700 hover:underline">OpenImmigration</a>, <a href="https://www.opensubsidies.org" class="text-teal-700 hover:underline">OpenSubsidies</a>, and <a href="https://www.warcosts.org" class="text-teal-700 hover:underline">WarCosts</a>. Together, these platforms represent over 100,000 pages of public data made accessible and searchable for free.</p>
+      <p class="text-gray-600 mb-4">Every platform follows the same philosophy: take public data that exists but is hard to use, process it into something meaningful, and give it away. No paywalls, no logins, no ads.</p>
+
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 my-8">
+        <p class="font-semibold text-gray-900 mb-2">Explore OpenPrescriber →</p>
+        <p class="text-gray-600 text-sm">Start at <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline font-medium">www.openprescriber.org</a> — search for any provider, explore your state's prescribing patterns, or dive into our risk analysis.</p>
+      </div>
+    `,
+  },
+  {
     slug: "launching-warcosts",
     title: "Launching WarCosts: 250 Years of US Military Interventionism in Hard Numbers",
     description: "How we built a 211-page data platform covering 36 conflicts, $11.6 trillion in spending, over 1 million US deaths, and 5.2 million civilian casualties — from the Revolutionary War through Iran 2026.",
