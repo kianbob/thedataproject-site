@@ -56,75 +56,13 @@ export const articles: Article[] = [
       </ul>
 
       <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">The Portfolio Grows</h2>
-      <p class="text-gray-600 mb-4">OpenPrescriber is the 10th platform in <a href="https://thedataproject.ai" class="text-teal-700 hover:underline font-medium">TheDataProject.ai</a> portfolio, joining <a href="https://www.openmedicaid.org" class="text-teal-700 hover:underline">OpenMedicaid</a>, <a href="https://www.openmedicare.us" class="text-teal-700 hover:underline">OpenMedicare</a>, <a href="https://www.openfeds.org" class="text-teal-700 hover:underline">OpenFeds</a>, <a href="https://www.openspending.us" class="text-teal-700 hover:underline">OpenSpending</a>, <a href="https://www.openlobby.us" class="text-teal-700 hover:underline">OpenLobby</a>, <a href="https://www.vaccinewatch.org" class="text-teal-700 hover:underline">VaccineWatch</a>, <a href="https://www.openimmigration.us" class="text-teal-700 hover:underline">OpenImmigration</a>, <a href="https://www.opensubsidies.org" class="text-teal-700 hover:underline">OpenSubsidies</a>, and <a href="https://www.warcosts.org" class="text-teal-700 hover:underline">WarCosts</a>. Together, these platforms represent over 100,000 pages of public data made accessible and searchable for free.</p>
+      <p class="text-gray-600 mb-4">OpenPrescriber is the 9th platform in <a href="https://thedataproject.ai" class="text-teal-700 hover:underline font-medium">TheDataProject.ai</a> portfolio, joining <a href="https://www.openmedicaid.org" class="text-teal-700 hover:underline">OpenMedicaid</a>, <a href="https://www.openmedicare.us" class="text-teal-700 hover:underline">OpenMedicare</a>, <a href="https://www.openfeds.org" class="text-teal-700 hover:underline">OpenFeds</a>, <a href="https://www.openspending.us" class="text-teal-700 hover:underline">OpenSpending</a>, <a href="https://www.openlobby.us" class="text-teal-700 hover:underline">OpenLobby</a>, <a href="https://www.vaccinewatch.org" class="text-teal-700 hover:underline">VaccineWatch</a>, <a href="https://www.openimmigration.us" class="text-teal-700 hover:underline">OpenImmigration</a>, <a href="https://www.opensubsidies.org" class="text-teal-700 hover:underline">OpenSubsidies</a>. Together, these platforms represent over 100,000 pages of public data made accessible and searchable for free.</p>
       <p class="text-gray-600 mb-4">Every platform follows the same philosophy: take public data that exists but is hard to use, process it into something meaningful, and give it away. No paywalls, no logins, no ads.</p>
 
       <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 my-8">
         <p class="font-semibold text-gray-900 mb-2">Explore OpenPrescriber →</p>
         <p class="text-gray-600 text-sm">Start at <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline font-medium">www.openprescriber.org</a> — search for any provider, explore your state's prescribing patterns, or dive into our risk analysis.</p>
       </div>
-    `,
-  },
-  {
-    slug: "launching-warcosts",
-    title: "Launching WarCosts: 250 Years of US Military Interventionism in Hard Numbers",
-    description: "How we built a 211-page data platform covering 36 conflicts, $11.6 trillion in spending, over 1 million US deaths, and 5.2 million civilian casualties — from the Revolutionary War through Iran 2026.",
-    date: "2026-03-01",
-    content: `
-      <p class="text-lg text-gray-600 mb-8">Today we're launching <a href="https://www.warcosts.org" class="text-teal-700 hover:underline font-medium">WarCosts</a> — a free, comprehensive data platform documenting <strong>every major US military intervention</strong> from the Revolutionary War through the 2026 Iran conflict. The site spans <strong>211+ pages</strong> of data covering <strong>36 conflicts</strong>, with the numbers that rarely appear together in one place: <strong>$11.6 trillion</strong> in total cost, <strong>1,049,463 US military deaths</strong>, and <strong>5,241,380 civilian deaths</strong>.</p>
-
-      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">The Numbers They Don't Put on the Recruiting Poster</h2>
-      <p class="text-gray-600 mb-4">American military spending is often discussed in annual budget terms — $886 billion this year, a 3% increase over last year, roughly what Congress approved. But this framing obscures the cumulative reality. When you add up every conflict the United States has fought over 250 years — adjusted for inflation, including long-tail veterans' care, interest on war debt, and reconstruction costs — the total reaches <strong>$11.6 trillion</strong>.</p>
-      <p class="text-gray-600 mb-4">That's not a Pentagon budget figure. That's the actual cost of choosing war, again and again, across two and a half centuries.</p>
-      <p class="text-gray-600 mb-4">The human toll is harder to contextualize but impossible to ignore. Over one million American service members have died in these conflicts. More than five million civilians — in countries most Americans couldn't find on a map — have been killed. WarCosts puts every one of these numbers in context: by conflict, by president, by decade, by region.</p>
-
-      <div class="bg-teal-50 border-l-4 border-teal-700 p-6 my-8 rounded-r-lg">
-        <p class="text-2xl font-bold text-teal-800">$11.6 trillion spent. 6.3 million lives lost.</p>
-        <p class="text-teal-700">36 conflicts across 250 years — every dollar and every casualty documented, sourced, and searchable.</p>
-      </div>
-
-      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">What's on the Platform</h2>
-      <p class="text-gray-600 mb-4">WarCosts is built to make this data explorable from every angle. The platform includes:</p>
-      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
-        <li><strong>36 conflict detail pages:</strong> Each war and intervention gets its own page with costs, casualties, duration, key events, and historical context — from the Revolutionary War and Civil War through Korea, Vietnam, the War on Terror, and the 2026 Iran conflict.</li>
-        <li><strong>Presidential analysis:</strong> Which presidents presided over the most military spending and casualties? The data tells a story that crosses party lines.</li>
-        <li><strong>Country, region, decade, and era views:</strong> See where the US has intervened geographically, how interventionism has shifted across eras, and which decades have been the most costly.</li>
-        <li><strong>750 overseas military bases</strong> across 80 countries — mapped and documented, illustrating the scale of America's global military footprint.</li>
-        <li><strong>17 analysis articles:</strong> Long-form pieces examining patterns in the data — the rise of the military-industrial complex, the cost of empire, the economics of intervention.</li>
-      </ul>
-
-      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Four Interactive Tools</h2>
-      <p class="text-gray-600 mb-4">Raw numbers only go so far. WarCosts includes four interactive tools designed to make the data personal and tangible:</p>
-      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
-        <li><strong>War Clock:</strong> A real-time counter showing the ongoing cost of current US military operations — dollars accumulating by the second.</li>
-        <li><strong>Tax Receipt Calculator:</strong> Enter your income and see exactly how much of your federal taxes fund the military, broken down by program and conflict legacy costs.</li>
-        <li><strong>Jobs Calculator:</strong> What could military spending buy if redirected? See how many teachers, nurses, or infrastructure workers the same dollars could employ.</li>
-        <li><strong>Cost Calculator:</strong> Compare the cost of specific conflicts to domestic programs — what the Iraq War could have funded in healthcare, education, or infrastructure.</li>
-      </ul>
-
-      <div class="bg-teal-50 border-l-4 border-teal-700 p-6 my-8 rounded-r-lg">
-        <p class="text-2xl font-bold text-teal-800">750 military bases in 80 countries</p>
-        <p class="text-teal-700">The infrastructure of global military presence — every overseas installation documented and mapped.</p>
-      </div>
-
-      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Data-Driven, Not Dogma-Driven</h2>
-      <p class="text-gray-600 mb-4">WarCosts is built from the data, not around a predetermined narrative. Our sources include <strong>SIPRI</strong> (Stockholm International Peace Research Institute), Brown University's <strong>Costs of War Project</strong>, the Congressional Research Service (<strong>CRS</strong>), the <strong>Bureau of Investigative Journalism</strong>, and the Department of Veterans Affairs (<strong>VA</strong>). Every number on the platform is sourced and verifiable.</p>
-      <p class="text-gray-600 mb-4">That said, we don't pretend the data is neutral in its implications. When you lay out 250 years of military interventions — the costs, the casualties, the countries invaded, the bases built, the debt accumulated — the pattern speaks for itself. The United States maintains a global military empire that dwarfs any in human history, funded by trillions in taxpayer dollars and paid for in millions of lives. Whether you call that security or imperialism, the numbers are the numbers.</p>
-      <p class="text-gray-600 mb-4">Our perspective is straightforward: the data suggests that the costs of interventionism — financial, human, and strategic — have far exceeded the benefits. But we present the data openly so readers can draw their own conclusions.</p>
-
-      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Part of TheDataProject Portfolio</h2>
-      <p class="text-gray-600 mb-4">WarCosts joins our growing suite of government transparency platforms:</p>
-      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
-        <li><a href="https://www.openspending.us" class="text-teal-700 hover:underline font-medium">OpenSpending</a> — $11.2 trillion in federal contracts, grants, and agency expenditures</li>
-        <li><a href="https://www.openmedicare.us" class="text-teal-700 hover:underline font-medium">OpenMedicare</a> — $854B in Medicare payments with ML fraud detection</li>
-        <li><a href="https://www.openmedicaid.org" class="text-teal-700 hover:underline font-medium">OpenMedicaid</a> — $1.09 trillion in Medicaid provider payments</li>
-        <li><a href="https://www.openfeds.org" class="text-teal-700 hover:underline font-medium">OpenFeds</a> — 2.07 million federal employees, DOGE tracking, brain drain analysis</li>
-      </ul>
-      <p class="text-gray-600 mb-4">WarCosts adds the missing dimension to this picture: not just where the money goes, but what it buys — and what it costs — when it goes to war.</p>
-
-      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Explore WarCosts</h2>
-      <p class="text-gray-600 mb-4">Visit <a href="https://www.warcosts.org" class="text-teal-700 hover:underline font-medium">warcosts.org</a> to explore 250 years of US military interventions — every conflict, every cost, every casualty. Browse by war, president, country, decade, or era. Use the interactive tools to see what the numbers mean for your own tax dollars. Everything is free, open, and requires no account.</p>
-      <p class="text-gray-600">WarCosts is built by <a href="/" class="text-teal-700 hover:underline font-medium">TheDataProject.AI</a> — making public data usable, searchable, and accessible to everyone.</p>
     `,
   },
   {
