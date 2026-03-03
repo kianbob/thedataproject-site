@@ -10,7 +10,7 @@ export const articles: Article[] = [
   {
     slug: "launching-openprescriber",
     title: "Launching OpenPrescriber: 1.38 Million Medicare Prescribers, $275.6 Billion in Drug Costs, Every Pill Tracked",
-    description: "We built a free platform analyzing every Medicare Part D prescriber in America — with fraud risk scoring, machine learning detection, opioid tracking, and cost transparency across 20,000+ pages.",
+    description: "We built a free platform analyzing every Medicare Part D prescriber in America — with fraud risk scoring, machine learning detection, opioid tracking, and cost transparency across 21,000+ pages.",
     date: "2026-03-02",
     content: `
       <p class="text-lg text-gray-600 mb-8">Today we're launching <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline font-medium">OpenPrescriber</a> — a free, open-data platform that makes Medicare Part D prescribing data accessible, searchable, and analyzable. The site covers <strong>1,380,665 prescribers</strong>, <strong>$275.6 billion</strong> in drug costs, and includes something no other public tool offers: <strong>specialty-adjusted fraud risk scoring</strong> and <strong>machine learning detection</strong> trained on confirmed fraud cases.</p>
