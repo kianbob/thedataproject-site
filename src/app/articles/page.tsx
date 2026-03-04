@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { articles } from "@/lib/articles";
+import { publishedArticles as articles } from "@/lib/articles";
 
 const categories: Record<string, string[]> = {
   Flagships: ["still-billing-still-free", "tracking-medicaid-spending", "federal-brain-drain", "federal-spending-breakdown", "building-with-ai"],

@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { categories, getCategorySites, getCategoryStats, formatRecords } from "@/lib/data";
 import SiteCard from "@/components/SiteCard";
-import { articles } from "@/lib/articles";
+import { publishedArticles as articles } from "@/lib/articles";
 
 const categoryArticleMap: Record<string, string> = {
   "healthcare": "healthcare-data",

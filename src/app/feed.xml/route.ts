@@ -1,4 +1,4 @@
-import { articles } from "@/lib/articles";
+import { publishedArticles as articles } from "@/lib/articles";
 
 export async function GET() {
   const base = "https://www.thedataproject.ai";

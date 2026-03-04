@@ -3,6 +3,7 @@ export interface Article {
   title: string;
   description: string;
   date: string;
+  draft?: boolean;
   content: string;
 }
 
@@ -12,6 +13,7 @@ export const articles: Article[] = [
     title: "Still Billing, Still Free: 10 Healthcare Providers Our Algorithms Flagged — None Have Been Charged",
     description: "Our ML models across OpenMedicare, OpenPrescriber, and OpenMedicaid flagged thousands of providers with extreme billing patterns matching convicted fraudsters. These 10 span all three platforms — $1.5 billion in combined billing. Here's what the data shows.",
     date: "2026-03-04",
+    draft: true,
     content: `
       <p class="text-lg text-gray-600 mb-8">Across three of our healthcare data platforms — <a href="https://www.openmedicare.us" class="text-teal-700 hover:underline font-medium">OpenMedicare</a>, <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline font-medium">OpenPrescriber</a>, and <a href="https://www.openmedicaid.org" class="text-teal-700 hover:underline font-medium">OpenMedicaid</a> — we've built machine learning models and statistical watchlists trained on <strong>confirmed fraud cases</strong> from the HHS Office of Inspector General's exclusion list and suspicious billing pattern detection. These systems have flagged thousands of currently-practicing providers whose billing patterns closely match those of providers later confirmed as fraudulent. None of the providers below have been charged with fraud. But the numbers demand attention.</p>
 
@@ -1596,6 +1598,8 @@ export const articles: Article[] = [
   },
 ];
 
+export const publishedArticles = articles.filter((a) => !a.draft);
+
 export function getArticleBySlug(slug: string): Article | undefined {
-  return articles.find((a) => a.slug === slug);
+  return publishedArticles.find((a) => a.slug === slug);
 }

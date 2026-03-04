@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { articles, getArticleBySlug } from "@/lib/articles";
+import { publishedArticles as articles, getArticleBySlug } from "@/lib/articles";
 
 interface Props {
   params: Promise<{ slug: string }>;

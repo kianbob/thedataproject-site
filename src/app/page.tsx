@@ -1,7 +1,7 @@
 import Link from "next/link";
 import StatCounter from "@/components/StatCounter";
 import { categories, getCategoryStats, formatRecords } from "@/lib/data";
-import { articles } from "@/lib/articles";
+import { publishedArticles as articles } from "@/lib/articles";
 
 const dataSources = ["HHS", "CMS", "FEC", "FDA", "FAA", "NCES", "SEC", "Census Bureau", "BLS", "CFPB", "FDIC", "NPS", "NHTSA", "OPM"];
 
