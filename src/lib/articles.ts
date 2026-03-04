@@ -259,17 +259,17 @@ export const articles: Article[] = [
 
       <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">10. Remy Zockazock, MD</h2>
       <p class="text-sm text-gray-500 mb-1">Internal Medicine · Katy, Texas · NPI 1215381900</p>
-      <p class="text-sm mb-4"><a href="https://www.openmedicare.us/providers/1215381900" class="text-teal-700 hover:underline">View on OpenMedicare →</a></p>
+      <p class="text-sm mb-4"><a href="https://www.openmedicare.us/providers/1215381900" class="text-teal-700 hover:underline">View on OpenMedicare →</a> · <a href="https://www.openprescriber.org/providers/1215381900" class="text-teal-700 hover:underline">View on OpenPrescriber →</a></p>
       <div class="bg-gray-50 rounded-lg p-6 mb-6">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div class="text-2xl font-bold text-red-700">$4.1M</div><div class="text-xs text-gray-500">Medicare Payments</div></div>
-          <div><div class="text-2xl font-bold text-red-700">92%</div><div class="text-xs text-gray-500">Fraud Probability</div></div>
-          <div><div class="text-2xl font-bold text-red-700">132/day</div><div class="text-xs text-gray-500">Services Per Day</div></div>
-          <div><div class="text-2xl font-bold text-red-700">48,344</div><div class="text-xs text-gray-500">Total Services</div></div>
+          <div><div class="text-2xl font-bold text-red-700">$5.7M</div><div class="text-xs text-gray-500">Combined Billing</div></div>
+          <div><div class="text-2xl font-bold text-red-700">100%</div><div class="text-xs text-gray-500">Prescriber ML Score</div></div>
+          <div><div class="text-2xl font-bold text-red-700">92%</div><div class="text-xs text-gray-500">Medicare ML Score</div></div>
+          <div><div class="text-2xl font-bold text-red-700">2</div><div class="text-xs text-gray-500">Independent ML Models</div></div>
         </div>
       </div>
-      <p class="text-gray-700 mb-4">Dr. Zockazock is <strong>independently flagged on <a href="https://www.openmedicare.us/providers/1215381900" class="text-teal-700 hover:underline">OpenMedicare</a></strong> with a 92% fraud probability — one of the highest scores in our entire dataset.</p>
-      <p class="text-gray-700 mb-4"><strong>$4.1 million</strong> in Medicare payments, 48,344 services, and 11,412 beneficiaries. His services-per-day rate of 132 means he's billing Medicare for a patient interaction roughly <strong>every 4 minutes</strong> of a 9-hour workday. That volume alone is a major red flag — most internal medicine physicians see 20-30 patients per day.</p>
+      <p class="text-gray-700 mb-4">Dr. Zockazock is the <strong>only provider on this list flagged by two completely independent machine learning models</strong>. On <a href="https://www.openmedicare.us/providers/1215381900" class="text-teal-700 hover:underline">OpenMedicare</a>, he carries a 92% fraud probability based on his Medicare billing patterns — $4.1 million in payments, 48,344 services, 11,412 beneficiaries. On <a href="https://www.openprescriber.org/providers/1215381900" class="text-teal-700 hover:underline">OpenPrescriber</a>, he earned a <strong>perfect 100% ML fraud score</strong> — every single decision tree flagged him — with $1.6 million in Part D prescribing costs across 26,331 claims.</p>
+      <p class="text-gray-700 mb-4">When two separate algorithms, trained on different datasets, looking at different types of billing, both independently flag the same provider — that's not a coincidence. That's convergent evidence. His Medicare services-per-day rate of 132 means he's billing for a patient interaction <strong>every 4 minutes</strong> of a 9-hour workday. Most internal medicine physicians see 20-30 patients per day.</p>
       <p class="text-gray-700 mb-4">He is currently still practicing and accepting patients in Katy, TX. He has not been charged with any crime.</p>
 
       <hr class="my-10 border-gray-200" />
@@ -288,7 +288,7 @@ export const articles: Article[] = [
             <tr class="border-t"><td class="p-2">7</td><td class="p-2 font-medium"><a href="https://www.openprescriber.org/providers/1104916907" class="text-teal-700 hover:underline">Alpert</a></td><td class="p-2">Infectious Dis</td><td class="p-2">NY</td><td class="text-right p-2 font-bold">$9.2M</td><td class="text-right p-2 text-red-700">95% ML</td><td class="text-right p-2">$33K/patient</td><td class="text-center p-2">Medicare + Prescriber</td></tr>
             <tr class="border-t bg-gray-50"><td class="p-2">8</td><td class="p-2 font-medium"><a href="https://www.openprescriber.org/providers/1316108269" class="text-teal-700 hover:underline">Graf</a></td><td class="p-2">Internal Med</td><td class="p-2">PA</td><td class="text-right p-2 font-bold">$7.5M</td><td class="text-right p-2 text-red-700">100% ML</td><td class="text-right p-2">362 Rx/day</td><td class="text-center p-2">Medicare + Prescriber</td></tr>
             <tr class="border-t"><td class="p-2">9</td><td class="p-2 font-medium"><a href="https://www.openmedicare.us/providers/1205837374" class="text-teal-700 hover:underline">Hughes</a></td><td class="p-2">Phys Med/Rehab</td><td class="p-2">GA</td><td class="text-right p-2 font-bold">$5.3M</td><td class="text-right p-2 text-red-700">88% ML</td><td class="text-right p-2">317 svc/day</td><td class="text-center p-2">Medicare</td></tr>
-            <tr class="border-t bg-gray-50"><td class="p-2">10</td><td class="p-2 font-medium"><a href="https://www.openmedicare.us/providers/1215381900" class="text-teal-700 hover:underline">Zockazock</a></td><td class="p-2">Internal Med</td><td class="p-2">TX</td><td class="text-right p-2 font-bold">$4.1M</td><td class="text-right p-2 text-red-700">92% ML</td><td class="text-right p-2">132 svc/day</td><td class="text-center p-2">Medicare</td></tr>
+            <tr class="border-t bg-gray-50"><td class="p-2">10</td><td class="p-2 font-medium"><a href="https://www.openmedicare.us/providers/1215381900" class="text-teal-700 hover:underline">Zockazock</a></td><td class="p-2">Internal Med</td><td class="p-2">TX</td><td class="text-right p-2 font-bold">$5.7M</td><td class="text-right p-2 text-red-700">100% + 92% ML</td><td class="text-right p-2">Dual-model flagged</td><td class="text-center p-2">Medicare + Prescriber</td></tr>
             <tr class="border-t border-t-2 border-gray-900 bg-gray-100"><td class="p-2"></td><td class="p-2 font-bold" colspan="3">TOTAL</td><td class="text-right p-2 font-bold text-red-700">$1.51B</td><td class="text-right p-2" colspan="3"></td></tr>
           </tbody>
         </table>
