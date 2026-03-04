@@ -20,14 +20,14 @@ export const articles: Article[] = [
         <p class="text-gray-700">Being flagged by a statistical model does not mean a provider has committed fraud. These are <strong>anomalies in public billing data</strong> that warrant further investigation. Some may have legitimate explanations — unusual patient populations, specialized practices, or data reporting artifacts. We present this data for transparency and public interest. Only law enforcement can determine actual fraud.</p>
       </div>
 
-      <div class="bg-gray-900 text-white rounded-xl p-8 my-10">
-        <h2 class="text-2xl font-bold mb-4">The Numbers at a Glance</h2>
+      <div style="background-color: #111827; color: #ffffff; border-radius: 0.75rem; padding: 2rem; margin: 2.5rem 0;">
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #ffffff;">The Numbers at a Glance</h2>
         <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
-          <div><div class="text-3xl font-bold text-red-400">$69M</div><div class="text-xs text-gray-400 mt-1">These 10 Providers Billed</div></div>
-          <div><div class="text-3xl font-bold text-red-400">$3.5B</div><div class="text-xs text-gray-400 mt-1">Total Flagged System-Wide</div></div>
-          <div><div class="text-3xl font-bold text-red-400">7</div><div class="text-xs text-gray-400 mt-1">On Multiple Platforms</div></div>
-          <div><div class="text-3xl font-bold text-red-400">3</div><div class="text-xs text-gray-400 mt-1">Perfect 100% ML Scores</div></div>
-          <div><div class="text-3xl font-bold text-red-400">0</div><div class="text-xs text-gray-400 mt-1">Charged With Fraud</div></div>
+          <div><div style="font-size: 1.875rem; font-weight: 700; color: #f87171;">$69M</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">These 10 Providers Billed</div></div>
+          <div><div style="font-size: 1.875rem; font-weight: 700; color: #f87171;">$3.5B</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Total Flagged System-Wide</div></div>
+          <div><div style="font-size: 1.875rem; font-weight: 700; color: #f87171;">7</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">On Multiple Platforms</div></div>
+          <div><div style="font-size: 1.875rem; font-weight: 700; color: #f87171;">3</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Perfect 100% ML Scores</div></div>
+          <div><div style="font-size: 1.875rem; font-weight: 700; color: #f87171;">0</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Charged With Fraud</div></div>
         </div>
       </div>
 
