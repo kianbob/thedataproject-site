@@ -9,15 +9,17 @@ export interface Article {
 export const articles: Article[] = [
   {
     slug: "still-billing-still-free",
-    title: "Still Billing, Still Free: 10 Healthcare Providers Our Algorithms Flagged — Who Haven't Been Caught",
+    title: "Still Billing, Still Free: 10 Healthcare Providers Our Algorithms Flagged — None Have Been Charged",
     description: "Our ML models across OpenMedicare, OpenPrescriber, and OpenMedicaid flagged thousands of providers with extreme billing patterns matching convicted fraudsters. These 10 span all three platforms — $1.5 billion in combined billing. Here's what the data shows.",
     date: "2026-03-04",
     content: `
-      <p class="text-lg text-gray-600 mb-8">Across three of our healthcare data platforms — <a href="https://www.openmedicare.us" class="text-teal-700 hover:underline font-medium">OpenMedicare</a>, <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline font-medium">OpenPrescriber</a>, and <a href="https://www.openmedicaid.org" class="text-teal-700 hover:underline font-medium">OpenMedicaid</a> — we've built machine learning models and statistical watchlists trained on <strong>confirmed fraud cases</strong> from the HHS Office of Inspector General's exclusion list and suspicious billing pattern detection. These systems have flagged thousands of currently-practicing providers whose billing patterns closely match those of convicted fraudsters. None of the providers below have been charged with fraud. But the numbers demand attention.</p>
+      <p class="text-lg text-gray-600 mb-8">Across three of our healthcare data platforms — <a href="https://www.openmedicare.us" class="text-teal-700 hover:underline font-medium">OpenMedicare</a>, <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline font-medium">OpenPrescriber</a>, and <a href="https://www.openmedicaid.org" class="text-teal-700 hover:underline font-medium">OpenMedicaid</a> — we've built machine learning models and statistical watchlists trained on <strong>confirmed fraud cases</strong> from the HHS Office of Inspector General's exclusion list and suspicious billing pattern detection. These systems have flagged thousands of currently-practicing providers whose billing patterns closely match those of providers later confirmed as fraudulent. None of the providers below have been charged with fraud. But the numbers demand attention.</p>
 
       <div class="bg-red-50 border-l-4 border-red-700 p-6 my-8 rounded-r-lg">
         <p class="text-lg font-bold text-red-800 mb-2">⚠️ Important Disclaimer</p>
-        <p class="text-gray-700">Being flagged by a statistical model does not mean a provider has committed fraud. These are <strong>anomalies in public billing data</strong> that warrant further investigation. Some may have legitimate explanations — unusual patient populations, specialized practices, or data reporting artifacts. We present this data for transparency and public interest. Only law enforcement can determine actual fraud.</p>
+        <p class="text-gray-700 mb-3">Being flagged by a statistical model <strong>does not mean a provider has committed fraud</strong>. These are <strong>statistical anomalies in public billing data</strong> — patterns that resemble those of previously convicted providers. There may be entirely legitimate explanations: unusual patient populations, specialized practices, multi-provider clinics billing under one NPI, data reporting artifacts, or state-specific billing rules.</p>
+        <p class="text-gray-700 mb-3">We present this data for <strong>transparency and public interest</strong>. All figures come from publicly available CMS and HHS datasets. Only law enforcement can investigate and determine actual fraud. We make no allegations of wrongdoing against any provider named in this article.</p>
+        <p class="text-gray-700"><strong>Provider response:</strong> If you are a provider referenced in this article and believe any data is inaccurate or misleading, we welcome your response. Please <a href="/contact" class="text-teal-700 hover:underline font-medium">contact us</a> and we will promptly review and correct any errors or add your context.</p>
       </div>
 
       <div style="background-color: #111827; color: #ffffff; border-radius: 0.75rem; padding: 2rem; margin: 2.5rem 0;">
@@ -32,7 +34,7 @@ export const articles: Article[] = [
       </div>
 
       <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">The Full Scale of What We Found</h2>
-      <p class="text-gray-700 mb-4">These 10 providers are the tip of the iceberg. Across our three platforms, our models have flagged <strong>over 6,500 providers</strong> with suspicious billing:</p>
+      <p class="text-gray-700 mb-4">These 10 providers are the tip of the iceberg. Across our three platforms, our models have flagged <strong>over 6,500 providers</strong> with unusual billing patterns:</p>
       <div class="overflow-x-auto mb-6">
         <table class="w-full text-sm border-collapse">
           <thead><tr class="bg-gray-100"><th class="text-left p-3 font-semibold">Platform</th><th class="text-right p-3 font-semibold">Providers Flagged</th><th class="text-right p-3 font-semibold">Total Suspicious Billing</th><th class="text-right p-3 font-semibold">Model Accuracy</th></tr></thead>
@@ -47,8 +49,8 @@ export const articles: Article[] = [
       </div>
       <p class="text-gray-700 mb-4">That's $230 billion in billing by providers whose patterns triggered fraud detection systems — with Medicaid representing by far the largest pool of flagged spending. For context, the DOJ's entire Healthcare Fraud Strike Force recovered $1.9 billion in 2024. Our models suggest the amount of fraud-patterned billing currently flowing through Medicare and Medicaid dwarfs what enforcement recovers annually.</p>
 
-      <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">The Smoking Gun: Cost Per Beneficiary</h2>
-      <p class="text-gray-700 mb-4">The single most damning metric in our analysis is <strong>cost per beneficiary</strong> — how much each provider spends per patient compared to their peers. Legitimate high-volume providers might have lots of patients. But when a provider is spending 10-30x more <em>per patient</em> than their peers in the same specialty, volume can't explain it.</p>
+      <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">The Key Metric: Cost Per Beneficiary</h2>
+      <p class="text-gray-700 mb-4">The single most striking metric in our analysis is <strong>cost per beneficiary</strong> — how much each provider spends per patient compared to their peers. Legitimate high-volume providers might have lots of patients. But when a provider is spending 10-30x more <em>per patient</em> than their peers in the same specialty, volume can't explain it.</p>
       <div class="overflow-x-auto mb-6">
         <table class="w-full text-sm border-collapse">
           <thead><tr class="bg-gray-100"><th class="text-left p-3 font-semibold">Provider</th><th class="text-left p-3 font-semibold">Specialty</th><th class="text-right p-3 font-semibold">Cost/Beneficiary</th><th class="text-right p-3 font-semibold">Typical for Specialty</th><th class="text-right p-3 font-semibold">Multiple</th></tr></thead>
@@ -115,7 +117,7 @@ export const articles: Article[] = [
           <div><div class="text-2xl font-bold text-red-700">3 Flags</div><div class="text-xs text-gray-500">Watchlist Triggers</div></div>
         </div>
       </div>
-      <p class="text-gray-700 mb-4">CARES is the single most alarming case on our <a href="https://www.openmedicaid.org/watchlist" class="text-teal-700 hover:underline">OpenMedicaid watchlist</a>. This New York City case management organization billed Medicaid <strong>$1.04 billion</strong> — that's billion with a B — and triggered three independent flags: code-specific outlier, billing swing, and rate outlier across multiple procedure codes.</p>
+      <p class="text-gray-700 mb-4">CARES is the single most notable case on our <a href="https://www.openmedicaid.org/watchlist" class="text-teal-700 hover:underline">OpenMedicaid watchlist</a>. This New York City case management organization billed Medicaid <strong>$1.04 billion</strong> — that's billion with a B — and triggered three independent flags: code-specific outlier, billing swing, and rate outlier across multiple procedure codes.</p>
       <p class="text-gray-700 mb-4">The billing swing is staggering: from <strong>$1.6 million in 2020 to $112.6 million in 2021</strong> — a 6,886% increase in a single year. That's not growth. That's an explosion. The organization charges $555.61 per claim on procedure code H2015 (comprehensive community support services) when the national median is $96.24 — <strong>5.8 times the median rate</strong>. Nine of its 17 procedure codes are billed above the 90th percentile nationally.</p>
       <p class="text-gray-700 mb-4">A billion-dollar case management provider charging 4-6x the median rate across most of its service codes, with a 6,886% year-over-year billing explosion, is a pattern that demands investigation. They have not been charged with any crime.</p>
 
@@ -133,7 +135,7 @@ export const articles: Article[] = [
         </div>
       </div>
       <p class="text-gray-700 mb-4">SRH CHN Lead Health Home carries the <strong>most watchlist flags of any provider on this list: four</strong> — code-specific outlier, billing swing, massive new entrant, and rate outlier across multiple codes. This organization didn't exist in Medicaid before September 2022. In just 28 months, it has billed <strong>$239 million</strong>, averaging $8.5 million per month.</p>
-      <p class="text-gray-700 mb-4">The rate analysis is damning. On procedure code G9005 (home health care coordination), SRH CHN charges <strong>$296.20 per claim versus a national median of $47.08</strong> — 6.3 times the median. On code G0506 (care planning), they charge $186.29 per claim versus a median of $7.41 — <strong>25.1 times the median rate</strong>. Their billing swung from $34.6 million in 2022 to $107.1 million in 2023 — a 209% increase.</p>
+      <p class="text-gray-700 mb-4">The rate analysis is striking. On procedure code G9005 (home health care coordination), SRH CHN charges <strong>$296.20 per claim versus a national median of $47.08</strong> — 6.3 times the median. On code G0506 (care planning), they charge $186.29 per claim versus a median of $7.41 — <strong>25.1 times the median rate</strong>. Their billing swung from $34.6 million in 2022 to $107.1 million in 2023 — a 209% increase.</p>
       <p class="text-gray-700 mb-4">755,970 total claims serving 755,546 beneficiaries — nearly a 1:1 ratio of claims to patients, suggesting one-time billing touches across a massive population. An entity that didn't exist three years ago billing a quarter of a billion dollars at rates 6-25x the national median is a pattern that the HHS Office of Inspector General should be examining closely. They have not been charged with any crime.</p>
 
       <hr class="my-10 border-gray-200" />
@@ -151,7 +153,7 @@ export const articles: Article[] = [
       </div>
       <p class="text-gray-700 mb-4">Fishing Point Health Care LLC appeared in Medicaid in <strong>May 2023</strong>. In just 20 months of existence, this "general practice" in Portsmouth, Virginia has billed <strong>$170 million</strong> in Medicaid payments — averaging $8.5 million per month. It triggered three flags: code-specific outlier, billing swing, and massive new entrant.</p>
       <p class="text-gray-700 mb-4">The numbers break down like this: 139,427 total claims across 13,417 beneficiaries — that's <strong>$12,659 per patient</strong>. For a general practice. On procedure code S5121 (home health aide services), Fishing Point charges <strong>$1,302.95 per claim versus a national median of $111.06</strong> — 11.7 times the median. Their billing rocketed from $34.8 million in 2023 to $135.1 million in 2024, a 288% increase.</p>
-      <p class="text-gray-700 mb-4">A general practice that didn't exist two years ago, billing $170 million for home health aide services at 11.7x the national median rate, growing 288% year-over-year. This is the kind of pattern that historically precedes federal indictments. They have not been charged with any crime.</p>
+      <p class="text-gray-700 mb-4">A general practice that didn't exist two years ago, billing $170 million for home health aide services at 11.7x the national median rate, growing 288% year-over-year. This is the kind of pattern that historically attracted federal scrutiny. They have not been charged with any crime.</p>
 
       <hr class="my-10 border-gray-200" />
 
@@ -161,7 +163,7 @@ export const articles: Article[] = [
       <div class="bg-gray-50 rounded-lg p-6 mb-6">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div><div class="text-2xl font-bold text-red-700">$14M</div><div class="text-xs text-gray-500">Prescribing Costs</div></div>
-          <div><div class="text-2xl font-bold text-red-700">97%</div><div class="text-xs text-gray-500">ML Fraud Score</div></div>
+          <div><div class="text-2xl font-bold text-red-700">97%</div><div class="text-xs text-gray-500">ML Pattern Score</div></div>
           <div><div class="text-2xl font-bold text-red-700">113,639</div><div class="text-xs text-gray-500">Total Claims</div></div>
           <div><div class="text-2xl font-bold text-red-700">311/day</div><div class="text-xs text-gray-500">Prescriptions Per Day</div></div>
         </div>
@@ -178,7 +180,7 @@ export const articles: Article[] = [
       <div class="bg-gray-50 rounded-lg p-6 mb-6">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div><div class="text-2xl font-bold text-red-700">$10.2M</div><div class="text-xs text-gray-500">Prescribing Costs</div></div>
-          <div><div class="text-2xl font-bold text-red-700">100%</div><div class="text-xs text-gray-500">ML Fraud Score</div></div>
+          <div><div class="text-2xl font-bold text-red-700">100%</div><div class="text-xs text-gray-500">ML Pattern Score</div></div>
           <div><div class="text-2xl font-bold text-red-700">173,800</div><div class="text-xs text-gray-500">Total Claims</div></div>
           <div><div class="text-2xl font-bold text-red-700">476/day</div><div class="text-xs text-gray-500">Claims Per Day</div></div>
         </div>
@@ -195,7 +197,7 @@ export const articles: Article[] = [
       <div class="bg-gray-50 rounded-lg p-6 mb-6">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div><div class="text-2xl font-bold text-red-700">$9.3M</div><div class="text-xs text-gray-500">Prescribing Costs</div></div>
-          <div><div class="text-2xl font-bold text-red-700">100%</div><div class="text-xs text-gray-500">ML Fraud Score</div></div>
+          <div><div class="text-2xl font-bold text-red-700">100%</div><div class="text-xs text-gray-500">ML Pattern Score</div></div>
           <div><div class="text-2xl font-bold text-red-700">22,648</div><div class="text-xs text-gray-500">Total Claims</div></div>
           <div><div class="text-2xl font-bold text-red-700">$411</div><div class="text-xs text-gray-500">Cost Per Claim</div></div>
         </div>
@@ -212,7 +214,7 @@ export const articles: Article[] = [
       <div class="bg-gray-50 rounded-lg p-6 mb-6">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div><div class="text-2xl font-bold text-red-700">$9.2M</div><div class="text-xs text-gray-500">Prescribing Costs</div></div>
-          <div><div class="text-2xl font-bold text-red-700">95%</div><div class="text-xs text-gray-500">ML Fraud Score</div></div>
+          <div><div class="text-2xl font-bold text-red-700">95%</div><div class="text-xs text-gray-500">ML Pattern Score</div></div>
           <div><div class="text-2xl font-bold text-red-700">8,557</div><div class="text-xs text-gray-500">Total Claims</div></div>
           <div><div class="text-2xl font-bold text-red-700">39.4%</div><div class="text-xs text-gray-500">Brand-Name Rate</div></div>
         </div>
@@ -229,7 +231,7 @@ export const articles: Article[] = [
       <div class="bg-gray-50 rounded-lg p-6 mb-6">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div><div class="text-2xl font-bold text-red-700">$7.5M</div><div class="text-xs text-gray-500">Prescribing Costs</div></div>
-          <div><div class="text-2xl font-bold text-red-700">100%</div><div class="text-xs text-gray-500">ML Fraud Score</div></div>
+          <div><div class="text-2xl font-bold text-red-700">100%</div><div class="text-xs text-gray-500">ML Pattern Score</div></div>
           <div><div class="text-2xl font-bold text-red-700">132,160</div><div class="text-xs text-gray-500">Total Claims</div></div>
           <div><div class="text-2xl font-bold text-red-700">362/day</div><div class="text-xs text-gray-500">Claims Per Day</div></div>
         </div>
@@ -246,7 +248,7 @@ export const articles: Article[] = [
       <div class="bg-gray-50 rounded-lg p-6 mb-6">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div><div class="text-2xl font-bold text-red-700">$5.3M</div><div class="text-xs text-gray-500">Medicare Payments</div></div>
-          <div><div class="text-2xl font-bold text-red-700">88%</div><div class="text-xs text-gray-500">Fraud Probability</div></div>
+          <div><div class="text-2xl font-bold text-red-700">88%</div><div class="text-xs text-gray-500">ML Pattern Match</div></div>
           <div><div class="text-2xl font-bold text-red-700">317/day</div><div class="text-xs text-gray-500">Services Per Day</div></div>
           <div><div class="text-2xl font-bold text-red-700">45,889</div><div class="text-xs text-gray-500">Beneficiaries</div></div>
         </div>
@@ -269,7 +271,7 @@ export const articles: Article[] = [
         </div>
       </div>
       <p class="text-gray-700 mb-4">Dr. Zockazock is the <strong>only provider on this list flagged by two completely independent machine learning models</strong>. On <a href="https://www.openmedicare.us/providers/1215381900" class="text-teal-700 hover:underline">OpenMedicare</a>, he carries a 92% fraud probability based on his Medicare billing patterns — $4.1 million in payments, 48,344 services, 11,412 beneficiaries. On <a href="https://www.openprescriber.org/providers/1215381900" class="text-teal-700 hover:underline">OpenPrescriber</a>, he earned a <strong>perfect 100% ML fraud score</strong> — every single decision tree flagged him — with $1.6 million in Part D prescribing costs across 26,331 claims.</p>
-      <p class="text-gray-700 mb-4">When two separate algorithms, trained on different datasets, looking at different types of billing, both independently flag the same provider — that's not a coincidence. That's convergent evidence. His Medicare services-per-day rate of 132 means he's billing for a patient interaction <strong>every 4 minutes</strong> of a 9-hour workday. Most internal medicine physicians see 20-30 patients per day.</p>
+      <p class="text-gray-700 mb-4">When two separate algorithms, trained on different datasets, looking at different types of billing, both independently flag the same provider — that's not a coincidence. That's a consistent pattern across independent systems. His Medicare services-per-day rate of 132 means he's billing for a patient interaction <strong>every 4 minutes</strong> of a 9-hour workday. Most internal medicine physicians see 20-30 patients per day.</p>
       <p class="text-gray-700 mb-4">He is currently still practicing and accepting patients in Katy, TX. He has not been charged with any crime.</p>
 
       <hr class="my-10 border-gray-200" />
@@ -295,7 +297,7 @@ export const articles: Article[] = [
       </div>
 
       <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">The Bigger Picture</h2>
-      <p class="text-gray-700 mb-4">These 10 providers represent $1.5 billion in billing that our models flagged as suspicious. But they're 10 out of <strong>6,500+ flagged providers</strong> billing a combined <strong>$230 billion</strong>. The Medicaid numbers dwarf everything else — $226.2 billion in flagged spending across 1,860 providers — because Medicaid's decentralized state-by-state structure creates enormous blind spots that bad actors exploit.</p>
+      <p class="text-gray-700 mb-4">These 10 providers represent $1.5 billion in billing that our models flagged for anomalous billing patterns. But they're 10 out of <strong>6,500+ flagged providers</strong> billing a combined <strong>$230 billion</strong>. The Medicaid numbers dwarf everything else — $226.2 billion in flagged spending across 1,860 providers — because Medicaid's decentralized state-by-state structure creates enormous blind spots where fraud can thrive.</p>
 
       <div class="bg-gray-50 rounded-lg p-6 mb-6">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
@@ -335,7 +337,7 @@ export const articles: Article[] = [
         </a>
         <a href="https://www.openmedicaid.org/watchlist" class="block bg-gray-50 border border-gray-200 rounded-lg p-5 hover:shadow-md transition">
           <h3 class="font-bold text-gray-900 mb-1">OpenMedicaid Watchlist</h3>
-          <p class="text-sm text-gray-600 mb-2">1,860 flagged providers with $226.2B in suspicious billing</p>
+          <p class="text-sm text-gray-600 mb-2">1,860 flagged providers with $226.2B in anomalous billing</p>
           <span class="text-teal-700 text-sm font-medium">Explore →</span>
         </a>
       </div>
