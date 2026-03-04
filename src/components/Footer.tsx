@@ -46,6 +46,8 @@ export default function Footer() {
               <a href="https://www.openspending.us" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenSpending</a>
               <a href="https://www.opensubsidies.us" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenSubsidies</a>
               <a href="https://www.vaccinewatch.org" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">VaccineWatch</a>
+              <a href="https://www.openprescriber.org" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenPrescriber</a>
+              <a href="https://www.opencrime.us" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenCrime</a>
             </div>
           </div>
           <div>

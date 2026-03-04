@@ -8,6 +8,43 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "launching-opencrime",
+    title: "Launching OpenCrime: FBI Crime Data for 9,700+ Cities",
+    description: "OpenCrime makes 45 years of FBI crime data searchable and accessible. City-level statistics, state trends, rankings, interactive tools, and in-depth analysis.",
+    date: "2026-03-04",
+    content: `
+      <p class="text-lg text-gray-600 mb-8">Today we're launching <a href="https://www.opencrime.us" class="text-teal-700 hover:underline font-medium">OpenCrime</a> — a free crime data explorer covering <strong>9,700+ US cities</strong>, all 50 states, and <strong>45 years of national trends</strong>. Built from FBI Crime Data Explorer statistics, it's the most accessible way to explore American crime data.</p>
+
+      <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">What's Inside</h2>
+      <ul class="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+        <li><strong>9,700+ city profiles</strong> with violent crime, murder, property crime rates and multi-year trends</li>
+        <li><strong>51 state pages</strong> with 42 years of historical data (1979-2024)</li>
+        <li><strong>National dashboard</strong> with interactive charts covering violent crime, homicide, and property crime</li>
+        <li><strong>City rankings</strong> — safest and most dangerous cities ranked by crime rate</li>
+        <li><strong>Hate crime statistics</strong> by state and bias motivation</li>
+        <li><strong>Expanded homicide data</strong> — weapon types, victim demographics, circumstances, relationships</li>
+        <li><strong>8 in-depth analysis articles</strong> including The Great Crime Decline, Gun Violence, Rural vs Urban Crime</li>
+        <li><strong>Interactive tools</strong> — Compare Cities side-by-side, Safety Score calculator (A-F grades)</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">The Key Finding</h2>
+      <p class="text-gray-700 mb-4">Violent crime in America has <strong>fallen 52.6% since 1991</strong>. The 2024 murder rate dropped 15.7% from 2023 — the steepest single-year decline in decades. Despite public perception, the data is unambiguous: America is dramatically safer than 30 years ago.</p>
+
+      <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">By the Numbers</h2>
+      <div class="grid grid-cols-2 gap-4 mb-6">
+        <div class="bg-gray-50 rounded-lg p-4 text-center"><div class="text-2xl font-bold text-gray-900">9,800+</div><div class="text-sm text-gray-500">Searchable Pages</div></div>
+        <div class="bg-gray-50 rounded-lg p-4 text-center"><div class="text-2xl font-bold text-gray-900">45</div><div class="text-sm text-gray-500">Years of Data</div></div>
+        <div class="bg-gray-50 rounded-lg p-4 text-center"><div class="text-2xl font-bold text-gray-900">8</div><div class="text-sm text-gray-500">Analysis Articles</div></div>
+        <div class="bg-gray-50 rounded-lg p-4 text-center"><div class="text-2xl font-bold text-gray-900">12,826</div><div class="text-sm text-gray-500">City Detail Files</div></div>
+      </div>
+
+      <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Our 11th Platform</h2>
+      <p class="text-gray-700 mb-4">OpenCrime joins our growing network of free data platforms: <a href="https://www.openmedicaid.org" class="text-teal-700 hover:underline">OpenMedicaid</a>, <a href="https://www.openmedicare.us" class="text-teal-700 hover:underline">OpenMedicare</a>, <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline">OpenPrescriber</a>, <a href="https://www.openlobby.us" class="text-teal-700 hover:underline">OpenLobby</a>, <a href="https://www.vaccinewatch.org" class="text-teal-700 hover:underline">VaccineWatch</a>, <a href="https://www.opensubsidies.us" class="text-teal-700 hover:underline">OpenSubsidies</a>, <a href="https://www.openimmigration.us" class="text-teal-700 hover:underline">OpenImmigration</a>, <a href="https://www.openfeds.org" class="text-teal-700 hover:underline">OpenFeds</a>, and <a href="https://www.openspending.us" class="text-teal-700 hover:underline">OpenSpending</a>.</p>
+
+      <p class="text-gray-600 text-sm mt-8">Start at <a href="https://www.opencrime.us" class="text-teal-700 hover:underline font-medium">www.opencrime.us</a> — search for any city, explore your state's crime trends, or compare cities side by side.</p>
+    `
+  },
+  {
     slug: "launching-openprescriber",
     title: "Launching OpenPrescriber: 1.38 Million Medicare Prescribers, $275.6 Billion in Drug Costs, Every Pill Tracked",
     description: "We built a free platform analyzing every Medicare Part D prescriber in America — with fraud risk scoring, machine learning detection, opioid tracking, and cost transparency across 21,000+ pages.",
