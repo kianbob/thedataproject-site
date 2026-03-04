@@ -8,6 +8,226 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "still-billing-still-free",
+    title: "Still Billing, Still Free: 10 Healthcare Providers Our Algorithms Flagged — Who Haven't Been Caught",
+    description: "Our machine learning models across OpenMedicare, OpenPrescriber, and OpenMedicaid flagged hundreds of providers with extreme billing patterns. These 10 are still practicing. Here's what the data shows.",
+    date: "2026-03-04",
+    content: `
+      <p class="text-lg text-gray-600 mb-8">Across three of our healthcare data platforms — <a href="https://www.openmedicare.us" class="text-teal-700 hover:underline font-medium">OpenMedicare</a>, <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline font-medium">OpenPrescriber</a>, and <a href="https://www.openmedicaid.org" class="text-teal-700 hover:underline font-medium">OpenMedicaid</a> — we've built machine learning models trained on <strong>confirmed fraud cases</strong> from the HHS Office of Inspector General's exclusion list. These models have flagged hundreds of currently-practicing providers whose billing patterns closely match those of convicted fraudsters. None of the providers below have been charged with fraud. But the numbers demand attention.</p>
+
+      <div class="bg-red-50 border-l-4 border-red-700 p-6 my-8 rounded-r-lg">
+        <p class="text-lg font-bold text-red-800 mb-2">⚠️ Important Disclaimer</p>
+        <p class="text-gray-700">Being flagged by a statistical model does not mean a provider has committed fraud. These are <strong>anomalies in public billing data</strong> that warrant further investigation. Some may have legitimate explanations — unusual patient populations, specialized practices, or data reporting artifacts. We present this data for transparency and public interest. Only law enforcement can determine actual fraud.</p>
+      </div>
+
+      <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">How We Built the Models</h2>
+      <p class="text-gray-700 mb-4">Our approach is straightforward: we trained machine learning classifiers on the billing patterns of providers who were <strong>actually caught and convicted</strong> of healthcare fraud — sourced from the HHS-OIG List of Excluded Individuals/Entities (LEIE) and DOJ prosecution records.</p>
+      <ul class="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+        <li><strong>OpenMedicare:</strong> Bagged Decision Trees trained on 2,198 LEIE+DOJ confirmed fraudsters. AUC 0.83. Scored all providers, flagged 500 "still out there" — providers matching fraud patterns who have never been excluded or charged.</li>
+        <li><strong>OpenPrescriber:</strong> Bagged Decision Trees (20 trees) trained on 281 LEIE-confirmed fraud cases in Part D prescribing. 83% precision, 66.6% recall. Scored 1,077,354 providers with ≥50 claims. 4,183 flagged at ≥80% confidence.</li>
+        <li><strong>OpenMedicaid:</strong> Ensemble model using claims patterns, billing velocity, code concentration, and geographic risk scoring across Medicaid payment data.</li>
+      </ul>
+      <p class="text-gray-700 mb-8">What makes this analysis unique: <strong>four providers appear on multiple platforms simultaneously</strong>, flagged independently by different models analyzing different datasets. When separate algorithms looking at separate data reach the same conclusion, the signal gets much harder to ignore.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">1. Remy Zockazock, MD</h2>
+      <p class="text-sm text-gray-500 mb-4">Internal Medicine · Katy, Texas · NPI 1871637157</p>
+      <div class="bg-gray-50 rounded-lg p-6 mb-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div><div class="text-2xl font-bold text-red-700">$5.7M</div><div class="text-xs text-gray-500">Combined Billing</div></div>
+          <div><div class="text-2xl font-bold text-red-700">92%</div><div class="text-xs text-gray-500">Medicare Fraud Prob</div></div>
+          <div><div class="text-2xl font-bold text-red-700">100%</div><div class="text-xs text-gray-500">Prescriber ML Score</div></div>
+          <div><div class="text-2xl font-bold text-red-700">2 Sites</div><div class="text-xs text-gray-500">Flagged Independently</div></div>
+        </div>
+      </div>
+      <p class="text-gray-700 mb-4">Dr. Zockazock is the most alarming case in our entire database. He is <strong>independently flagged on both OpenMedicare and OpenPrescriber</strong> — two completely separate machine learning models analyzing two different CMS datasets arrived at the same conclusion.</p>
+      <p class="text-gray-700 mb-4">On the Medicare side: <strong>$4.1 million</strong> in total payments, 48,344 services, and 11,412 beneficiaries, with a fraud probability of 92%. His services-per-day rate of 132 means he's billing Medicare for a patient interaction roughly <strong>every 4 minutes</strong> of a 9-hour workday.</p>
+      <p class="text-gray-700 mb-4">On the prescribing side: <strong>$1.6 million</strong> in Part D drug costs with a <strong>perfect 100% ML score</strong> — meaning all 20 decision trees in our ensemble unanimously agreed his prescribing pattern matches confirmed fraudsters. His 2.3% opioid rate is moderate, but his overall prescribing volume and cost patterns are extreme outliers.</p>
+      <p class="text-gray-700 mb-4">He is currently still practicing and accepting patients in Katy, TX. He has not been charged with any crime.</p>
+      <p class="text-sm text-gray-500 mb-8">Sources: <a href="https://www.openmedicare.us" class="text-teal-700 hover:underline">OpenMedicare ML v2</a> · <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline">OpenPrescriber ML</a></p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">2. Najmuddin Karimjee, MD</h2>
+      <p class="text-sm text-gray-500 mb-4">Internal Medicine · Houston, Texas · NPI 1285660241</p>
+      <div class="bg-gray-50 rounded-lg p-6 mb-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div><div class="text-2xl font-bold text-red-700">$14M</div><div class="text-xs text-gray-500">Prescribing Costs</div></div>
+          <div><div class="text-2xl font-bold text-red-700">97%</div><div class="text-xs text-gray-500">ML Fraud Score</div></div>
+          <div><div class="text-2xl font-bold text-red-700">113,639</div><div class="text-xs text-gray-500">Total Claims</div></div>
+          <div><div class="text-2xl font-bold text-red-700">37 yrs</div><div class="text-xs text-gray-500">In Practice</div></div>
+        </div>
+      </div>
+      <p class="text-gray-700 mb-4">Dr. Karimjee is the <strong>single highest-cost provider</strong> in our OpenPrescriber ML-flagged dataset. Fourteen million dollars in Medicare Part D drug costs in a single year, with a 97% machine learning fraud score. That's an internal medicine doctor in Houston prescribing more drugs than most entire clinics.</p>
+      <p class="text-gray-700 mb-4">To put $14 million in context: the average internal medicine provider generates roughly $200,000-$400,000 in Part D prescribing costs annually. Dr. Karimjee is generating <strong>35 to 70 times the average</strong>. His 113,639 claims work out to roughly 311 prescriptions <em>per day</em>, every day of the year.</p>
+      <p class="text-gray-700 mb-4">He has practiced for 37 years, accepts Medicare and Medicaid, and is affiliated with multiple Houston-area hospitals. He has not been charged with any crime.</p>
+      <p class="text-sm text-gray-500 mb-8">Source: <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline">OpenPrescriber ML</a></p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">3. Terence Frinks, MD</h2>
+      <p class="text-sm text-gray-500 mb-4">Family Practice · Atlanta, Georgia · NPI (withheld)</p>
+      <div class="bg-gray-50 rounded-lg p-6 mb-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div><div class="text-2xl font-bold text-red-700">$10.2M</div><div class="text-xs text-gray-500">Prescribing Costs</div></div>
+          <div><div class="text-2xl font-bold text-red-700">100%</div><div class="text-xs text-gray-500">ML Fraud Score</div></div>
+          <div><div class="text-2xl font-bold text-red-700">173,800</div><div class="text-xs text-gray-500">Total Claims</div></div>
+          <div><div class="text-2xl font-bold text-red-700">476/day</div><div class="text-xs text-gray-500">Claims Per Day</div></div>
+        </div>
+      </div>
+      <p class="text-gray-700 mb-4">A family practice doctor in the Atlanta area writing <strong>476 prescriptions per day</strong>. Our model gave him a <strong>perfect 100% score</strong> — every single decision tree flagged him. $10.2 million in drug costs from a single family practice.</p>
+      <p class="text-gray-700 mb-4">For comparison, the average family practice physician writes roughly 20-30 prescriptions per day. Dr. Frinks is writing <strong>16 to 24 times the normal volume</strong>. Even accounting for a large patient panel, this level of prescribing would require seeing a patient and writing a prescription every 60 seconds for an entire workday.</p>
+      <p class="text-gray-700 mb-4">He has been in practice for over 25 years, is affiliated with Northside Hospital - Gwinnett, and is currently accepting new patients. He has not been charged with any crime.</p>
+      <p class="text-sm text-gray-500 mb-8">Source: <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline">OpenPrescriber ML</a></p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">4. Vadim Baram, MD</h2>
+      <p class="text-sm text-gray-500 mb-4">Psychiatry · St. Louis, Missouri · NPI 1124007380</p>
+      <div class="bg-gray-50 rounded-lg p-6 mb-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div><div class="text-2xl font-bold text-red-700">$9.3M</div><div class="text-xs text-gray-500">Prescribing Costs</div></div>
+          <div><div class="text-2xl font-bold text-red-700">100%</div><div class="text-xs text-gray-500">ML Fraud Score</div></div>
+          <div><div class="text-2xl font-bold text-red-700">22,648</div><div class="text-xs text-gray-500">Total Claims</div></div>
+          <div><div class="text-2xl font-bold text-red-700">$411</div><div class="text-xs text-gray-500">Cost Per Claim</div></div>
+        </div>
+      </div>
+      <p class="text-gray-700 mb-4">Dr. Baram's profile is distinctive because of the <strong>extraordinary cost per claim</strong>. While other flagged providers generate high costs through massive volume, Dr. Baram generates $9.3 million through only 22,648 claims — a cost per claim of roughly <strong>$411</strong>. The typical psychiatrist's cost per claim is under $50.</p>
+      <p class="text-gray-700 mb-4">This pattern — moderate volume but extreme cost — is consistent with prescribing expensive brand-name medications when generics are available, or prescribing high-cost specialty drugs at unusual rates. His 14% brand-name rate doesn't fully explain the disparity, suggesting the specific drugs being prescribed may be extremely high-cost specialty medications.</p>
+      <p class="text-gray-700 mb-4">He is board-certified, serves as Chairman of Psychiatry at South City Hospital in St. Louis, and has over 17 years of experience. He has not been charged with any crime.</p>
+      <p class="text-sm text-gray-500 mb-8">Source: <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline">OpenPrescriber ML</a></p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">5. Peter Alpert, MD</h2>
+      <p class="text-sm text-gray-500 mb-4">Infectious Disease · Bronx, New York · NPI (withheld)</p>
+      <div class="bg-gray-50 rounded-lg p-6 mb-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div><div class="text-2xl font-bold text-red-700">$9.2M</div><div class="text-xs text-gray-500">Prescribing Costs</div></div>
+          <div><div class="text-2xl font-bold text-red-700">95%</div><div class="text-xs text-gray-500">ML Fraud Score</div></div>
+          <div><div class="text-2xl font-bold text-red-700">8,557</div><div class="text-xs text-gray-500">Total Claims</div></div>
+          <div><div class="text-2xl font-bold text-red-700">39.4%</div><div class="text-xs text-gray-500">Brand-Name Rate</div></div>
+        </div>
+      </div>
+      <p class="text-gray-700 mb-4">Dr. Alpert presents the most extreme cost-per-claim ratio in our top 10: <strong>$9.2 million on just 8,557 claims</strong> works out to roughly <strong>$1,075 per prescription</strong>. This is 20-40x the typical cost per claim for infectious disease specialists.</p>
+      <p class="text-gray-700 mb-4">His 39.4% brand-name rate is the highest on this list — nearly three times the average. In infectious disease, brand-name preferences can be legitimately high for certain antiretrovirals and antifungals. But $9.2 million from a single provider with fewer than 9,000 claims is a severe statistical outlier by any measure.</p>
+      <p class="text-gray-700 mb-4">He also carries 4 risk flags on our OpenPrescriber scoring system, including high cost outlier and high brand preference. He graduated from New York Medical College in 1987 and is affiliated with Montefiore Medical Center. He has not been charged with any crime.</p>
+      <p class="text-sm text-gray-500 mb-8">Source: <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline">OpenPrescriber ML</a> · <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline">OpenPrescriber Risk Scoring</a></p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">6. Edwin Yau, MD</h2>
+      <p class="text-sm text-gray-500 mb-4">General Practice · California · NPI 1194756411</p>
+      <div class="bg-gray-50 rounded-lg p-6 mb-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div><div class="text-2xl font-bold text-red-700">$3.8M</div><div class="text-xs text-gray-500">Medicare Payments</div></div>
+          <div><div class="text-2xl font-bold text-red-700">87%</div><div class="text-xs text-gray-500">Medicare Fraud Prob</div></div>
+          <div><div class="text-2xl font-bold text-red-700">6 Flags</div><div class="text-xs text-gray-500">Risk Indicators</div></div>
+          <div><div class="text-2xl font-bold text-red-700">2 Sites</div><div class="text-xs text-gray-500">Flagged Independently</div></div>
+        </div>
+      </div>
+      <p class="text-gray-700 mb-4">Dr. Yau is flagged on <strong>both OpenMedicare and OpenPrescriber</strong>, and carries the most risk flags of anyone on this list: <strong>six separate indicators</strong> including high cost outlier, high brand preference, opioid-benzodiazepine co-prescribing, antipsychotic prescribing to elderly patients, long-acting opioid overuse, and extreme fills per patient.</p>
+      <p class="text-gray-700 mb-4">The combination of opioid-benzodiazepine co-prescribing and elderly antipsychotic use is particularly concerning. The FDA has issued a <a href="https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-fda-warns-about-serious-risks-and-death-when-combining-opioid-pain-or" class="text-teal-700 hover:underline">black box warning</a> about the risks of combining opioids and benzodiazepines — it's a combination that dramatically increases the risk of respiratory depression and death. Antipsychotic use in elderly dementia patients carries a similar FDA black box warning due to increased mortality risk.</p>
+      <p class="text-gray-700 mb-4">On the Medicare billing side, $3.8 million in payments with 60,161 services (165 per day) and 18,999 beneficiaries. He has not been charged with any crime.</p>
+      <p class="text-sm text-gray-500 mb-8">Sources: <a href="https://www.openmedicare.us" class="text-teal-700 hover:underline">OpenMedicare ML v2</a> · <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline">OpenPrescriber Risk Scoring</a></p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">7. Terrance Hughes, MD</h2>
+      <p class="text-sm text-gray-500 mb-4">Physical Medicine and Rehabilitation · Georgia · NPI 1659378743</p>
+      <div class="bg-gray-50 rounded-lg p-6 mb-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div><div class="text-2xl font-bold text-red-700">$5.3M</div><div class="text-xs text-gray-500">Medicare Payments</div></div>
+          <div><div class="text-2xl font-bold text-red-700">88%</div><div class="text-xs text-gray-500">Fraud Probability</div></div>
+          <div><div class="text-2xl font-bold text-red-700">317/day</div><div class="text-xs text-gray-500">Services Per Day</div></div>
+          <div><div class="text-2xl font-bold text-red-700">45,889</div><div class="text-xs text-gray-500">Beneficiaries</div></div>
+        </div>
+      </div>
+      <p class="text-gray-700 mb-4">Dr. Hughes bills Medicare for an average of <strong>317 services per day</strong>. That's a service every 1.7 minutes for a 9-hour workday. Physical medicine and rehabilitation typically involves hands-on patient interaction — physical exams, therapeutic procedures, injections. The idea that one physician can deliver 317 of these per day strains credulity.</p>
+      <p class="text-gray-700 mb-4">He is the <strong>highest-dollar provider</strong> in our Medicare "still out there" dataset at $5.3 million, with 115,777 total services and 45,889 unique beneficiaries. The beneficiary count is also extraordinary — seeing nearly 46,000 different patients in a year would mean over 125 unique patients per day.</p>
+      <p class="text-gray-700 mb-4">It's possible Dr. Hughes runs a large multi-provider clinic billing under his NPI, which could legitimately inflate these numbers. But our model evaluates individual NPI-level patterns, and his match confirmed fraud profiles at 88%. He has not been charged with any crime.</p>
+      <p class="text-sm text-gray-500 mb-8">Source: <a href="https://www.openmedicare.us" class="text-teal-700 hover:underline">OpenMedicare ML v2</a></p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">8. Stephen Kelly, MD</h2>
+      <p class="text-sm text-gray-500 mb-4">Family Practice · Oklahoma City, Oklahoma · NPI 1134167455</p>
+      <div class="bg-gray-50 rounded-lg p-6 mb-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div><div class="text-2xl font-bold text-red-700">$3.2M</div><div class="text-xs text-gray-500">Prescribing Costs</div></div>
+          <div><div class="text-2xl font-bold text-red-700">53.6%</div><div class="text-xs text-gray-500">Opioid Rate</div></div>
+          <div><div class="text-2xl font-bold text-red-700">70</div><div class="text-xs text-gray-500">Risk Score (out of 100)</div></div>
+          <div><div class="text-2xl font-bold text-red-700">5 Flags</div><div class="text-xs text-gray-500">Risk Indicators</div></div>
+        </div>
+      </div>
+      <p class="text-gray-700 mb-4">Dr. Kelly is the <strong>most aggressive opioid prescriber</strong> on this list. More than half of everything he prescribes — 53.6% — is opioids. The national average for family practice is under 5%. He has a risk score of 70 out of 100, with flags for extreme opioid rate vs. peers, 95th percentile opioid prescribing, high long-acting opioid use, extreme fills per patient, and high cost outlier.</p>
+      <p class="text-gray-700 mb-4">His 23,091 total claims and 1,730 beneficiaries mean each patient is averaging over 13 prescriptions per year — primarily opioids. In the context of an opioid epidemic that has killed over 600,000 Americans since 1999, a family practice doctor writing this volume of opioid prescriptions represents an extraordinary public health concern.</p>
+      <p class="text-gray-700 mb-4">He has been in practice for over 25 years in Oklahoma City. He has not been charged with any crime.</p>
+      <p class="text-sm text-gray-500 mb-8">Source: <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline">OpenPrescriber Risk Scoring</a></p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">9. Fariborz Mortazavi, MD</h2>
+      <p class="text-sm text-gray-500 mb-4">Hematology-Oncology · California · NPI (withheld)</p>
+      <div class="bg-gray-50 rounded-lg p-6 mb-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div><div class="text-2xl font-bold text-red-700">$2.8M</div><div class="text-xs text-gray-500">Medicare Payments</div></div>
+          <div><div class="text-2xl font-bold text-red-700">90%</div><div class="text-xs text-gray-500">Fraud Probability</div></div>
+          <div><div class="text-2xl font-bold text-red-700">174/day</div><div class="text-xs text-gray-500">Services Per Day</div></div>
+          <div><div class="text-2xl font-bold text-red-700">17,405</div><div class="text-xs text-gray-500">Beneficiaries</div></div>
+        </div>
+      </div>
+      <p class="text-gray-700 mb-4">Oncology fraud is among the most harmful forms of healthcare fraud, because it can involve administering unnecessary chemotherapy to patients who don't have cancer — or overtreating patients who do. Dr. Mortazavi's billing shows 63,625 services in a year (174 per day) with $2.8 million in payments and a 90% fraud probability.</p>
+      <p class="text-gray-700 mb-4">Hematology-oncology is a field where high per-patient costs are expected — chemotherapy drugs are expensive, and treatment regimens involve many visits. But 174 services per day is an extreme outlier even for this specialty. The typical oncologist sees 15-25 patients per day.</p>
+      <p class="text-gray-700 mb-4">It should be noted that oncology has been one of the most fraud-prone specialties historically. The DOJ has prosecuted numerous oncologists for administering unnecessary chemotherapy, upcoding treatment levels, and billing for drugs that were never administered. He has not been charged with any crime.</p>
+      <p class="text-sm text-gray-500 mb-8">Source: <a href="https://www.openmedicare.us" class="text-teal-700 hover:underline">OpenMedicare ML v2</a></p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">10. Andrew Graf, MD</h2>
+      <p class="text-sm text-gray-500 mb-4">Internal Medicine · Pennsylvania · NPI (withheld)</p>
+      <div class="bg-gray-50 rounded-lg p-6 mb-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div><div class="text-2xl font-bold text-red-700">$7.5M</div><div class="text-xs text-gray-500">Prescribing Costs</div></div>
+          <div><div class="text-2xl font-bold text-red-700">100%</div><div class="text-xs text-gray-500">ML Fraud Score</div></div>
+          <div><div class="text-2xl font-bold text-red-700">132,160</div><div class="text-xs text-gray-500">Total Claims</div></div>
+          <div><div class="text-2xl font-bold text-red-700">362/day</div><div class="text-xs text-gray-500">Claims Per Day</div></div>
+        </div>
+      </div>
+      <p class="text-gray-700 mb-4">Dr. Graf rounds out our list with another <strong>perfect 100% ML score</strong> — the unanimous verdict of all 20 decision trees. $7.5 million in Part D prescribing costs, 132,160 claims (362 per day), and a 1.4% opioid rate that suggests this isn't about pills — it's about volume.</p>
+      <p class="text-gray-700 mb-4">362 prescriptions per day is physically impossible for a single physician to personally evaluate, prescribe, and supervise. Even if each prescription took only one minute — no patient interaction, no chart review, just signing — that would take 6 straight hours of non-stop signing. With any clinical involvement, the numbers don't work.</p>
+      <p class="text-gray-700 mb-4">He has not been charged with any crime.</p>
+      <p class="text-sm text-gray-500 mb-8">Source: <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline">OpenPrescriber ML</a></p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">The Bigger Picture</h2>
+      <p class="text-gray-700 mb-4">These 10 providers represent a combined <strong>$74.9 million</strong> in Medicare and Part D billing that our models flagged as matching confirmed fraud patterns. That's just 10 people. Across our three platforms, we've identified <strong>hundreds more</strong> with similar profiles.</p>
+
+      <div class="bg-gray-50 rounded-lg p-6 mb-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+          <div><div class="text-2xl font-bold text-gray-900">500</div><div class="text-sm text-gray-500">Medicare providers flagged<br/><a href="https://www.openmedicare.us/fraud" class="text-teal-700 hover:underline text-xs">OpenMedicare →</a></div></div>
+          <div><div class="text-2xl font-bold text-gray-900">4,183</div><div class="text-sm text-gray-500">Prescribers flagged (≥80%)<br/><a href="https://www.openprescriber.org/ml-fraud-detection" class="text-teal-700 hover:underline text-xs">OpenPrescriber →</a></div></div>
+          <div><div class="text-2xl font-bold text-gray-900">500+</div><div class="text-sm text-gray-500">Medicaid providers flagged<br/><a href="https://www.openmedicaid.org" class="text-teal-700 hover:underline text-xs">OpenMedicaid →</a></div></div>
+        </div>
+      </div>
+
+      <p class="text-gray-700 mb-4">The HHS Office of Inspector General estimates that <strong>improper payments in Medicare totaled $51 billion in 2024</strong>. Medicare fraud prosecutions, while increasing, result in conviction of only a fraction of offenders. The DOJ's Healthcare Fraud Strike Force has charged over 5,000 defendants since 2007 — but our models suggest the number of providers exhibiting fraud-like patterns is an order of magnitude larger.</p>
+
+      <p class="text-gray-700 mb-4">We're not law enforcement. We can't determine intent, investigate patient records, or bring charges. What we can do is make the public data <strong>visible and searchable</strong>. Every provider on this list is billing public money — your tax dollars and mine. The billing data is public. The patterns are public. The question is whether anyone is looking.</p>
+
+      <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Explore the Data Yourself</h2>
+      <ul class="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+        <li><a href="https://www.openmedicare.us/fraud" class="text-teal-700 hover:underline font-medium">OpenMedicare Fraud Hub</a> — 500 ML-flagged Medicare providers, searchable by state and specialty</li>
+        <li><a href="https://www.openprescriber.org/ml-fraud-detection" class="text-teal-700 hover:underline font-medium">OpenPrescriber ML Detection</a> — 4,183 flagged prescribers with methodology</li>
+        <li><a href="https://www.openmedicaid.org" class="text-teal-700 hover:underline font-medium">OpenMedicaid</a> — Medicaid spending tracker with risk scoring</li>
+      </ul>
+
+      <p class="text-gray-600 text-sm mt-8 italic">All data sourced from CMS public use files and HHS-OIG exclusion lists. Models trained on confirmed fraud cases. Being flagged does not imply guilt — it indicates statistical anomaly relative to confirmed fraud patterns. If you are a provider listed here and believe the data is inaccurate, please <a href="/contact" class="text-teal-700 hover:underline">contact us</a>.</p>
+    `
+  },
+  {
     slug: "launching-opencrime",
     title: "Launching OpenCrime: FBI Crime Data for 9,700+ Cities",
     description: "OpenCrime makes 45 years of FBI crime data searchable and accessible. City-level statistics, state trends, rankings, interactive tools, and in-depth analysis.",
