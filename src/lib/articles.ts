@@ -100,7 +100,7 @@ export const articles: Article[] = [
         </div>
       </div>
 
-      <p class="text-gray-700 mb-8">What makes this analysis unique: <strong>four providers appear on multiple platforms simultaneously</strong>, flagged independently by different models analyzing different datasets. When separate algorithms looking at separate data reach the same conclusion, the signal gets much harder to ignore.</p>
+      <p class="text-gray-700 mb-8">What makes this analysis unique: <strong>seven of these ten providers appear on multiple platforms simultaneously</strong>, flagged independently by different models analyzing different datasets. When separate algorithms looking at separate data reach the same conclusion, the signal gets much harder to ignore.</p>
 
       <hr class="my-10 border-gray-200" />
 
