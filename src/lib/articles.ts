@@ -24,7 +24,7 @@ export const articles: Article[] = [
         <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #ffffff;">The Numbers at a Glance</h2>
         <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
           <div><div style="font-size: 1.875rem; font-weight: 700; color: #f87171;">$1.5B</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">These 10 Providers Billed</div></div>
-          <div><div style="font-size: 1.875rem; font-weight: 700; color: #f87171;">$233B+</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Total Flagged System-Wide</div></div>
+          <div><div style="font-size: 1.875rem; font-weight: 700; color: #f87171;">$230B+</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Total Flagged System-Wide</div></div>
           <div><div style="font-size: 1.875rem; font-weight: 700; color: #f87171;">3</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Platforms Represented</div></div>
           <div><div style="font-size: 1.875rem; font-weight: 700; color: #f87171;">3</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Perfect 100% ML Scores</div></div>
           <div><div style="font-size: 1.875rem; font-weight: 700; color: #f87171;">0</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Charged With Fraud</div></div>
@@ -39,13 +39,13 @@ export const articles: Article[] = [
           <tbody>
             <tr class="border-t"><td class="p-3"><a href="https://www.openmedicare.us/fraud" class="text-teal-700 hover:underline font-medium">OpenMedicare</a></td><td class="text-right p-3">500</td><td class="text-right p-3 font-bold">$399.4 million</td><td class="text-right p-3">AUC 0.83</td></tr>
             <tr class="border-t"><td class="p-3"><a href="https://www.openprescriber.org/ml-fraud-detection" class="text-teal-700 hover:underline font-medium">OpenPrescriber</a> (≥80% confidence)</td><td class="text-right p-3">4,183</td><td class="text-right p-3 font-bold">$3.12 billion</td><td class="text-right p-3">0.83 precision</td></tr>
-            <tr class="border-t"><td class="p-3">↳ Perfect 100% ML score</td><td class="text-right p-3">249</td><td class="text-right p-3">$425 million</td><td class="text-right p-3">unanimous (20/20 trees)</td></tr>
-            <tr class="border-t"><td class="p-3"><a href="https://www.openmedicaid.org/watchlist" class="text-teal-700 hover:underline font-medium">OpenMedicaid</a></td><td class="text-right p-3">1,860</td><td class="text-right p-3 font-bold">$229.6 billion</td><td class="text-right p-3">ensemble + rules</td></tr>
-            <tr class="border-t bg-gray-50"><td class="p-3 font-bold">Combined</td><td class="text-right p-3 font-bold">6,543+</td><td class="text-right p-3 font-bold text-red-700">$233+ billion</td><td class="text-right p-3">—</td></tr>
+            <tr class="border-t"><td class="p-3">↳ Perfect 100% ML score</td><td class="text-right p-3">240</td><td class="text-right p-3">$418 million</td><td class="text-right p-3">unanimous (20/20 trees)</td></tr>
+            <tr class="border-t"><td class="p-3"><a href="https://www.openmedicaid.org/watchlist" class="text-teal-700 hover:underline font-medium">OpenMedicaid</a></td><td class="text-right p-3">1,860</td><td class="text-right p-3 font-bold">$226.2 billion</td><td class="text-right p-3">ensemble + rules</td></tr>
+            <tr class="border-t bg-gray-50"><td class="p-3 font-bold">Combined</td><td class="text-right p-3 font-bold">6,543+</td><td class="text-right p-3 font-bold text-red-700">$230+ billion</td><td class="text-right p-3">—</td></tr>
           </tbody>
         </table>
       </div>
-      <p class="text-gray-700 mb-4">That's $233 billion in billing by providers whose patterns triggered fraud detection systems — with Medicaid representing by far the largest pool of flagged spending. For context, the DOJ's entire Healthcare Fraud Strike Force recovered $1.9 billion in 2024. Our models suggest the amount of fraud-patterned billing currently flowing through Medicare and Medicaid dwarfs what enforcement recovers annually.</p>
+      <p class="text-gray-700 mb-4">That's $230 billion in billing by providers whose patterns triggered fraud detection systems — with Medicaid representing by far the largest pool of flagged spending. For context, the DOJ's entire Healthcare Fraud Strike Force recovered $1.9 billion in 2024. Our models suggest the amount of fraud-patterned billing currently flowing through Medicare and Medicaid dwarfs what enforcement recovers annually.</p>
 
       <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">The Smoking Gun: Cost Per Beneficiary</h2>
       <p class="text-gray-700 mb-4">The single most damning metric in our analysis is <strong>cost per beneficiary</strong> — how much each provider spends per patient compared to their peers. Legitimate high-volume providers might have lots of patients. But when a provider is spending 10-30x more <em>per patient</em> than their peers in the same specialty, volume can't explain it.</p>
@@ -295,7 +295,7 @@ export const articles: Article[] = [
       </div>
 
       <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">The Bigger Picture</h2>
-      <p class="text-gray-700 mb-4">These 10 providers represent $1.5 billion in billing that our models flagged as suspicious. But they're 10 out of <strong>6,500+ flagged providers</strong> billing a combined <strong>$233 billion</strong>. The Medicaid numbers dwarf everything else — $229.6 billion in flagged spending across 1,860 providers — because Medicaid's decentralized state-by-state structure creates enormous blind spots that bad actors exploit.</p>
+      <p class="text-gray-700 mb-4">These 10 providers represent $1.5 billion in billing that our models flagged as suspicious. But they're 10 out of <strong>6,500+ flagged providers</strong> billing a combined <strong>$230 billion</strong>. The Medicaid numbers dwarf everything else — $226.2 billion in flagged spending across 1,860 providers — because Medicaid's decentralized state-by-state structure creates enormous blind spots that bad actors exploit.</p>
 
       <div class="bg-gray-50 rounded-lg p-6 mb-6">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
@@ -335,7 +335,7 @@ export const articles: Article[] = [
         </a>
         <a href="https://www.openmedicaid.org/watchlist" class="block bg-gray-50 border border-gray-200 rounded-lg p-5 hover:shadow-md transition">
           <h3 class="font-bold text-gray-900 mb-1">OpenMedicaid Watchlist</h3>
-          <p class="text-sm text-gray-600 mb-2">1,860 flagged providers with $229.6B in suspicious billing</p>
+          <p class="text-sm text-gray-600 mb-2">1,860 flagged providers with $226.2B in suspicious billing</p>
           <span class="text-teal-700 text-sm font-medium">Explore →</span>
         </a>
       </div>
@@ -534,7 +534,7 @@ export const articles: Article[] = [
 
       <div class="bg-teal-50 border-l-4 border-teal-700 p-6 my-8 rounded-r-lg">
         <p class="text-2xl font-bold text-teal-800">1,860 providers flagged</p>
-        <p class="text-teal-700">These flagged providers collectively billed <strong>$229.6 billion</strong> — representing potential fraud, waste, or abuse that deserves investigation.</p>
+        <p class="text-teal-700">These flagged providers collectively billed <strong>$226.2 billion</strong> — representing potential fraud, waste, or abuse that deserves investigation.</p>
       </div>
 
       <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Key Findings</h2>
@@ -543,7 +543,7 @@ export const articles: Article[] = [
         <li>The top 1% of providers by billing volume account for a disproportionate share of total Medicaid spending</li>
         <li>Certain procedure codes show extreme geographic variation — suggesting either different medical practices or different billing practices</li>
         <li>Provider turnover rates in some states correlate with higher fraud flag rates, suggesting "pop-up" billing operations</li>
-        <li>1,860 providers have been flagged across our detection systems, collectively billing $229.6 billion</li>
+        <li>1,860 providers have been flagged across our detection systems, collectively billing $226.2 billion</li>
       </ul>
 
       <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">What You Can Do With OpenMedicaid</h2>
