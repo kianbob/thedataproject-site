@@ -10,10 +10,10 @@ export const articles: Article[] = [
   {
     slug: "still-billing-still-free",
     title: "Still Billing, Still Free: 10 Healthcare Providers Our Algorithms Flagged — Who Haven't Been Caught",
-    description: "Our ML models across OpenMedicare, OpenPrescriber, and OpenMedicaid flagged hundreds of providers with extreme billing patterns matching convicted fraudsters. These 10 are still practicing — $69M+ in combined billing. Here's what the data shows.",
+    description: "Our ML models across OpenMedicare, OpenPrescriber, and OpenMedicaid flagged thousands of providers with extreme billing patterns matching convicted fraudsters. These 10 span all three platforms — $1.5 billion in combined billing. Here's what the data shows.",
     date: "2026-03-04",
     content: `
-      <p class="text-lg text-gray-600 mb-8">Across three of our healthcare data platforms — <a href="https://www.openmedicare.us" class="text-teal-700 hover:underline font-medium">OpenMedicare</a>, <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline font-medium">OpenPrescriber</a>, and <a href="https://www.openmedicaid.org" class="text-teal-700 hover:underline font-medium">OpenMedicaid</a> — we've built machine learning models trained on <strong>confirmed fraud cases</strong> from the HHS Office of Inspector General's exclusion list. These models have flagged hundreds of currently-practicing providers whose billing patterns closely match those of convicted fraudsters. None of the providers below have been charged with fraud. But the numbers demand attention.</p>
+      <p class="text-lg text-gray-600 mb-8">Across three of our healthcare data platforms — <a href="https://www.openmedicare.us" class="text-teal-700 hover:underline font-medium">OpenMedicare</a>, <a href="https://www.openprescriber.org" class="text-teal-700 hover:underline font-medium">OpenPrescriber</a>, and <a href="https://www.openmedicaid.org" class="text-teal-700 hover:underline font-medium">OpenMedicaid</a> — we've built machine learning models and statistical watchlists trained on <strong>confirmed fraud cases</strong> from the HHS Office of Inspector General's exclusion list and suspicious billing pattern detection. These systems have flagged thousands of currently-practicing providers whose billing patterns closely match those of convicted fraudsters. None of the providers below have been charged with fraud. But the numbers demand attention.</p>
 
       <div class="bg-red-50 border-l-4 border-red-700 p-6 my-8 rounded-r-lg">
         <p class="text-lg font-bold text-red-800 mb-2">⚠️ Important Disclaimer</p>
@@ -23,29 +23,29 @@ export const articles: Article[] = [
       <div style="background-color: #111827; color: #ffffff; border-radius: 0.75rem; padding: 2rem; margin: 2.5rem 0;">
         <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #ffffff;">The Numbers at a Glance</h2>
         <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
-          <div><div style="font-size: 1.875rem; font-weight: 700; color: #f87171;">$69M</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">These 10 Providers Billed</div></div>
-          <div><div style="font-size: 1.875rem; font-weight: 700; color: #f87171;">$3.5B</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Total Flagged System-Wide</div></div>
-          <div><div style="font-size: 1.875rem; font-weight: 700; color: #f87171;">7</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">On Multiple Platforms</div></div>
+          <div><div style="font-size: 1.875rem; font-weight: 700; color: #f87171;">$1.5B</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">These 10 Providers Billed</div></div>
+          <div><div style="font-size: 1.875rem; font-weight: 700; color: #f87171;">$233B+</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Total Flagged System-Wide</div></div>
+          <div><div style="font-size: 1.875rem; font-weight: 700; color: #f87171;">3</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Platforms Represented</div></div>
           <div><div style="font-size: 1.875rem; font-weight: 700; color: #f87171;">3</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Perfect 100% ML Scores</div></div>
           <div><div style="font-size: 1.875rem; font-weight: 700; color: #f87171;">0</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Charged With Fraud</div></div>
         </div>
       </div>
 
       <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">The Full Scale of What We Found</h2>
-      <p class="text-gray-700 mb-4">These 10 providers are the tip of the iceberg. Across our three platforms, our machine learning models have flagged <strong>$3.5 billion</strong> in suspicious billing:</p>
+      <p class="text-gray-700 mb-4">These 10 providers are the tip of the iceberg. Across our three platforms, our models have flagged <strong>over 6,500 providers</strong> with suspicious billing:</p>
       <div class="overflow-x-auto mb-6">
         <table class="w-full text-sm border-collapse">
-          <thead><tr class="bg-gray-100"><th class="text-left p-3 font-semibold">Platform</th><th class="text-right p-3 font-semibold">Providers Flagged</th><th class="text-right p-3 font-semibold">Total Suspicious Billing</th><th class="text-right p-3 font-semibold">Model Accuracy (AUC)</th></tr></thead>
+          <thead><tr class="bg-gray-100"><th class="text-left p-3 font-semibold">Platform</th><th class="text-right p-3 font-semibold">Providers Flagged</th><th class="text-right p-3 font-semibold">Total Suspicious Billing</th><th class="text-right p-3 font-semibold">Model Accuracy</th></tr></thead>
           <tbody>
-            <tr class="border-t"><td class="p-3"><a href="https://www.openmedicare.us/fraud" class="text-teal-700 hover:underline font-medium">OpenMedicare</a></td><td class="text-right p-3">500</td><td class="text-right p-3 font-bold">$399.4 million</td><td class="text-right p-3">0.83</td></tr>
-            <tr class="border-t"><td class="p-3"><a href="https://www.openprescriber.org/ml-fraud-detection" class="text-teal-700 hover:underline font-medium">OpenPrescriber</a> (80%+ confidence)</td><td class="text-right p-3">2,000</td><td class="text-right p-3 font-bold">$3.12 billion</td><td class="text-right p-3">0.83 precision</td></tr>
+            <tr class="border-t"><td class="p-3"><a href="https://www.openmedicare.us/fraud" class="text-teal-700 hover:underline font-medium">OpenMedicare</a></td><td class="text-right p-3">500</td><td class="text-right p-3 font-bold">$399.4 million</td><td class="text-right p-3">AUC 0.83</td></tr>
+            <tr class="border-t"><td class="p-3"><a href="https://www.openprescriber.org/ml-fraud-detection" class="text-teal-700 hover:underline font-medium">OpenPrescriber</a> (≥80% confidence)</td><td class="text-right p-3">4,183</td><td class="text-right p-3 font-bold">$3.12 billion</td><td class="text-right p-3">0.83 precision</td></tr>
             <tr class="border-t"><td class="p-3">↳ Perfect 100% ML score</td><td class="text-right p-3">249</td><td class="text-right p-3">$425 million</td><td class="text-right p-3">unanimous (20/20 trees)</td></tr>
-            <tr class="border-t"><td class="p-3"><a href="https://www.openmedicaid.org/watchlist" class="text-teal-700 hover:underline font-medium">OpenMedicaid</a></td><td class="text-right p-3">500+</td><td class="text-right p-3">under analysis</td><td class="text-right p-3">ensemble</td></tr>
-            <tr class="border-t bg-gray-50"><td class="p-3 font-bold">Combined</td><td class="text-right p-3 font-bold">3,000+</td><td class="text-right p-3 font-bold text-red-700">$3.5+ billion</td><td class="text-right p-3">—</td></tr>
+            <tr class="border-t"><td class="p-3"><a href="https://www.openmedicaid.org/watchlist" class="text-teal-700 hover:underline font-medium">OpenMedicaid</a></td><td class="text-right p-3">1,860</td><td class="text-right p-3 font-bold">$229.6 billion</td><td class="text-right p-3">ensemble + rules</td></tr>
+            <tr class="border-t bg-gray-50"><td class="p-3 font-bold">Combined</td><td class="text-right p-3 font-bold">6,543+</td><td class="text-right p-3 font-bold text-red-700">$233+ billion</td><td class="text-right p-3">—</td></tr>
           </tbody>
         </table>
       </div>
-      <p class="text-gray-700 mb-4">That's $3.5 billion in billing by providers whose patterns match those of <strong>confirmed, convicted healthcare fraudsters</strong>. For context, the DOJ's entire Healthcare Fraud Strike Force recovered $1.9 billion in 2024. Our models suggest the amount of fraud-patterned billing currently flowing through Medicare and Medicaid is roughly double what enforcement recovers annually.</p>
+      <p class="text-gray-700 mb-4">That's $233 billion in billing by providers whose patterns triggered fraud detection systems — with Medicaid representing by far the largest pool of flagged spending. For context, the DOJ's entire Healthcare Fraud Strike Force recovered $1.9 billion in 2024. Our models suggest the amount of fraud-patterned billing currently flowing through Medicare and Medicaid dwarfs what enforcement recovers annually.</p>
 
       <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">The Smoking Gun: Cost Per Beneficiary</h2>
       <p class="text-gray-700 mb-4">The single most damning metric in our analysis is <strong>cost per beneficiary</strong> — how much each provider spends per patient compared to their peers. Legitimate high-volume providers might have lots of patients. But when a provider is spending 10-30x more <em>per patient</em> than their peers in the same specialty, volume can't explain it.</p>
@@ -54,11 +54,11 @@ export const articles: Article[] = [
           <thead><tr class="bg-gray-100"><th class="text-left p-3 font-semibold">Provider</th><th class="text-left p-3 font-semibold">Specialty</th><th class="text-right p-3 font-semibold">Cost/Beneficiary</th><th class="text-right p-3 font-semibold">Typical for Specialty</th><th class="text-right p-3 font-semibold">Multiple</th></tr></thead>
           <tbody>
             <tr class="border-t"><td class="p-3 font-medium">Peter Alpert</td><td class="p-3">Infectious Disease</td><td class="text-right p-3 text-red-700 font-bold">$33,434</td><td class="text-right p-3">$1,000–2,000</td><td class="text-right p-3 text-red-700 font-bold">17–33x</td></tr>
+            <tr class="border-t"><td class="p-3 font-medium">Fishing Point Health Care</td><td class="p-3">General Practice</td><td class="text-right p-3 text-red-700 font-bold">$12,659</td><td class="text-right p-3">$500–2,000</td><td class="text-right p-3 text-red-700 font-bold">6–25x</td></tr>
             <tr class="border-t"><td class="p-3 font-medium">Vadim Baram</td><td class="p-3">Psychiatry</td><td class="text-right p-3 text-red-700 font-bold">$7,417</td><td class="text-right p-3">$200–400</td><td class="text-right p-3 text-red-700 font-bold">19–37x</td></tr>
             <tr class="border-t"><td class="p-3 font-medium">Terence Frinks</td><td class="p-3">Family Practice</td><td class="text-right p-3 text-red-700 font-bold">$3,867</td><td class="text-right p-3">$200–400</td><td class="text-right p-3 text-red-700 font-bold">10–19x</td></tr>
             <tr class="border-t"><td class="p-3 font-medium">Andrew Graf</td><td class="p-3">Internal Medicine</td><td class="text-right p-3 text-red-700 font-bold">$2,449</td><td class="text-right p-3">$300–500</td><td class="text-right p-3 text-red-700 font-bold">5–8x</td></tr>
             <tr class="border-t"><td class="p-3 font-medium">Najmuddin Karimjee</td><td class="p-3">Internal Medicine</td><td class="text-right p-3 text-red-700 font-bold">$2,334</td><td class="text-right p-3">$300–500</td><td class="text-right p-3 text-red-700 font-bold">5–8x</td></tr>
-            <tr class="border-t"><td class="p-3 font-medium">Remy Zockazock</td><td class="p-3">Internal Medicine</td><td class="text-right p-3 text-red-700 font-bold">$1,799</td><td class="text-right p-3">$300–500</td><td class="text-right p-3 text-red-700 font-bold">4–6x</td></tr>
           </tbody>
         </table>
       </div>
@@ -91,37 +91,71 @@ export const articles: Article[] = [
         <div class="bg-teal-50 border border-teal-200 rounded-lg p-5">
           <h3 class="font-bold text-teal-800 mb-2"><a href="https://www.openmedicaid.org" class="hover:underline">OpenMedicaid</a></h3>
           <ul class="text-sm text-gray-700 space-y-1">
-            <li>• Ensemble model</li>
+            <li>• Ensemble ML + rule-based detection</li>
             <li>• Claims patterns + billing velocity</li>
-            <li>• Code concentration + geographic risk</li>
-            <li>• <strong>500+</strong> providers flagged</li>
+            <li>• Code concentration + rate outlier analysis</li>
+            <li>• <strong>1,860</strong> providers flagged</li>
             <li>• <a href="https://www.openmedicaid.org/watchlist" class="text-teal-700 hover:underline">View watchlist →</a></li>
           </ul>
         </div>
       </div>
 
-      <p class="text-gray-700 mb-8">What makes this analysis unique: <strong>seven of these ten providers appear on multiple platforms simultaneously</strong>, flagged independently by different models analyzing different datasets. When separate algorithms looking at separate data reach the same conclusion, the signal gets much harder to ignore.</p>
+      <p class="text-gray-700 mb-8">What makes this analysis unique: these 10 cases span <strong>all three platforms</strong> — Medicare billing, Part D prescribing, and Medicaid claims. When separate algorithms looking at separate datasets across separate programs reach the same conclusion about the same types of patterns, the signal gets much harder to ignore.</p>
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">1. Remy Zockazock, MD</h2>
-      <p class="text-sm text-gray-500 mb-1">Internal Medicine · Katy, Texas · NPI 1215381900</p>
-      <p class="text-sm mb-4"><a href="https://www.openmedicare.us/providers/1215381900" class="text-teal-700 hover:underline">View on OpenMedicare →</a></p>
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">1. Community Assistance Resources & Extended Services, Inc. (CARES)</h2>
+      <p class="text-sm text-gray-500 mb-1">Case Management · New York, New York · NPI 1396049987</p>
+      <p class="text-sm mb-4"><a href="https://www.openmedicaid.org/providers/1396049987" class="text-teal-700 hover:underline">View on OpenMedicaid →</a></p>
       <div class="bg-gray-50 rounded-lg p-6 mb-6">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div class="text-2xl font-bold text-red-700">$4.1M</div><div class="text-xs text-gray-500">Medicare Payments</div></div>
-          <div><div class="text-2xl font-bold text-red-700">92%</div><div class="text-xs text-gray-500">Fraud Probability</div></div>
-          <div><div class="text-2xl font-bold text-red-700">132/day</div><div class="text-xs text-gray-500">Services Per Day</div></div>
-          <div><div class="text-2xl font-bold text-red-700">48,344</div><div class="text-xs text-gray-500">Total Services</div></div>
+          <div><div class="text-2xl font-bold text-red-700">$1.04B</div><div class="text-xs text-gray-500">Medicaid Payments</div></div>
+          <div><div class="text-2xl font-bold text-red-700">6,886%</div><div class="text-xs text-gray-500">Billing Swing YoY</div></div>
+          <div><div class="text-2xl font-bold text-red-700">9 codes</div><div class="text-xs text-gray-500">Above 90th Percentile</div></div>
+          <div><div class="text-2xl font-bold text-red-700">3 Flags</div><div class="text-xs text-gray-500">Watchlist Triggers</div></div>
         </div>
       </div>
-      <p class="text-gray-700 mb-4">Dr. Zockazock is the most alarming case in our entire database. He is <strong>independently flagged on <a href="https://www.openmedicare.us/providers/1215381900" class="text-teal-700 hover:underline">OpenMedicare</a></strong> with a 92% fraud probability — one of the highest scores in our entire dataset.</p>
-      <p class="text-gray-700 mb-4"><strong>$4.1 million</strong> in Medicare payments, 48,344 services, and 11,412 beneficiaries, with a fraud probability of 92%. His services-per-day rate of 132 means he's billing Medicare for a patient interaction roughly <strong>every 4 minutes</strong> of a 9-hour workday. That volume alone is a major red flag — most internal medicine physicians see 20-30 patients per day.</p>
-      <p class="text-gray-700 mb-4">He is currently still practicing and accepting patients in Katy, TX. He has positive patient reviews on Healthgrades and ZocDoc. He has not been charged with any crime.</p>
+      <p class="text-gray-700 mb-4">CARES is the single most alarming case on our <a href="https://www.openmedicaid.org/watchlist" class="text-teal-700 hover:underline">OpenMedicaid watchlist</a>. This New York City case management organization billed Medicaid <strong>$1.04 billion</strong> — that's billion with a B — and triggered three independent flags: code-specific outlier, billing swing, and rate outlier across multiple procedure codes.</p>
+      <p class="text-gray-700 mb-4">The billing swing is staggering: from <strong>$1.6 million in 2020 to $112.6 million in 2021</strong> — a 6,886% increase in a single year. That's not growth. That's an explosion. The organization charges $555.61 per claim on procedure code H2015 (comprehensive community support services) when the national median is $96.24 — <strong>5.8 times the median rate</strong>. Nine of its 17 procedure codes are billed above the 90th percentile nationally.</p>
+      <p class="text-gray-700 mb-4">A billion-dollar case management provider charging 4-6x the median rate across most of its service codes, with a 6,886% year-over-year billing explosion, is a pattern that demands investigation. They have not been charged with any crime.</p>
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">2. Najmuddin Karimjee, MD</h2>
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">2. SRH CHN Lead Health Home LLC</h2>
+      <p class="text-sm text-gray-500 mb-1">Case Management · Peekskill, New York · NPI 1750053948</p>
+      <p class="text-sm mb-4"><a href="https://www.openmedicaid.org/providers/1750053948" class="text-teal-700 hover:underline">View on OpenMedicaid →</a></p>
+      <div class="bg-gray-50 rounded-lg p-6 mb-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div><div class="text-2xl font-bold text-red-700">$239M</div><div class="text-xs text-gray-500">Medicaid Payments</div></div>
+          <div><div class="text-2xl font-bold text-red-700">4 Flags</div><div class="text-xs text-gray-500">Most Flags on List</div></div>
+          <div><div class="text-2xl font-bold text-red-700">$8.5M/mo</div><div class="text-xs text-gray-500">Avg Monthly Billing</div></div>
+          <div><div class="text-2xl font-bold text-red-700">25x</div><div class="text-xs text-gray-500">Rate vs. Median (G0506)</div></div>
+        </div>
+      </div>
+      <p class="text-gray-700 mb-4">SRH CHN Lead Health Home carries the <strong>most watchlist flags of any provider on this list: four</strong> — code-specific outlier, billing swing, massive new entrant, and rate outlier across multiple codes. This organization didn't exist in Medicaid before September 2022. In just 28 months, it has billed <strong>$239 million</strong>, averaging $8.5 million per month.</p>
+      <p class="text-gray-700 mb-4">The rate analysis is damning. On procedure code G9005 (home health care coordination), SRH CHN charges <strong>$296.20 per claim versus a national median of $47.08</strong> — 6.3 times the median. On code G0506 (care planning), they charge $186.29 per claim versus a median of $7.41 — <strong>25.1 times the median rate</strong>. Their billing swung from $34.6 million in 2022 to $107.1 million in 2023 — a 209% increase.</p>
+      <p class="text-gray-700 mb-4">755,970 total claims serving 755,546 beneficiaries — nearly a 1:1 ratio of claims to patients, suggesting one-time billing touches across a massive population. An entity that didn't exist three years ago billing a quarter of a billion dollars at rates 6-25x the national median is a pattern that the HHS Office of Inspector General should be examining closely. They have not been charged with any crime.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">3. Fishing Point Health Care LLC</h2>
+      <p class="text-sm text-gray-500 mb-1">General Practice · Portsmouth, Virginia · NPI 1679279046</p>
+      <p class="text-sm mb-4"><a href="https://www.openmedicaid.org/providers/1679279046" class="text-teal-700 hover:underline">View on OpenMedicaid →</a></p>
+      <div class="bg-gray-50 rounded-lg p-6 mb-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div><div class="text-2xl font-bold text-red-700">$170M</div><div class="text-xs text-gray-500">Medicaid Payments</div></div>
+          <div><div class="text-2xl font-bold text-red-700">288%</div><div class="text-xs text-gray-500">YoY Billing Increase</div></div>
+          <div><div class="text-2xl font-bold text-red-700">11.7x</div><div class="text-xs text-gray-500">Rate vs. Median</div></div>
+          <div><div class="text-2xl font-bold text-red-700">20 mo</div><div class="text-xs text-gray-500">Total Active Period</div></div>
+        </div>
+      </div>
+      <p class="text-gray-700 mb-4">Fishing Point Health Care LLC appeared in Medicaid in <strong>May 2023</strong>. In just 20 months of existence, this "general practice" in Portsmouth, Virginia has billed <strong>$170 million</strong> in Medicaid payments — averaging $8.5 million per month. It triggered three flags: code-specific outlier, billing swing, and massive new entrant.</p>
+      <p class="text-gray-700 mb-4">The numbers break down like this: 139,427 total claims across 13,417 beneficiaries — that's <strong>$12,659 per patient</strong>. For a general practice. On procedure code S5121 (home health aide services), Fishing Point charges <strong>$1,302.95 per claim versus a national median of $111.06</strong> — 11.7 times the median. Their billing rocketed from $34.8 million in 2023 to $135.1 million in 2024, a 288% increase.</p>
+      <p class="text-gray-700 mb-4">A general practice that didn't exist two years ago, billing $170 million for home health aide services at 11.7x the national median rate, growing 288% year-over-year. This is the kind of pattern that historically precedes federal indictments. They have not been charged with any crime.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">4. Najmuddin Karimjee, MD</h2>
       <p class="text-sm text-gray-500 mb-1">Internal Medicine · Houston, Texas · NPI 1285660241</p>
       <p class="text-sm mb-4"><a href="https://www.openmedicare.us/providers/1285660241" class="text-teal-700 hover:underline">View on OpenMedicare →</a> · <a href="https://www.openprescriber.org/providers/1285660241" class="text-teal-700 hover:underline">View on OpenPrescriber →</a></p>
       <div class="bg-gray-50 rounded-lg p-6 mb-6">
@@ -129,16 +163,16 @@ export const articles: Article[] = [
           <div><div class="text-2xl font-bold text-red-700">$14M</div><div class="text-xs text-gray-500">Prescribing Costs</div></div>
           <div><div class="text-2xl font-bold text-red-700">97%</div><div class="text-xs text-gray-500">ML Fraud Score</div></div>
           <div><div class="text-2xl font-bold text-red-700">113,639</div><div class="text-xs text-gray-500">Total Claims</div></div>
-          <div><div class="text-2xl font-bold text-red-700">37 yrs</div><div class="text-xs text-gray-500">In Practice</div></div>
+          <div><div class="text-2xl font-bold text-red-700">311/day</div><div class="text-xs text-gray-500">Prescriptions Per Day</div></div>
         </div>
       </div>
-      <p class="text-gray-700 mb-4">Dr. Karimjee is the <strong>single highest-cost provider</strong> in our <a href="https://www.openprescriber.org/ml-fraud-detection" class="text-teal-700 hover:underline">OpenPrescriber ML-flagged dataset</a>. Fourteen million dollars in Medicare Part D drug costs in a single year, with a 97% machine learning fraud score. That's an internal medicine doctor in Houston prescribing more drugs than most entire clinics.</p>
-      <p class="text-gray-700 mb-4">To put $14 million in context: the average internal medicine provider generates roughly $200,000-$400,000 in Part D prescribing costs annually. Dr. Karimjee is generating <strong>35 to 70 times the average</strong>. His 113,639 claims work out to roughly 311 prescriptions <em>per day</em>, every day of the year.</p>
+      <p class="text-gray-700 mb-4">Dr. Karimjee is the <strong>single highest-cost individual provider</strong> in our <a href="https://www.openprescriber.org/ml-fraud-detection" class="text-teal-700 hover:underline">OpenPrescriber ML-flagged dataset</a>. Fourteen million dollars in Medicare Part D drug costs in a single year, with a 97% machine learning fraud score. That's an internal medicine doctor in Houston prescribing more drugs than most entire clinics.</p>
+      <p class="text-gray-700 mb-4">To put $14 million in context: the average internal medicine provider generates roughly $200,000-$400,000 in Part D prescribing costs annually. Dr. Karimjee is generating <strong>35 to 70 times the average</strong>. His 113,639 claims work out to roughly 311 prescriptions <em>per day</em>, every day of the year. That's a prescription every 1.7 minutes for a 9-hour workday.</p>
       <p class="text-gray-700 mb-4">He has practiced for 37 years, accepts Medicare and Medicaid, and is affiliated with multiple Houston-area hospitals including HCA Houston Healthcare Tomball and Huntsville Memorial Hospital. He has not been charged with any crime.</p>
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">3. Terence Frinks, MD</h2>
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">5. Terence Frinks, MD</h2>
       <p class="text-sm text-gray-500 mb-1">Family Practice · Atlanta, Georgia · NPI 1285761833</p>
       <p class="text-sm mb-4"><a href="https://www.openmedicare.us/providers/1285761833" class="text-teal-700 hover:underline">View on OpenMedicare →</a> · <a href="https://www.openprescriber.org/providers/1285761833" class="text-teal-700 hover:underline">View on OpenPrescriber →</a></p>
       <div class="bg-gray-50 rounded-lg p-6 mb-6">
@@ -155,7 +189,7 @@ export const articles: Article[] = [
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">4. Vadim Baram, MD</h2>
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">6. Vadim Baram, MD</h2>
       <p class="text-sm text-gray-500 mb-1">Psychiatry · St. Louis, Missouri · NPI 1124007380</p>
       <p class="text-sm mb-4"><a href="https://www.openmedicare.us/providers/1124007380" class="text-teal-700 hover:underline">View on OpenMedicare →</a> · <a href="https://www.openprescriber.org/providers/1124007380" class="text-teal-700 hover:underline">View on OpenPrescriber →</a></p>
       <div class="bg-gray-50 rounded-lg p-6 mb-6">
@@ -172,7 +206,7 @@ export const articles: Article[] = [
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">5. Peter Alpert, MD</h2>
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">7. Peter Alpert, MD</h2>
       <p class="text-sm text-gray-500 mb-1">Infectious Disease · Bronx, New York · NPI 1104916907</p>
       <p class="text-sm mb-4"><a href="https://www.openmedicare.us/providers/1104916907" class="text-teal-700 hover:underline">View on OpenMedicare →</a> · <a href="https://www.openprescriber.org/providers/1104916907" class="text-teal-700 hover:underline">View on OpenPrescriber →</a></p>
       <div class="bg-gray-50 rounded-lg p-6 mb-6">
@@ -183,96 +217,13 @@ export const articles: Article[] = [
           <div><div class="text-2xl font-bold text-red-700">39.4%</div><div class="text-xs text-gray-500">Brand-Name Rate</div></div>
         </div>
       </div>
-      <p class="text-gray-700 mb-4">Dr. Alpert presents the most extreme cost-per-claim ratio in our top 10: <strong>$9.2 million on just 8,557 claims</strong> works out to roughly <strong>$1,075 per prescription</strong>. This is 20-40x the typical cost per claim for infectious disease specialists.</p>
+      <p class="text-gray-700 mb-4">Dr. Alpert presents the most extreme cost-per-claim ratio among individual providers: <strong>$9.2 million on just 8,557 claims</strong> works out to roughly <strong>$1,075 per prescription</strong>. This is 20-40x the typical cost per claim for infectious disease specialists.</p>
       <p class="text-gray-700 mb-4">His 39.4% brand-name rate is the highest on this list — nearly three times the average. In infectious disease, brand-name preferences can be legitimately high for certain antiretrovirals and antifungals. But $9.2 million from a single provider with fewer than 9,000 claims is a severe statistical outlier by any measure.</p>
       <p class="text-gray-700 mb-4">He also carries 4 risk flags on our <a href="https://www.openprescriber.org/providers/1104916907" class="text-teal-700 hover:underline">OpenPrescriber risk scoring system</a>, including high cost outlier and high brand preference. He graduated from New York Medical College in 1987 and is affiliated with Montefiore Medical Center. He has not been charged with any crime.</p>
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">6. Edwin Yau, MD</h2>
-      <p class="text-sm text-gray-500 mb-1">General Practice · California · NPI 1316291925</p>
-      <p class="text-sm mb-4"><a href="https://www.openmedicare.us/providers/1316291925" class="text-teal-700 hover:underline">View on OpenMedicare →</a> · <a href="https://www.openprescriber.org/providers/1316291925" class="text-teal-700 hover:underline">View on OpenPrescriber →</a></p>
-      <div class="bg-gray-50 rounded-lg p-6 mb-6">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div class="text-2xl font-bold text-red-700">$3.8M</div><div class="text-xs text-gray-500">Medicare Payments</div></div>
-          <div><div class="text-2xl font-bold text-red-700">87%</div><div class="text-xs text-gray-500">Medicare Fraud Prob</div></div>
-          <div><div class="text-2xl font-bold text-red-700">6 Flags</div><div class="text-xs text-gray-500">Risk Indicators</div></div>
-          <div><div class="text-2xl font-bold text-red-700">2 Sites</div><div class="text-xs text-gray-500">Flagged Independently</div></div>
-        </div>
-      </div>
-      <p class="text-gray-700 mb-4">Dr. Yau is flagged on <strong>both <a href="https://www.openmedicare.us/providers/1316291925" class="text-teal-700 hover:underline">OpenMedicare</a> and <a href="https://www.openprescriber.org/providers/1316291925" class="text-teal-700 hover:underline">OpenPrescriber</a></strong>, and carries the most risk flags of anyone on this list: <strong>six separate indicators</strong>:</p>
-      <ol class="list-decimal pl-6 space-y-1 text-gray-700 mb-4">
-        <li><strong>High cost outlier</strong> — spending far above peers</li>
-        <li><strong>High brand preference</strong> — prescribing expensive brand-name drugs over generics</li>
-        <li><strong>Opioid-benzodiazepine co-prescribing</strong> — an FDA black-box warning combination</li>
-        <li><strong>Antipsychotic prescribing to elderly patients</strong> — another FDA black-box warning</li>
-        <li><strong>High long-acting opioid use</strong> — associated with higher abuse potential</li>
-        <li><strong>Extreme fills per patient</strong> — patients receiving far more prescriptions than normal</li>
-      </ol>
-      <p class="text-gray-700 mb-4">The combination of opioid-benzodiazepine co-prescribing and elderly antipsychotic use is particularly concerning. The FDA warns that combining opioids and benzodiazepines dramatically increases the risk of respiratory depression and death. Antipsychotic use in elderly dementia patients carries a similar warning due to increased mortality risk.</p>
-      <p class="text-gray-700 mb-4">On the Medicare billing side, $3.8 million in payments with 60,161 services (165 per day) and 18,999 beneficiaries. He has not been charged with any crime.</p>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">7. Terrance Hughes, MD</h2>
-      <p class="text-sm text-gray-500 mb-1">Physical Medicine and Rehabilitation · Georgia · NPI 1205837374</p>
-      <p class="text-sm mb-4"><a href="https://www.openmedicare.us/providers/1205837374" class="text-teal-700 hover:underline">View on OpenMedicare →</a></p>
-      <div class="bg-gray-50 rounded-lg p-6 mb-6">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div class="text-2xl font-bold text-red-700">$5.3M</div><div class="text-xs text-gray-500">Medicare Payments</div></div>
-          <div><div class="text-2xl font-bold text-red-700">88%</div><div class="text-xs text-gray-500">Fraud Probability</div></div>
-          <div><div class="text-2xl font-bold text-red-700">317/day</div><div class="text-xs text-gray-500">Services Per Day</div></div>
-          <div><div class="text-2xl font-bold text-red-700">45,889</div><div class="text-xs text-gray-500">Beneficiaries</div></div>
-        </div>
-      </div>
-      <p class="text-gray-700 mb-4">Dr. Hughes bills Medicare for an average of <strong>317 services per day</strong>. That's a service every 1.7 minutes for a 9-hour workday. Physical medicine and rehabilitation typically involves hands-on patient interaction — physical exams, therapeutic procedures, injections. The idea that one physician can deliver 317 of these per day strains credulity.</p>
-      <p class="text-gray-700 mb-4">He is the <strong>highest-dollar provider</strong> in our <a href="https://www.openmedicare.us/fraud/still-out-there" class="text-teal-700 hover:underline">Medicare "still out there" dataset</a> at $5.3 million, with 115,777 total services and 45,889 unique beneficiaries. The beneficiary count is also extraordinary — seeing nearly 46,000 different patients in a year would mean over 125 unique patients per day.</p>
-      <p class="text-gray-700 mb-4">It's possible Dr. Hughes runs a large multi-provider clinic billing under his NPI, which could legitimately inflate these numbers. But our model evaluates individual NPI-level patterns, and his match confirmed fraud profiles at 88%. He has not been charged with any crime.</p>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">8. Stephen Kelly, MD</h2>
-      <p class="text-sm text-gray-500 mb-1">Family Practice · Oklahoma City, Oklahoma · NPI 1134167455</p>
-      <p class="text-sm mb-4"><a href="https://www.openmedicare.us/providers/1134167455" class="text-teal-700 hover:underline">View on OpenMedicare →</a> · <a href="https://www.openprescriber.org/providers/1134167455" class="text-teal-700 hover:underline">View on OpenPrescriber →</a></p>
-      <div class="bg-gray-50 rounded-lg p-6 mb-6">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div class="text-2xl font-bold text-red-700">$3.2M</div><div class="text-xs text-gray-500">Prescribing Costs</div></div>
-          <div><div class="text-2xl font-bold text-red-700">53.6%</div><div class="text-xs text-gray-500">Opioid Rate</div></div>
-          <div><div class="text-2xl font-bold text-red-700">70</div><div class="text-xs text-gray-500">Risk Score (out of 100)</div></div>
-          <div><div class="text-2xl font-bold text-red-700">5 Flags</div><div class="text-xs text-gray-500">Risk Indicators</div></div>
-        </div>
-      </div>
-      <p class="text-gray-700 mb-4">Dr. Kelly is the <strong>most aggressive opioid prescriber</strong> on this list. More than half of everything he prescribes — 53.6% — is opioids. The national average for family practice is under 5%. He has a risk score of 70 out of 100 on our <a href="https://www.openprescriber.org/providers/1134167455" class="text-teal-700 hover:underline">OpenPrescriber risk scoring system</a>, with five flags:</p>
-      <ol class="list-decimal pl-6 space-y-1 text-gray-700 mb-4">
-        <li><strong>Extreme opioid rate vs. peers</strong> — 10x the specialty average</li>
-        <li><strong>95th percentile opioid prescribing</strong> — top 5% nationally</li>
-        <li><strong>High long-acting opioid use</strong> — associated with higher overdose risk</li>
-        <li><strong>Extreme fills per patient</strong> — 13+ prescriptions per patient per year</li>
-        <li><strong>High cost outlier</strong> — $3.2M total</li>
-      </ol>
-      <p class="text-gray-700 mb-4">His 23,091 total claims and 1,730 beneficiaries mean each patient is averaging over 13 prescriptions per year — primarily opioids. In the context of an opioid epidemic that has killed over 600,000 Americans since 1999, a family practice doctor writing this volume of opioid prescriptions represents an extraordinary public health concern.</p>
-      <p class="text-gray-700 mb-4">He has been in practice for over 25 years in Oklahoma City. He has not been charged with any crime.</p>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">9. Fariborz Mortazavi, MD</h2>
-      <p class="text-sm text-gray-500 mb-1">Hematology-Oncology · California · NPI 1689782708</p>
-      <p class="text-sm mb-4"><a href="https://www.openmedicare.us/providers/1689782708" class="text-teal-700 hover:underline">View on OpenMedicare →</a></p>
-      <div class="bg-gray-50 rounded-lg p-6 mb-6">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div class="text-2xl font-bold text-red-700">$2.8M</div><div class="text-xs text-gray-500">Medicare Payments</div></div>
-          <div><div class="text-2xl font-bold text-red-700">90%</div><div class="text-xs text-gray-500">Fraud Probability</div></div>
-          <div><div class="text-2xl font-bold text-red-700">174/day</div><div class="text-xs text-gray-500">Services Per Day</div></div>
-          <div><div class="text-2xl font-bold text-red-700">17,405</div><div class="text-xs text-gray-500">Beneficiaries</div></div>
-        </div>
-      </div>
-      <p class="text-gray-700 mb-4">Oncology fraud is among the most harmful forms of healthcare fraud, because it can involve administering unnecessary chemotherapy to patients who don't have cancer — or overtreating patients who do. Dr. Mortazavi's billing shows 63,625 services in a year (174 per day) with $2.8 million in payments and a 90% fraud probability.</p>
-      <p class="text-gray-700 mb-4">Hematology-oncology is a field where high per-patient costs are expected — chemotherapy drugs are expensive, and treatment regimens involve many visits. But 174 services per day is an extreme outlier even for this specialty. The typical oncologist sees 15-25 patients per day.</p>
-      <p class="text-gray-700 mb-4">Oncology has been one of the most fraud-prone specialties historically. The DOJ has <a href="https://www.openmedicare.us/investigations/medicare-fraud-statistics" class="text-teal-700 hover:underline">prosecuted numerous oncologists</a> for administering unnecessary chemotherapy, upcoding treatment levels, and billing for drugs that were never administered. He has not been charged with any crime.</p>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">10. Andrew Graf, MD</h2>
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">8. Andrew Graf, MD</h2>
       <p class="text-sm text-gray-500 mb-1">Internal Medicine · Pennsylvania · NPI 1316108269</p>
       <p class="text-sm mb-4"><a href="https://www.openmedicare.us/providers/1316108269" class="text-teal-700 hover:underline">View on OpenMedicare →</a> · <a href="https://www.openprescriber.org/providers/1316108269" class="text-teal-700 hover:underline">View on OpenPrescriber →</a></p>
       <div class="bg-gray-50 rounded-lg p-6 mb-6">
@@ -283,34 +234,68 @@ export const articles: Article[] = [
           <div><div class="text-2xl font-bold text-red-700">362/day</div><div class="text-xs text-gray-500">Claims Per Day</div></div>
         </div>
       </div>
-      <p class="text-gray-700 mb-4">Dr. Graf rounds out our list with another <strong>perfect 100% ML score</strong> — the unanimous verdict of all 20 decision trees. $7.5 million in Part D prescribing costs, 132,160 claims (362 per day), and a 1.4% opioid rate that suggests this isn't about pills — it's about sheer volume.</p>
+      <p class="text-gray-700 mb-4">Dr. Graf earned a <strong>perfect 100% ML score</strong> — the unanimous verdict of all 20 decision trees. $7.5 million in Part D prescribing costs, 132,160 claims (362 per day), and a 1.4% opioid rate that suggests this isn't about pills — it's about sheer volume.</p>
       <p class="text-gray-700 mb-4">362 prescriptions per day is physically impossible for a single physician to personally evaluate, prescribe, and supervise. Even if each prescription took only one minute — no patient interaction, no chart review, just signing — that would take 6 straight hours of non-stop signing. With any clinical involvement, the numbers don't work.</p>
       <p class="text-gray-700 mb-4">He has not been charged with any crime.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">9. Terrance Hughes, MD</h2>
+      <p class="text-sm text-gray-500 mb-1">Physical Medicine and Rehabilitation · Georgia · NPI 1205837374</p>
+      <p class="text-sm mb-4"><a href="https://www.openmedicare.us/providers/1205837374" class="text-teal-700 hover:underline">View on OpenMedicare →</a></p>
+      <div class="bg-gray-50 rounded-lg p-6 mb-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div><div class="text-2xl font-bold text-red-700">$5.3M</div><div class="text-xs text-gray-500">Medicare Payments</div></div>
+          <div><div class="text-2xl font-bold text-red-700">88%</div><div class="text-xs text-gray-500">Fraud Probability</div></div>
+          <div><div class="text-2xl font-bold text-red-700">317/day</div><div class="text-xs text-gray-500">Services Per Day</div></div>
+          <div><div class="text-2xl font-bold text-red-700">45,889</div><div class="text-xs text-gray-500">Beneficiaries</div></div>
+        </div>
+      </div>
+      <p class="text-gray-700 mb-4">Dr. Hughes bills Medicare for an average of <strong>317 services per day</strong>. That's one every 1.7 minutes for a 9-hour workday — or one every 1.5 minutes for an 8-hour day. Physical medicine and rehabilitation typically involves hands-on patient interaction — physical exams, therapeutic procedures, injections. The idea that one physician can deliver 317 of these per day strains credulity.</p>
+      <p class="text-gray-700 mb-4">He is one of the <strong>highest-dollar providers</strong> in our <a href="https://www.openmedicare.us/fraud/still-out-there" class="text-teal-700 hover:underline">Medicare "still out there" dataset</a> at $5.3 million, with 115,777 total services and 45,889 unique beneficiaries. The beneficiary count is also extraordinary — seeing nearly 46,000 different patients in a year would mean over 125 unique patients per day.</p>
+      <p class="text-gray-700 mb-4">It's possible Dr. Hughes runs a large multi-provider clinic billing under his NPI, which could legitimately inflate these numbers. But our model evaluates individual NPI-level patterns, and his match confirmed fraud profiles at 88%. He has not been charged with any crime.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-2">10. Remy Zockazock, MD</h2>
+      <p class="text-sm text-gray-500 mb-1">Internal Medicine · Katy, Texas · NPI 1215381900</p>
+      <p class="text-sm mb-4"><a href="https://www.openmedicare.us/providers/1215381900" class="text-teal-700 hover:underline">View on OpenMedicare →</a></p>
+      <div class="bg-gray-50 rounded-lg p-6 mb-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div><div class="text-2xl font-bold text-red-700">$4.1M</div><div class="text-xs text-gray-500">Medicare Payments</div></div>
+          <div><div class="text-2xl font-bold text-red-700">92%</div><div class="text-xs text-gray-500">Fraud Probability</div></div>
+          <div><div class="text-2xl font-bold text-red-700">132/day</div><div class="text-xs text-gray-500">Services Per Day</div></div>
+          <div><div class="text-2xl font-bold text-red-700">48,344</div><div class="text-xs text-gray-500">Total Services</div></div>
+        </div>
+      </div>
+      <p class="text-gray-700 mb-4">Dr. Zockazock is <strong>independently flagged on <a href="https://www.openmedicare.us/providers/1215381900" class="text-teal-700 hover:underline">OpenMedicare</a></strong> with a 92% fraud probability — one of the highest scores in our entire dataset.</p>
+      <p class="text-gray-700 mb-4"><strong>$4.1 million</strong> in Medicare payments, 48,344 services, and 11,412 beneficiaries. His services-per-day rate of 132 means he's billing Medicare for a patient interaction roughly <strong>every 4 minutes</strong> of a 9-hour workday. That volume alone is a major red flag — most internal medicine physicians see 20-30 patients per day.</p>
+      <p class="text-gray-700 mb-4">He is currently still practicing and accepting patients in Katy, TX. He has not been charged with any crime.</p>
 
       <hr class="my-10 border-gray-200" />
 
       <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">All 10 Providers: The Complete Comparison</h2>
       <div class="overflow-x-auto mb-8">
         <table class="w-full text-xs border-collapse">
-          <thead><tr class="bg-gray-900 text-white"><th class="text-left p-2">#</th><th class="text-left p-2">Provider</th><th class="text-left p-2">Specialty</th><th class="text-left p-2">State</th><th class="text-right p-2">Total Billing</th><th class="text-right p-2">ML Score</th><th class="text-right p-2">Claims/Day</th><th class="text-right p-2">Key Red Flag</th><th class="text-center p-2">Sites</th></tr></thead>
+          <thead><tr class="bg-gray-900 text-white"><th class="text-left p-2">#</th><th class="text-left p-2">Provider</th><th class="text-left p-2">Specialty</th><th class="text-left p-2">State</th><th class="text-right p-2">Total Billing</th><th class="text-right p-2">Score/Flags</th><th class="text-right p-2">Key Red Flag</th><th class="text-center p-2">Platform</th></tr></thead>
           <tbody>
-            <tr class="border-t"><td class="p-2">1</td><td class="p-2 font-medium"><a href="https://www.openmedicare.us/providers/1215381900" class="text-teal-700 hover:underline">Zockazock</a></td><td class="p-2">Internal Med</td><td class="p-2">TX</td><td class="text-right p-2 font-bold">$4.1M</td><td class="text-right p-2 text-red-700">92%</td><td class="text-right p-2">132</td><td class="text-right p-2">132 svc/day</td><td class="text-center p-2">1</td></tr>
-            <tr class="border-t bg-gray-50"><td class="p-2">2</td><td class="p-2 font-medium"><a href="https://www.openprescriber.org/providers/1285660241" class="text-teal-700 hover:underline">Karimjee</a></td><td class="p-2">Internal Med</td><td class="p-2">TX</td><td class="text-right p-2 font-bold">$14.0M</td><td class="text-right p-2 text-red-700">97%</td><td class="text-right p-2">311</td><td class="text-right p-2">Highest $ total</td><td class="text-center p-2">1</td></tr>
-            <tr class="border-t"><td class="p-2">3</td><td class="p-2 font-medium"><a href="https://www.openprescriber.org/providers/1285761833" class="text-teal-700 hover:underline">Frinks</a></td><td class="p-2">Family Practice</td><td class="p-2">GA</td><td class="text-right p-2 font-bold">$10.2M</td><td class="text-right p-2 text-red-700">100%</td><td class="text-right p-2">476</td><td class="text-right p-2">476 Rx/day</td><td class="text-center p-2">1</td></tr>
-            <tr class="border-t bg-gray-50"><td class="p-2">4</td><td class="p-2 font-medium"><a href="https://www.openprescriber.org/providers/1124007380" class="text-teal-700 hover:underline">Baram</a></td><td class="p-2">Psychiatry</td><td class="p-2">MO</td><td class="text-right p-2 font-bold">$9.3M</td><td class="text-right p-2 text-red-700">100%</td><td class="text-right p-2">62</td><td class="text-right p-2">$411/claim</td><td class="text-center p-2">1</td></tr>
-            <tr class="border-t"><td class="p-2">5</td><td class="p-2 font-medium"><a href="https://www.openprescriber.org/providers/1104916907" class="text-teal-700 hover:underline">Alpert</a></td><td class="p-2">Infectious Dis</td><td class="p-2">NY</td><td class="text-right p-2 font-bold">$9.2M</td><td class="text-right p-2 text-red-700">95%</td><td class="text-right p-2">23</td><td class="text-right p-2">$33K/patient</td><td class="text-center p-2">1</td></tr>
-            <tr class="border-t bg-gray-50"><td class="p-2">6</td><td class="p-2 font-medium"><a href="https://www.openmedicare.us/providers/1316291925" class="text-teal-700 hover:underline">Yau</a></td><td class="p-2">General Practice</td><td class="p-2">CA</td><td class="text-right p-2 font-bold">$3.8M</td><td class="text-right p-2 text-red-700">87%</td><td class="text-right p-2">165</td><td class="text-right p-2">6 risk flags</td><td class="text-center p-2">2</td></tr>
-            <tr class="border-t"><td class="p-2">7</td><td class="p-2 font-medium"><a href="https://www.openmedicare.us/providers/1205837374" class="text-teal-700 hover:underline">Hughes</a></td><td class="p-2">Phys Med/Rehab</td><td class="p-2">GA</td><td class="text-right p-2 font-bold">$5.3M</td><td class="text-right p-2 text-red-700">88%</td><td class="text-right p-2">317</td><td class="text-right p-2">317 svc/day</td><td class="text-center p-2">1</td></tr>
-            <tr class="border-t bg-gray-50"><td class="p-2">8</td><td class="p-2 font-medium"><a href="https://www.openprescriber.org/providers/1134167455" class="text-teal-700 hover:underline">Kelly</a></td><td class="p-2">Family Practice</td><td class="p-2">OK</td><td class="text-right p-2 font-bold">$3.2M</td><td class="text-right p-2 text-red-700">70 risk</td><td class="text-right p-2">63</td><td class="text-right p-2">53.6% opioid</td><td class="text-center p-2">1</td></tr>
-            <tr class="border-t"><td class="p-2">9</td><td class="p-2 font-medium"><a href="https://www.openmedicare.us/providers/1689782708" class="text-teal-700 hover:underline">Mortazavi</a></td><td class="p-2">Hem-Onc</td><td class="p-2">CA</td><td class="text-right p-2 font-bold">$2.8M</td><td class="text-right p-2 text-red-700">90%</td><td class="text-right p-2">174</td><td class="text-right p-2">Oncology risk</td><td class="text-center p-2">1</td></tr>
-            <tr class="border-t bg-gray-50"><td class="p-2">10</td><td class="p-2 font-medium"><a href="https://www.openprescriber.org/providers/1316108269" class="text-teal-700 hover:underline">Graf</a></td><td class="p-2">Internal Med</td><td class="p-2">PA</td><td class="text-right p-2 font-bold">$7.5M</td><td class="text-right p-2 text-red-700">100%</td><td class="text-right p-2">362</td><td class="text-right p-2">362 Rx/day</td><td class="text-center p-2">1</td></tr>
-            <tr class="border-t border-t-2 border-gray-900 bg-gray-100"><td class="p-2"></td><td class="p-2 font-bold" colspan="3">TOTAL</td><td class="text-right p-2 font-bold text-red-700">$69.4M</td><td class="text-right p-2" colspan="4"></td></tr>
+            <tr class="border-t"><td class="p-2">1</td><td class="p-2 font-medium"><a href="https://www.openmedicaid.org/providers/1396049987" class="text-teal-700 hover:underline">CARES Inc.</a></td><td class="p-2">Case Mgmt</td><td class="p-2">NY</td><td class="text-right p-2 font-bold">$1.04B</td><td class="text-right p-2 text-red-700">3 flags</td><td class="text-right p-2">6,886% billing swing</td><td class="text-center p-2">Medicaid</td></tr>
+            <tr class="border-t bg-gray-50"><td class="p-2">2</td><td class="p-2 font-medium"><a href="https://www.openmedicaid.org/providers/1750053948" class="text-teal-700 hover:underline">SRH CHN Lead</a></td><td class="p-2">Case Mgmt</td><td class="p-2">NY</td><td class="text-right p-2 font-bold">$239M</td><td class="text-right p-2 text-red-700">4 flags</td><td class="text-right p-2">25x median rate</td><td class="text-center p-2">Medicaid</td></tr>
+            <tr class="border-t"><td class="p-2">3</td><td class="p-2 font-medium"><a href="https://www.openmedicaid.org/providers/1679279046" class="text-teal-700 hover:underline">Fishing Point</a></td><td class="p-2">General Practice</td><td class="p-2">VA</td><td class="text-right p-2 font-bold">$170M</td><td class="text-right p-2 text-red-700">3 flags</td><td class="text-right p-2">11.7x median rate</td><td class="text-center p-2">Medicaid</td></tr>
+            <tr class="border-t bg-gray-50"><td class="p-2">4</td><td class="p-2 font-medium"><a href="https://www.openprescriber.org/providers/1285660241" class="text-teal-700 hover:underline">Karimjee</a></td><td class="p-2">Internal Med</td><td class="p-2">TX</td><td class="text-right p-2 font-bold">$14.0M</td><td class="text-right p-2 text-red-700">97% ML</td><td class="text-right p-2">311 Rx/day</td><td class="text-center p-2">Medicare + Prescriber</td></tr>
+            <tr class="border-t"><td class="p-2">5</td><td class="p-2 font-medium"><a href="https://www.openprescriber.org/providers/1285761833" class="text-teal-700 hover:underline">Frinks</a></td><td class="p-2">Family Practice</td><td class="p-2">GA</td><td class="text-right p-2 font-bold">$10.2M</td><td class="text-right p-2 text-red-700">100% ML</td><td class="text-right p-2">476 Rx/day</td><td class="text-center p-2">Medicare + Prescriber</td></tr>
+            <tr class="border-t bg-gray-50"><td class="p-2">6</td><td class="p-2 font-medium"><a href="https://www.openprescriber.org/providers/1124007380" class="text-teal-700 hover:underline">Baram</a></td><td class="p-2">Psychiatry</td><td class="p-2">MO</td><td class="text-right p-2 font-bold">$9.3M</td><td class="text-right p-2 text-red-700">100% ML</td><td class="text-right p-2">$411/claim</td><td class="text-center p-2">Medicare + Prescriber</td></tr>
+            <tr class="border-t"><td class="p-2">7</td><td class="p-2 font-medium"><a href="https://www.openprescriber.org/providers/1104916907" class="text-teal-700 hover:underline">Alpert</a></td><td class="p-2">Infectious Dis</td><td class="p-2">NY</td><td class="text-right p-2 font-bold">$9.2M</td><td class="text-right p-2 text-red-700">95% ML</td><td class="text-right p-2">$33K/patient</td><td class="text-center p-2">Medicare + Prescriber</td></tr>
+            <tr class="border-t bg-gray-50"><td class="p-2">8</td><td class="p-2 font-medium"><a href="https://www.openprescriber.org/providers/1316108269" class="text-teal-700 hover:underline">Graf</a></td><td class="p-2">Internal Med</td><td class="p-2">PA</td><td class="text-right p-2 font-bold">$7.5M</td><td class="text-right p-2 text-red-700">100% ML</td><td class="text-right p-2">362 Rx/day</td><td class="text-center p-2">Medicare + Prescriber</td></tr>
+            <tr class="border-t"><td class="p-2">9</td><td class="p-2 font-medium"><a href="https://www.openmedicare.us/providers/1205837374" class="text-teal-700 hover:underline">Hughes</a></td><td class="p-2">Phys Med/Rehab</td><td class="p-2">GA</td><td class="text-right p-2 font-bold">$5.3M</td><td class="text-right p-2 text-red-700">88% ML</td><td class="text-right p-2">317 svc/day</td><td class="text-center p-2">Medicare</td></tr>
+            <tr class="border-t bg-gray-50"><td class="p-2">10</td><td class="p-2 font-medium"><a href="https://www.openmedicare.us/providers/1215381900" class="text-teal-700 hover:underline">Zockazock</a></td><td class="p-2">Internal Med</td><td class="p-2">TX</td><td class="text-right p-2 font-bold">$4.1M</td><td class="text-right p-2 text-red-700">92% ML</td><td class="text-right p-2">132 svc/day</td><td class="text-center p-2">Medicare</td></tr>
+            <tr class="border-t border-t-2 border-gray-900 bg-gray-100"><td class="p-2"></td><td class="p-2 font-bold" colspan="3">TOTAL</td><td class="text-right p-2 font-bold text-red-700">$1.51B</td><td class="text-right p-2" colspan="3"></td></tr>
           </tbody>
         </table>
       </div>
 
       <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">The Bigger Picture</h2>
-      <p class="text-gray-700 mb-4">These 10 providers represent $69 million in billing that our models flagged as matching confirmed fraud patterns. But they're 10 out of <strong>3,000+ flagged providers</strong> billing a combined <strong>$3.5 billion</strong>. Every one of them is still practicing. Every one of them is still billing taxpayer money.</p>
+      <p class="text-gray-700 mb-4">These 10 providers represent $1.5 billion in billing that our models flagged as suspicious. But they're 10 out of <strong>6,500+ flagged providers</strong> billing a combined <strong>$233 billion</strong>. The Medicaid numbers dwarf everything else — $229.6 billion in flagged spending across 1,860 providers — because Medicaid's decentralized state-by-state structure creates enormous blind spots that bad actors exploit.</p>
 
       <div class="bg-gray-50 rounded-lg p-6 mb-6">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
@@ -325,7 +310,7 @@ export const articles: Article[] = [
             <a href="https://www.openprescriber.org/ml-fraud-detection" class="text-teal-700 hover:underline text-sm font-medium">Explore the data →</a>
           </div>
           <div>
-            <div class="text-3xl font-bold text-gray-900">500+</div>
+            <div class="text-3xl font-bold text-gray-900">1,860</div>
             <div class="text-sm text-gray-500 mb-2">Medicaid providers flagged</div>
             <a href="https://www.openmedicaid.org/watchlist" class="text-teal-700 hover:underline text-sm font-medium">View the watchlist →</a>
           </div>
@@ -350,7 +335,7 @@ export const articles: Article[] = [
         </a>
         <a href="https://www.openmedicaid.org/watchlist" class="block bg-gray-50 border border-gray-200 rounded-lg p-5 hover:shadow-md transition">
           <h3 class="font-bold text-gray-900 mb-1">OpenMedicaid Watchlist</h3>
-          <p class="text-sm text-gray-600 mb-2">Medicaid spending tracker with risk scoring</p>
+          <p class="text-sm text-gray-600 mb-2">1,860 flagged providers with $229.6B in suspicious billing</p>
           <span class="text-teal-700 text-sm font-medium">Explore →</span>
         </a>
       </div>
@@ -374,7 +359,7 @@ export const articles: Article[] = [
         <li><a href="https://www.openprescriber.org/fraud" class="text-teal-700 hover:underline">Fraud Hub</a> — Overview of prescribing fraud detection across all providers</li>
       </ul>
 
-      <p class="text-gray-600 text-sm mt-8 italic">All data sourced from CMS public use files and HHS-OIG exclusion lists. Models trained on confirmed fraud cases. Being flagged does not imply guilt — it indicates statistical anomaly relative to confirmed fraud patterns. If you are a provider listed here and believe the data is inaccurate, please <a href="/contact" class="text-teal-700 hover:underline">contact us</a>.</p>
+      <p class="text-gray-600 text-sm mt-8 italic">All data sourced from CMS public use files, Medicaid state claims data, and HHS-OIG exclusion lists. Models trained on confirmed fraud cases. Being flagged does not imply guilt — it indicates statistical anomaly relative to confirmed fraud patterns. If you are a provider listed here and believe the data is inaccurate, please <a href="/contact" class="text-teal-700 hover:underline">contact us</a>.</p>
     `
   },
   {
