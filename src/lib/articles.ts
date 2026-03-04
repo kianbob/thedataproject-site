@@ -23,13 +23,46 @@ export const articles: Article[] = [
       <div class="bg-gray-900 text-white rounded-xl p-8 my-10">
         <h2 class="text-2xl font-bold mb-4">The Numbers at a Glance</h2>
         <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
-          <div><div class="text-3xl font-bold text-red-400">$74.9M</div><div class="text-xs text-gray-400 mt-1">Combined Billing Flagged</div></div>
-          <div><div class="text-3xl font-bold text-red-400">10</div><div class="text-xs text-gray-400 mt-1">Providers Profiled</div></div>
+          <div><div class="text-3xl font-bold text-red-400">$71M</div><div class="text-xs text-gray-400 mt-1">These 10 Providers Billed</div></div>
+          <div><div class="text-3xl font-bold text-red-400">$3.5B</div><div class="text-xs text-gray-400 mt-1">Total Flagged System-Wide</div></div>
           <div><div class="text-3xl font-bold text-red-400">4</div><div class="text-xs text-gray-400 mt-1">Flagged on 2+ Sites</div></div>
           <div><div class="text-3xl font-bold text-red-400">3</div><div class="text-xs text-gray-400 mt-1">Perfect 100% ML Scores</div></div>
           <div><div class="text-3xl font-bold text-red-400">0</div><div class="text-xs text-gray-400 mt-1">Charged With Fraud</div></div>
         </div>
       </div>
+
+      <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">The Full Scale of What We Found</h2>
+      <p class="text-gray-700 mb-4">These 10 providers are the tip of the iceberg. Across our three platforms, our machine learning models have flagged <strong>$3.5 billion</strong> in suspicious billing:</p>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-gray-100"><th class="text-left p-3 font-semibold">Platform</th><th class="text-right p-3 font-semibold">Providers Flagged</th><th class="text-right p-3 font-semibold">Total Suspicious Billing</th><th class="text-right p-3 font-semibold">Model Accuracy (AUC)</th></tr></thead>
+          <tbody>
+            <tr class="border-t"><td class="p-3"><a href="https://www.openmedicare.us/fraud" class="text-teal-700 hover:underline font-medium">OpenMedicare</a></td><td class="text-right p-3">500</td><td class="text-right p-3 font-bold">$399.4 million</td><td class="text-right p-3">0.83</td></tr>
+            <tr class="border-t"><td class="p-3"><a href="https://www.openprescriber.org/ml-fraud-detection" class="text-teal-700 hover:underline font-medium">OpenPrescriber</a> (80%+ confidence)</td><td class="text-right p-3">2,000</td><td class="text-right p-3 font-bold">$3.12 billion</td><td class="text-right p-3">0.83 precision</td></tr>
+            <tr class="border-t"><td class="p-3">↳ Perfect 100% ML score</td><td class="text-right p-3">249</td><td class="text-right p-3">$425 million</td><td class="text-right p-3">unanimous (20/20 trees)</td></tr>
+            <tr class="border-t"><td class="p-3"><a href="https://www.openmedicaid.org/watchlist" class="text-teal-700 hover:underline font-medium">OpenMedicaid</a></td><td class="text-right p-3">500+</td><td class="text-right p-3">under analysis</td><td class="text-right p-3">ensemble</td></tr>
+            <tr class="border-t bg-gray-50"><td class="p-3 font-bold">Combined</td><td class="text-right p-3 font-bold">3,000+</td><td class="text-right p-3 font-bold text-red-700">$3.5+ billion</td><td class="text-right p-3">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-gray-700 mb-4">That's $3.5 billion in billing by providers whose patterns match those of <strong>confirmed, convicted healthcare fraudsters</strong>. For context, the DOJ's entire Healthcare Fraud Strike Force recovered $1.9 billion in 2024. Our models suggest the amount of fraud-patterned billing currently flowing through Medicare and Medicaid is roughly double what enforcement recovers annually.</p>
+
+      <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">The Smoking Gun: Cost Per Beneficiary</h2>
+      <p class="text-gray-700 mb-4">The single most damning metric in our analysis is <strong>cost per beneficiary</strong> — how much each provider spends per patient compared to their peers. Legitimate high-volume providers might have lots of patients. But when a provider is spending 10-30x more <em>per patient</em> than their peers in the same specialty, volume can't explain it.</p>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-gray-100"><th class="text-left p-3 font-semibold">Provider</th><th class="text-left p-3 font-semibold">Specialty</th><th class="text-right p-3 font-semibold">Cost/Beneficiary</th><th class="text-right p-3 font-semibold">Typical for Specialty</th><th class="text-right p-3 font-semibold">Multiple</th></tr></thead>
+          <tbody>
+            <tr class="border-t"><td class="p-3 font-medium">Peter Alpert</td><td class="p-3">Infectious Disease</td><td class="text-right p-3 text-red-700 font-bold">$33,434</td><td class="text-right p-3">$1,000–2,000</td><td class="text-right p-3 text-red-700 font-bold">17–33x</td></tr>
+            <tr class="border-t"><td class="p-3 font-medium">Vadim Baram</td><td class="p-3">Psychiatry</td><td class="text-right p-3 text-red-700 font-bold">$7,417</td><td class="text-right p-3">$200–400</td><td class="text-right p-3 text-red-700 font-bold">19–37x</td></tr>
+            <tr class="border-t"><td class="p-3 font-medium">Terence Frinks</td><td class="p-3">Family Practice</td><td class="text-right p-3 text-red-700 font-bold">$3,867</td><td class="text-right p-3">$200–400</td><td class="text-right p-3 text-red-700 font-bold">10–19x</td></tr>
+            <tr class="border-t"><td class="p-3 font-medium">Andrew Graf</td><td class="p-3">Internal Medicine</td><td class="text-right p-3 text-red-700 font-bold">$2,449</td><td class="text-right p-3">$300–500</td><td class="text-right p-3 text-red-700 font-bold">5–8x</td></tr>
+            <tr class="border-t"><td class="p-3 font-medium">Najmuddin Karimjee</td><td class="p-3">Internal Medicine</td><td class="text-right p-3 text-red-700 font-bold">$2,334</td><td class="text-right p-3">$300–500</td><td class="text-right p-3 text-red-700 font-bold">5–8x</td></tr>
+            <tr class="border-t"><td class="p-3 font-medium">Remy Zockazock</td><td class="p-3">Internal Medicine</td><td class="text-right p-3 text-red-700 font-bold">$1,799</td><td class="text-right p-3">$300–500</td><td class="text-right p-3 text-red-700 font-bold">4–6x</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-gray-700 mb-8">Peter Alpert is the standout: <strong>$33,434 per beneficiary</strong>. That means for every patient he prescribes to, Medicare Part D pays $33,434 in drug costs in a single year. The typical infectious disease specialist generates $1,000–2,000 per patient. He is spending 17 to 33 times what his peers spend — on a per-patient basis — while carrying a 95% ML fraud score and a 39.4% brand-name prescribing rate (nearly 3x the average).</p>
 
       <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">How We Built the Models</h2>
       <p class="text-gray-700 mb-4">Our approach is straightforward: we trained machine learning classifiers on the billing patterns of providers who were <strong>actually caught and convicted</strong> of healthcare fraud — sourced from the HHS-OIG List of Excluded Individuals/Entities (LEIE) and DOJ prosecution records. Then we asked: <em>who else bills like them?</em></p>
@@ -257,8 +290,28 @@ export const articles: Article[] = [
 
       <hr class="my-10 border-gray-200" />
 
+      <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">All 10 Providers: The Complete Comparison</h2>
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-xs border-collapse">
+          <thead><tr class="bg-gray-900 text-white"><th class="text-left p-2">#</th><th class="text-left p-2">Provider</th><th class="text-left p-2">Specialty</th><th class="text-left p-2">State</th><th class="text-right p-2">Total Billing</th><th class="text-right p-2">ML Score</th><th class="text-right p-2">Claims/Day</th><th class="text-right p-2">Key Red Flag</th><th class="text-center p-2">Sites</th></tr></thead>
+          <tbody>
+            <tr class="border-t"><td class="p-2">1</td><td class="p-2 font-medium"><a href="https://www.openmedicare.us/providers/1871637157" class="text-teal-700 hover:underline">Zockazock</a></td><td class="p-2">Internal Med</td><td class="p-2">TX</td><td class="text-right p-2 font-bold">$5.7M</td><td class="text-right p-2 text-red-700">92%+100%</td><td class="text-right p-2">132</td><td class="text-right p-2">Dual-site flag</td><td class="text-center p-2">2</td></tr>
+            <tr class="border-t bg-gray-50"><td class="p-2">2</td><td class="p-2 font-medium"><a href="https://www.openprescriber.org/providers/1285660241" class="text-teal-700 hover:underline">Karimjee</a></td><td class="p-2">Internal Med</td><td class="p-2">TX</td><td class="text-right p-2 font-bold">$14.0M</td><td class="text-right p-2 text-red-700">97%</td><td class="text-right p-2">311</td><td class="text-right p-2">Highest $ total</td><td class="text-center p-2">1</td></tr>
+            <tr class="border-t"><td class="p-2">3</td><td class="p-2 font-medium"><a href="https://www.openprescriber.org/providers/1285761833" class="text-teal-700 hover:underline">Frinks</a></td><td class="p-2">Family Practice</td><td class="p-2">GA</td><td class="text-right p-2 font-bold">$10.2M</td><td class="text-right p-2 text-red-700">100%</td><td class="text-right p-2">476</td><td class="text-right p-2">476 Rx/day</td><td class="text-center p-2">1</td></tr>
+            <tr class="border-t bg-gray-50"><td class="p-2">4</td><td class="p-2 font-medium"><a href="https://www.openprescriber.org/providers/1124007380" class="text-teal-700 hover:underline">Baram</a></td><td class="p-2">Psychiatry</td><td class="p-2">MO</td><td class="text-right p-2 font-bold">$9.3M</td><td class="text-right p-2 text-red-700">100%</td><td class="text-right p-2">62</td><td class="text-right p-2">$411/claim</td><td class="text-center p-2">1</td></tr>
+            <tr class="border-t"><td class="p-2">5</td><td class="p-2 font-medium"><a href="https://www.openprescriber.org/providers/1104916907" class="text-teal-700 hover:underline">Alpert</a></td><td class="p-2">Infectious Dis</td><td class="p-2">NY</td><td class="text-right p-2 font-bold">$9.2M</td><td class="text-right p-2 text-red-700">95%</td><td class="text-right p-2">23</td><td class="text-right p-2">$33K/patient</td><td class="text-center p-2">1</td></tr>
+            <tr class="border-t bg-gray-50"><td class="p-2">6</td><td class="p-2 font-medium"><a href="https://www.openmedicare.us/providers/1316291925" class="text-teal-700 hover:underline">Yau</a></td><td class="p-2">General Practice</td><td class="p-2">CA</td><td class="text-right p-2 font-bold">$3.8M</td><td class="text-right p-2 text-red-700">87%</td><td class="text-right p-2">165</td><td class="text-right p-2">6 risk flags</td><td class="text-center p-2">2</td></tr>
+            <tr class="border-t"><td class="p-2">7</td><td class="p-2 font-medium"><a href="https://www.openmedicare.us/providers/1659378743" class="text-teal-700 hover:underline">Hughes</a></td><td class="p-2">Phys Med/Rehab</td><td class="p-2">GA</td><td class="text-right p-2 font-bold">$5.3M</td><td class="text-right p-2 text-red-700">88%</td><td class="text-right p-2">317</td><td class="text-right p-2">317 svc/day</td><td class="text-center p-2">1</td></tr>
+            <tr class="border-t bg-gray-50"><td class="p-2">8</td><td class="p-2 font-medium"><a href="https://www.openprescriber.org/providers/1134167455" class="text-teal-700 hover:underline">Kelly</a></td><td class="p-2">Family Practice</td><td class="p-2">OK</td><td class="text-right p-2 font-bold">$3.2M</td><td class="text-right p-2 text-red-700">70 risk</td><td class="text-right p-2">63</td><td class="text-right p-2">53.6% opioid</td><td class="text-center p-2">1</td></tr>
+            <tr class="border-t"><td class="p-2">9</td><td class="p-2 font-medium"><a href="https://www.openmedicare.us/providers/1689782708" class="text-teal-700 hover:underline">Mortazavi</a></td><td class="p-2">Hem-Onc</td><td class="p-2">CA</td><td class="text-right p-2 font-bold">$2.8M</td><td class="text-right p-2 text-red-700">90%</td><td class="text-right p-2">174</td><td class="text-right p-2">Oncology risk</td><td class="text-center p-2">1</td></tr>
+            <tr class="border-t bg-gray-50"><td class="p-2">10</td><td class="p-2 font-medium"><a href="https://www.openprescriber.org/providers/1316108269" class="text-teal-700 hover:underline">Graf</a></td><td class="p-2">Internal Med</td><td class="p-2">PA</td><td class="text-right p-2 font-bold">$7.5M</td><td class="text-right p-2 text-red-700">100%</td><td class="text-right p-2">362</td><td class="text-right p-2">362 Rx/day</td><td class="text-center p-2">1</td></tr>
+            <tr class="border-t border-t-2 border-gray-900 bg-gray-100"><td class="p-2"></td><td class="p-2 font-bold" colspan="3">TOTAL</td><td class="text-right p-2 font-bold text-red-700">$71.0M</td><td class="text-right p-2" colspan="4"></td></tr>
+          </tbody>
+        </table>
+      </div>
+
       <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">The Bigger Picture</h2>
-      <p class="text-gray-700 mb-4">These 10 providers represent a combined <strong>$74.9 million</strong> in Medicare and Part D billing that our models flagged as matching confirmed fraud patterns. That's just 10 people. Across our three platforms, we've identified <strong>thousands more</strong> with similar profiles.</p>
+      <p class="text-gray-700 mb-4">These 10 providers represent $71 million in billing that our models flagged as matching confirmed fraud patterns. But they're 10 out of <strong>3,000+ flagged providers</strong> billing a combined <strong>$3.5 billion</strong>. Every one of them is still practicing. Every one of them is still billing taxpayer money.</p>
 
       <div class="bg-gray-50 rounded-lg p-6 mb-6">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
