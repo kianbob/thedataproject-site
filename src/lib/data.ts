@@ -190,6 +190,7 @@ export const sites: Site[] = [
   { id: null, name: "OpenPrescriber", domain: "openprescriber.org", url: "https://www.openprescriber.org", records: 1380665, category: "healthcare" },
   { id: null, name: "OpenSubsidies", domain: "opensubsidies.us", url: "https://www.opensubsidies.us", records: 31800000, category: "government" },
   { id: null, name: "OpenCrime", domain: "opencrime.us", url: "https://www.opencrime.us", records: 12826, category: "government" },
+  { id: null, name: "WarCosts", domain: "warcosts.org", url: "https://www.warcosts.org", records: null, category: "government" },
 
   // Standalone sites
   { id: 43, name: "PPP Loan Lookup", domain: "ppploanlookup.com", url: "https://www.ppploanlookup.com", records: 11468299, category: "standalone" },

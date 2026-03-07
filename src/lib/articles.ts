@@ -9,6 +9,81 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "tracking-the-cost-of-war-iran-2026",
+    title: "What the Iran War Is Really Costing America",
+    description: "In week one, the U.S. military campaign against Iran has cost $3.6 billion, drawn in 11 countries, closed the Strait of Hormuz, and killed over 1,300 people. We built WarCosts.org to track every dollar and every life in real time.",
+    date: "2026-03-06",
+    content: `
+      <p style="font-size: 1.125rem; color: #4b5563; margin-bottom: 2rem;">On February 28, 2026, the United States launched airstrikes against Iran. Seven days later, the numbers are staggering — and they're climbing by the second. We built <a href="https://www.warcosts.org" style="color: #0f766e; font-weight: 600;">WarCosts.org</a> to track them in real time.</p>
+
+      <div style="background-color: #111827; color: #ffffff; border-radius: 0.75rem; padding: 2rem; margin: 2rem 0;">
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.25rem; color: #ffffff;">Week One: By the Numbers</h2>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; text-align: center;">
+          <div><div style="font-size: 2rem; font-weight: 700; color: #f87171;">$3.6B</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Cost in 7 Days</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #f87171;">1,332+</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">People Killed</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #f87171;">6</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">U.S. Troops Dead</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #f87171;">11</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Countries Drawn In</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #f87171;">Closed</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Strait of Hormuz</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #f87171;">$95+</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Oil Per Barrel</div></div>
+        </div>
+      </div>
+
+      <p style="color: #374151; margin-bottom: 1rem;">These aren't projections. These are documented costs from the first seven days of a military campaign that shows no signs of slowing down. The $3.6 billion figure includes Tomahawk cruise missiles ($2M each), B-2 sorties ($130K per flight hour), carrier strike group operations, and the initial mobilization of 45,000 troops to the region.</p>
+
+      <p style="color: #374151; margin-bottom: 1rem;">The human cost is even harder to process: over 1,332 people killed, including at least 6 U.S. service members, with Iranian civilian casualties mounting as strikes hit air defenses located near population centers. Iran's retaliatory missile barrages have struck U.S. bases in Iraq and naval assets in the Persian Gulf.</p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">Why We Built WarCosts</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;"><a href="https://www.warcosts.org" style="color: #0f766e; font-weight: 600;">WarCosts.org</a> is our deep-dive platform for tracking the human and financial costs of American wars. It joins TheDataProject's portfolio of public data platforms — alongside <a href="https://www.openmedicare.us" style="color: #0f766e;">OpenMedicare</a>, <a href="https://www.openmedicaid.org" style="color: #0f766e;">OpenMedicaid</a>, <a href="https://www.opencrime.us" style="color: #0f766e;">OpenCrime</a>, and others — with a singular focus: making the cost of war visible, in real time, down to the second.</p>
+
+      <p style="color: #374151; margin-bottom: 1rem;">The Iraq and Afghanistan wars cost $8 trillion over 20 years. Most Americans never saw a running tally. The Pentagon doesn't publish one. Congress doesn't either. By the time the costs are tallied, the war is over and the debate has moved on. We think that's a problem.</p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">What You'll Find on WarCosts</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 1.5rem 0;">
+        <a href="https://www.warcosts.org/analysis/iran-2026" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-weight: 700; color: #0f766e; margin-bottom: 0.25rem;">Iran 2026: Full Analysis</div>
+          <div style="font-size: 0.875rem; color: #4b5563;">Comprehensive overview of the conflict — timeline, costs, casualties, and geopolitical impact</div>
+        </a>
+        <a href="https://www.warcosts.org/analysis/iran-cost-per-second" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-weight: 700; color: #0f766e; margin-bottom: 0.25rem;">Cost Per Second</div>
+          <div style="font-size: 0.875rem; color: #4b5563;">Real-time cost ticker breaking down what America spends every second on this war</div>
+        </a>
+        <a href="https://www.warcosts.org/analysis/iran-civilian-cost" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-weight: 700; color: #0f766e; margin-bottom: 0.25rem;">The Civilian Cost</div>
+          <div style="font-size: 0.875rem; color: #4b5563;">Tracking civilian casualties, displacement, and humanitarian impact</div>
+        </a>
+        <a href="https://www.warcosts.org/analysis/iran-regional-war" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-weight: 700; color: #0f766e; margin-bottom: 0.25rem;">The Regional War</div>
+          <div style="font-size: 0.875rem; color: #4b5563;">How 11 countries got drawn into a conflict that was supposed to be contained</div>
+        </a>
+      </div>
+
+      <a href="https://www.warcosts.org/analysis/iran-russia-shadow-war" style="display: block; background: #fef2f2; border: 1px solid #fecaca; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none; margin-bottom: 1.5rem;">
+        <div style="font-weight: 700; color: #991b1b; margin-bottom: 0.25rem;">Russia's Shadow War</div>
+        <div style="font-size: 0.875rem; color: #4b5563;">Intelligence on Russian involvement — arms transfers, satellite data sharing, and economic positioning</div>
+      </a>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">The Hormuz Factor</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">Within 72 hours of the first strikes, Iran closed the Strait of Hormuz — the chokepoint through which 20% of the world's oil passes daily. Oil surged past $95/barrel and is still climbing. Every American is already paying for this war at the gas pump, whether they realize it or not.</p>
+
+      <p style="color: #374151; margin-bottom: 1rem;">The economic ripple effects extend far beyond oil. Shipping insurance rates in the Persian Gulf have increased 400%. Global supply chains that route through the Suez-Hormuz corridor are rerouting around the Cape of Good Hope, adding weeks and billions in transit costs. The war's true cost isn't just what the Pentagon spends — it's what every consumer and business in the global economy absorbs.</p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">Follow the Money. Count the Dead.</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">That's what <a href="https://www.warcosts.org" style="color: #0f766e; font-weight: 600;">WarCosts.org</a> does. Every dollar. Every life. Updated in real time. Because the cost of war shouldn't be an afterthought — it should be visible from day one.</p>
+
+      <div style="background-color: #0f766e; color: #ffffff; border-radius: 0.75rem; padding: 2rem; margin: 2rem 0; text-align: center;">
+        <p style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem;">Track the Iran War in Real Time</p>
+        <p style="font-size: 0.875rem; margin-bottom: 1.25rem; opacity: 0.9;">Live cost ticker · Casualty tracking · Economic impact · Deep analysis</p>
+        <a href="https://www.warcosts.org" style="display: inline-block; background: #ffffff; color: #0f766e; font-weight: 700; padding: 0.75rem 2rem; border-radius: 0.5rem; text-decoration: none; font-size: 1rem;">Visit WarCosts.org →</a>
+      </div>
+
+      <p style="color: #6b7280; font-size: 0.875rem; font-style: italic; margin-top: 2rem;">WarCosts.org is built by <a href="/" style="color: #0f766e;">TheDataProject.AI</a>. Cost estimates are based on publicly available DoD spending data, historical per-unit costs, and open-source intelligence. Casualty figures are compiled from official statements, credible media reports, and humanitarian organizations. All figures are estimates and are updated as better data becomes available.</p>
+    `
+  },
+  {
     slug: "still-billing-still-free",
     title: "Still Billing, Still Free: 10 Healthcare Providers Our Algorithms Flagged — None Have Been Charged",
     description: "Our ML models across OpenMedicare, OpenPrescriber, and OpenMedicaid flagged thousands of providers with extreme billing patterns matching convicted fraudsters. These 10 span all three platforms — $1.5 billion in combined billing. Here's what the data shows.",
