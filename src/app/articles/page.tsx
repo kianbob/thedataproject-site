@@ -5,7 +5,7 @@ import Link from "next/link";
 import { publishedArticles as articles } from "@/lib/articles";
 
 const categories: Record<string, string[]> = {
-  Flagships: ["still-billing-still-free", "tracking-medicaid-spending", "federal-brain-drain", "federal-spending-breakdown", "building-with-ai"],
+  Flagships: ["tracking-medicaid-spending", "federal-brain-drain", "federal-spending-breakdown", "building-with-ai", "introducing-warcosts"],
   Healthcare: ["healthcare-data"],
   Government: ["government-salaries", "ppp-loan-lookup"],
   Finance: ["housing-finance", "elections-political-money", "business-finance"],
