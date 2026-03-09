@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { articles } from "@/lib/articles";
+import { publishedArticles as articles } from "@/lib/articles";
 
 const latestArticles = [...articles]
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
