@@ -1719,6 +1719,93 @@ export const articles: Article[] = [
       <p class="text-gray-600">OpenSubsidies is built by <a href="/" class="text-teal-700 hover:underline font-medium">TheDataProject.AI</a> — making public data usable, searchable, and accessible to everyone.</p>
     `,
   },
+  {
+    slug: "launching-givescope",
+    title: "Launching GiveScope: Financial Intelligence for 1.9 Million U.S. Nonprofits",
+    description: "We built GiveScope to make nonprofit financial data actually useful. Health scores, executive compensation, peer benchmarking, and trend analysis for every tax-exempt organization in America — powered by IRS Form 990 data.",
+    date: "2026-03-17",
+    content: `
+      <p style="font-size: 1.125rem; color: #4b5563; margin-bottom: 2rem;">The U.S. nonprofit sector controls <strong>$4.09 trillion in annual revenue</strong> — larger than the GDP of Germany. There are 1.93 million tax-exempt organizations, from neighborhood food banks to hospital systems with billions in revenue. And yet, understanding how these organizations actually perform financially has been surprisingly difficult. We built <a href="https://www.givescope.com" style="color: #0f766e; font-weight: 600;">GiveScope</a> to change that.</p>
+
+      <div style="background-color: #0f766e; color: #ffffff; border-radius: 0.75rem; padding: 2rem; margin: 2rem 0;">
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.25rem; color: #ffffff;">GiveScope by the Numbers</h2>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
+          <div>
+            <p style="font-size: 2rem; font-weight: 700; color: #99f6e4;">1.93M</p>
+            <p style="color: #ccfbf1;">Tax-exempt organizations</p>
+          </div>
+          <div>
+            <p style="font-size: 2rem; font-weight: 700; color: #99f6e4;">$4.09T</p>
+            <p style="color: #ccfbf1;">Total annual revenue</p>
+          </div>
+          <div>
+            <p style="font-size: 2rem; font-weight: 700; color: #99f6e4;">99,975</p>
+            <p style="color: #ccfbf1;">Orgs with deep financial profiles</p>
+          </div>
+          <div>
+            <p style="font-size: 2rem; font-weight: 700; color: #99f6e4;">26</p>
+            <p style="color: #ccfbf1;">NTEE categories tracked</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Why We Built GiveScope</h2>
+      <p class="text-gray-600 mb-4">The IRS publishes Form 990 data for every tax-exempt organization in America. It's one of the richest public datasets in existence — revenue, expenses, assets, liabilities, executive compensation, program expenses, and more. But it's buried in bulk CSV files and XML dumps that nobody can use.</p>
+      <p class="text-gray-600 mb-4">Existing platforms like Charity Navigator and Candid do a decent job rating the largest charities, but they cover a fraction of the 1.93 million organizations. And their data is often locked behind paywalls or limited to basic star ratings that don't tell the full story.</p>
+      <p class="text-gray-600 mb-4">GiveScope takes a different approach: <strong>every nonprofit gets a financial profile</strong>. We process the IRS Business Master File (1.93M organizations) and enrich the top 100,000 with multi-year filing histories from ProPublica's Nonprofit Explorer API. Then we compute health scores, peer benchmarks, and trend analysis on top of that raw data.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Health Scores: A 9-Metric Financial Model</h2>
+      <p class="text-gray-600 mb-4">Every enriched nonprofit gets a <strong>health score from 0 to 100</strong>, computed from nine financial metrics across three tiers:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><strong>Tier 1 — Core Financial Health (60 pts):</strong> Working capital ratio, surplus consistency, liabilities ratio, revenue trend</li>
+        <li><strong>Tier 2 — Operational Efficiency (25 pts):</strong> Program expense ratio, fundraising efficiency, CEO pay reasonableness</li>
+        <li><strong>Tier 3 — Structural Resilience (15 pts):</strong> Revenue concentration (HHI), Tuckman-Chang vulnerability flags</li>
+      </ul>
+      <p class="text-gray-600 mb-4">The model draws on academic research — particularly the Tuckman-Chang framework for nonprofit financial vulnerability — combined with practical indicators that donors and analysts actually care about. The average score across our enriched dataset is 65.7, with grades ranging from A (excellent) to F (critical concern).</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">What You Can Do on GiveScope</h2>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><strong>Search</strong> any nonprofit by name, EIN, city, or state — instant results across 1.93M organizations</li>
+        <li><strong>Explore financial profiles</strong> — revenue, expenses, assets, liabilities, executive compensation, filing history</li>
+        <li><strong>Compare organizations</strong> with peer benchmarking — see how any nonprofit stacks up against its category and state</li>
+        <li><strong>Track trends</strong> — 5-year revenue and expense charts for enriched organizations</li>
+        <li><strong>Browse rankings</strong> — highest revenue, fastest growing, healthiest, highest-paid CEOs by state</li>
+        <li><strong>Read analysis</strong> — 27 data-driven articles on nonprofit sectors, CEO pay, transparency, and more</li>
+        <li><strong>Use interactive tools</strong> — compensation benchmarking, donation calculator, nonprofit quiz, nearby search</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">The Surprising Things in the Data</h2>
+      <p class="text-gray-600 mb-4">Building GiveScope revealed some striking facts about the nonprofit sector:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><strong>33% of nonprofits have declining revenue</strong> — roughly 640,000 organizations saw revenue drop in their most recent filings</li>
+        <li><strong>The top 1% controls 85-90% of revenue</strong> — about 19,000 organizations out of 1.93M control the vast majority of the sector's $4.09 trillion</li>
+        <li><strong>Kaiser Permanente's $82.5B revenue</strong> is larger than the GDP of 120+ countries</li>
+        <li><strong>90% of nonprofits operate on less than $1M/year</strong> — the sector is dominated by small organizations</li>
+        <li><strong>Religion has the most organizations (199,983)</strong> but Healthcare has the most revenue ($2.5T)</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Free + Pro Tiers</h2>
+      <p class="text-gray-600 mb-4">Basic access to GiveScope is free — search, browse profiles, read analysis, use tools. For researchers, journalists, and organizations that need deeper analysis, we offer Pro ($49/mo) and Team ($149/mo) tiers with trend charts, CSV exports, compensation benchmarking, grant flow mapping, and email alerts.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Part of TheDataProject Portfolio</h2>
+      <p class="text-gray-600 mb-4">GiveScope is our newest platform, joining:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><a href="https://www.openmedicare.us" class="text-teal-700 hover:underline font-medium">OpenMedicare</a> — $854B in Medicare payments with ML fraud detection</li>
+        <li><a href="https://www.openmedicaid.org" class="text-teal-700 hover:underline font-medium">OpenMedicaid</a> — $1.09 trillion in Medicaid provider payments</li>
+        <li><a href="https://www.openlobby.us" class="text-teal-700 hover:underline font-medium">OpenLobby</a> — $37.7B in federal lobbying, 726K+ filings</li>
+        <li><a href="https://www.warcosts.org" class="text-teal-700 hover:underline font-medium">WarCosts</a> — Every American war from the Revolution to Iran 2026</li>
+        <li><a href="https://www.opencrime.us" class="text-teal-700 hover:underline font-medium">OpenCrime</a> — FBI crime data for 9,700+ cities</li>
+        <li><a href="https://www.openprescriber.org" class="text-teal-700 hover:underline font-medium">OpenPrescriber</a> — 1.38M Medicare prescribers, $275.6B in drug costs</li>
+        <li><a href="https://www.vaccinewatch.org" class="text-teal-700 hover:underline font-medium">VaccineWatch</a> — 1.98M VAERS reports</li>
+        <li><a href="https://www.openimmigration.us" class="text-teal-700 hover:underline font-medium">OpenImmigration</a> — 9.6M immigration court cases</li>
+        <li><a href="https://www.opensubsidies.org" class="text-teal-700 hover:underline font-medium">OpenSubsidies</a> — $147B in farm subsidies</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Explore GiveScope</h2>
+      <p class="text-gray-600 mb-4">Visit <a href="https://www.givescope.com" class="text-teal-700 hover:underline font-medium">givescope.com</a> to search any nonprofit, explore financial health scores, compare organizations, and discover where $4 trillion in nonprofit revenue actually goes.</p>
+      <p class="text-gray-600">GiveScope is built by <a href="/" class="text-teal-700 hover:underline font-medium">TheDataProject.AI</a> — making public data usable, searchable, and accessible to everyone.</p>
+    `,
+  },
 ];
 
 export const publishedArticles = articles.filter((a) => !a.draft);
