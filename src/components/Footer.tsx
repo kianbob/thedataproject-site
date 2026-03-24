@@ -50,6 +50,7 @@ export default function Footer() {
               <a href="https://www.opencrime.us" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenCrime</a>
               <a href="https://www.warcosts.org" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">WarCosts</a>
               <a href="https://www.givescope.com" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">GiveScope</a>
+              <a href="https://www.spacgraveyard.com" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">SPACGraveyard</a>
             </div>
           </div>
           <div>

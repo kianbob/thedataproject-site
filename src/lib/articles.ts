@@ -9,6 +9,86 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "introducing-spacgraveyard",
+    title: "Introducing SPACGraveyard: Where $363 Billion Went to Die",
+    description: "We tracked 1,344 SPACs, $363 billion in capital, and 67 bankruptcies. SPACGraveyard.com is the definitive forensic investigation of the biggest speculative bubble in blank-check company history.",
+    date: "2026-03-23",
+    content: `
+      <p style="font-size: 1.125rem; color: #4b5563; margin-bottom: 2rem;">Between 2020 and 2021, over 800 Special Purpose Acquisition Companies raised more than $250 billion from investors — promising a new era of democratized access to pre-IPO companies. Most of those promises were broken. <a href="https://www.spacgraveyard.com" style="color: #0f766e; font-weight: 600;">SPACGraveyard.com</a> is our forensic investigation of what happened to that money.</p>
+
+      <div style="background-color: #0c1222; color: #ffffff; border-radius: 0.75rem; padding: 2rem; margin: 2rem 0;">
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.25rem; color: #ffffff;">The Damage Report</h2>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; text-align: center;">
+          <div><div style="font-size: 2rem; font-weight: 700; color: #06b6d4;">1,344</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">SPACs Tracked</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #fbbf24;">$363B</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Capital Raised</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #ea580c;">67</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Bankruptcies</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #ea580c;">-56%</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Avg Post-Merger Return</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #fbbf24;">$8B</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Bank Fees Earned</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #ea580c;">$131B</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Peak Market Cap Destroyed</div></div>
+        </div>
+      </div>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">What We Built</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">SPACGraveyard isn't a stock tracker or a trading tool. It's an investigative data platform — built to document the biggest wealth transfer from retail investors to Wall Street insiders in modern financial history.</p>
+
+      <p style="color: #374151; margin-bottom: 1rem;">Every SPAC that went public via SEC EDGAR. Every bankruptcy filing. Every celebrity-backed disaster. Every reverse stock split used to avoid delisting. We pulled it all together from SEC filings, EDGAR data, Yahoo Finance, and academic research.</p>
+
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 1.5rem 0;">
+        <a href="https://www.spacgraveyard.com/graveyard" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🪦</div>
+          <div style="font-weight: 600; color: #0f766e;">The Graveyard</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">67 bankrupt SPACs with peak market caps, timelines, and what went wrong</div>
+        </a>
+        <a href="https://www.spacgraveyard.com/zombies" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🧟</div>
+          <div style="font-weight: 600; color: #0f766e;">Zombie SPACs</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">322 companies technically alive but effectively dead — trading for pennies</div>
+        </a>
+        <a href="https://www.spacgraveyard.com/money-trail" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">💰</div>
+          <div style="font-weight: 600; color: #0f766e;">Follow the Money</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">Trace every dollar from IPO trust accounts through redemptions, mergers, and losses</div>
+        </a>
+        <a href="https://www.spacgraveyard.com/underwriters" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🏦</div>
+          <div style="font-weight: 600; color: #0f766e;">The Banks</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">Goldman, Citi, Credit Suisse — who earned $8B in fees while investors lost billions</div>
+        </a>
+      </div>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">Why This Story Matters</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">The SPAC bubble wasn't just a market event — it was a transfer of wealth from retail investors to Wall Street insiders, enabled by regulatory gaps and celebrity hype. Sponsors risked $25,000 and received 20% of companies worth hundreds of millions. Banks collected their 5.5% fees regardless of whether investors made or lost money. Celebrities lent their names and walked away before the crash.</p>
+
+      <p style="color: #374151; margin-bottom: 1rem;">The average post-merger SPAC trades at $3.85 — a 62% loss from the $10 IPO price. 85% of SPACs trade below their IPO price. The only consistent winners were the sponsors and the banks.</p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">Interactive Tools</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">SPACGraveyard includes tools you won't find anywhere else:</p>
+
+      <ul style="color: #374151; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+        <li style="margin-bottom: 0.5rem;"><strong>SPAC Screener</strong> — Filter all 1,344 SPACs by sector, status, year, and returns</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Portfolio Loss Calculator</strong> — See exactly how much your SPAC investments cost you vs. just buying the S&P 500</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Sponsor Report Card</strong> — Letter grades for every major SPAC sponsor based on investor returns</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Live Loss Counter</strong> — A national debt clock, but for SPAC investor losses</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Destruction Index</strong> — Ranking SPACs by total value destroyed</li>
+      </ul>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">The Data</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">Every dataset powering SPACGraveyard is available for free download as JSON. We believe in open data — use it for research, journalism, or your own projects. All sourced from SEC EDGAR filings, public financial data, and academic research.</p>
+
+      <p style="color: #374151; margin-bottom: 1rem;"><a href="https://www.spacgraveyard.com" style="color: #0f766e; font-weight: 600;">SPACGraveyard.com</a> joins TheDataProject's portfolio alongside <a href="https://www.openmedicare.us" style="color: #0f766e;">OpenMedicare</a>, <a href="https://www.opencrime.us" style="color: #0f766e;">OpenCrime</a>, <a href="https://www.warcosts.org" style="color: #0f766e;">WarCosts</a>, <a href="https://www.givescope.com" style="color: #0f766e;">GiveScope</a>, and 10 other public data platforms. Our mission: make public data accessible, useful, and impossible to ignore.</p>
+
+      <div style="background-color: #0c1222; color: #ffffff; border-radius: 0.75rem; padding: 2rem; margin: 2rem 0; text-align: center;">
+        <p style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; color: #06b6d4;">Explore SPACGraveyard</p>
+        <p style="color: #94a3b8; margin-bottom: 1.5rem;">1,344 SPACs. 56 analysis articles. 8 interactive tools. All free.</p>
+        <a href="https://www.spacgraveyard.com" style="display: inline-block; background-color: #06b6d4; color: #0c1222; padding: 0.75rem 2rem; border-radius: 0.5rem; font-weight: 700; text-decoration: none;">Visit SPACGraveyard.com →</a>
+      </div>
+    `,
+  },
+  {
     slug: "introducing-warcosts",
     title: "Introducing WarCosts.org: Tracking What America's Wars Really Cost",
     description: "We built WarCosts.org because no one else puts all the data in one place. Every American war from the Revolution to Iran 2026 — real-time cost tickers, interactive tools, casualty data, and deep analysis. $28,095 per second. Every dollar. Every life.",
