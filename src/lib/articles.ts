@@ -103,6 +103,104 @@ export const articles: Article[] = [
     `,
   },
   {
+    slug: "introducing-tarifftax",
+    title: "Introducing TariffTax.org: Every Tariff Is a Tax — See Who Pays",
+    description: "We built the definitive data platform tracking every US tariff and its real cost to American families. 279 pages of data, 80 product breakdowns, a household calculator, and one uncomfortable truth: you're the one paying. $3,800–$4,900 per household, per year.",
+    date: "2026-03-26",
+    content: `
+      <p style="font-size: 1.125rem; color: #4b5563; margin-bottom: 2rem;">Politicians love tariffs because they sound like someone else is paying. China pays. Mexico pays. Europe pays. Except they don't. You do. Every empirical study on the subject reaches the same conclusion: <strong>tariffs are taxes paid by American consumers and businesses</strong>, not by foreign countries. We built <a href="https://www.tarifftax.org" style="color: #0f766e; font-weight: 600;">TariffTax.org</a> to make that reality impossible to ignore — with 279 pages of data, tools, and analysis tracking every tariff and exactly who gets the bill.</p>
+
+      <div style="background-color: #0c1222; color: #ffffff; border-radius: 0.75rem; padding: 2rem; margin: 2rem 0;">
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.25rem; color: #ffffff;">The Tariff Tax on American Families</h2>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; text-align: center;">
+          <div><div style="font-size: 2rem; font-weight: 700; color: #f87171;">$3,800–$4,900</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Annual Cost Per Household</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #fbbf24;">$287B</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Projected 2025 Tariff Revenue</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #ea580c;">304K</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Jobs Affected</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #f87171;">Highest Since 1972</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Effective Tariff Rate</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #fbbf24;">279</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Pages of Data &amp; Analysis</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #ea580c;">Since 1789</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Historical Timeline</div></div>
+        </div>
+      </div>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">The Thesis Is Simple. The Data Is Overwhelming.</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">When the US government slaps a 25% tariff on Chinese steel, the Chinese steelmaker doesn't write a check to the US Treasury. The American importer pays the tariff at the border. Then they pass that cost to the American manufacturer. Who passes it to the American retailer. Who passes it to you. The tariff is a tax. It's just hidden behind enough middlemen that most people never notice.</p>
+
+      <p style="color: #374151; margin-bottom: 1rem;">The current effective tariff rate is the <strong>highest since 1972</strong>. American households are paying $3,800 to $4,900 more per year because of it — on everything from groceries to electronics to cars. The federal government will collect an estimated <strong>$287 billion</strong> in tariff revenue in 2025. That's $287 billion in taxes that were never debated, never voted on by Congress as a tax, and are disproportionately paid by lower-income families who spend more of their income on goods.</p>
+
+      <p style="color: #374151; margin-bottom: 1rem;">This isn't a partisan point. It's an economic one. Libertarians, free-market conservatives, and progressive economists all agree on the underlying mechanism. <a href="https://www.tarifftax.org" style="color: #0f766e; font-weight: 600;">TariffTax.org</a> just makes the evidence browsable.</p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">What You'll Find</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 1.5rem 0;">
+        <a href="https://www.tarifftax.org/products" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🛒</div>
+          <div style="font-weight: 600; color: #0f766e;">80 Product Pages</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">See exactly how tariffs affect everyday items — from iPhones to washing machines to lumber. Tariff rates, price impacts, and who really pays</div>
+        </a>
+        <a href="https://www.tarifftax.org/countries" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🌍</div>
+          <div style="font-weight: 600; color: #0f766e;">30 Country Profiles</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">China, Mexico, Canada, the EU, and 26 more — trade volumes, tariff rates, retaliatory measures, and the real impact on both sides</div>
+        </a>
+        <a href="https://www.tarifftax.org/states" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🗺️</div>
+          <div style="font-weight: 600; color: #0f766e;">51 State Impact Pages</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">Every state and DC — how tariffs affect local industries, jobs, and household costs where you actually live</div>
+        </a>
+        <a href="https://www.tarifftax.org/industries" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🏭</div>
+          <div style="font-weight: 600; color: #0f766e;">20 Industry Breakdowns</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">Agriculture, auto, tech, steel, retail, and more — industry-by-industry analysis of tariff exposure and job impact</div>
+        </a>
+        <a href="https://www.tarifftax.org/calculator" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🧮</div>
+          <div style="font-weight: 600; color: #0f766e;">Household Cost Calculator</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">Enter your income and spending habits — see exactly how much tariffs cost your family per year</div>
+        </a>
+        <a href="https://www.tarifftax.org/effective-rate" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📈</div>
+          <div style="font-weight: 600; color: #0f766e;">Effective Tariff Rate Tracker</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">Track the real tariff rate over time — currently the highest since 1972 and climbing</div>
+        </a>
+        <a href="https://www.tarifftax.org/timeline" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📜</div>
+          <div style="font-weight: 600; color: #0f766e;">Historical Timeline</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">From the Tariff Act of 1789 to today — 236 years of US trade policy, the debates, the disasters, and the patterns that keep repeating</div>
+        </a>
+        <a href="https://www.tarifftax.org/analysis" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📝</div>
+          <div style="font-weight: 600; color: #0f766e;">22 Analysis Articles</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">Deep dives into trade wars, Smoot-Hawley parallels, regressive impacts, and why protectionism keeps failing</div>
+        </a>
+      </div>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">A Hidden Tax That Hits the Poor Hardest</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">Here's what makes tariffs especially insidious: they're regressive. A family earning $40,000 spends a much larger share of their income on physical goods — food, clothing, appliances — than a family earning $400,000. So when tariffs raise the price of everything at Walmart by 10-25%, it's effectively a tax aimed at the people who can least afford it.</p>
+
+      <p style="color: #374151; margin-bottom: 1rem;">Meanwhile, the 304,000 jobs affected by tariff-related disruptions are concentrated in manufacturing, agriculture, and retail — industries that employ working-class Americans. The steel tariffs that were supposed to save steelworker jobs? They saved roughly 1,800 steel jobs while destroying an estimated 75,000 jobs in steel-consuming industries that faced higher input costs. The math doesn't work. It never has.</p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">History Keeps Teaching the Same Lesson</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">The <a href="https://www.tarifftax.org/timeline" style="color: #0f766e; font-weight: 600;">historical timeline</a> on TariffTax goes back to 1789 — and the pattern is remarkably consistent. Every major tariff escalation in American history was sold as protecting American workers. Every one of them raised consumer prices, invited retaliation, and ultimately hurt the economy. Smoot-Hawley in 1930 is the most famous example, but it's not the only one. We're just the latest generation to learn this lesson the expensive way.</p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">Data-First, Not Partisan</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">TariffTax isn't a campaign site. It's a data platform. Every number is sourced — from USITC, Census Bureau trade data, CBO estimates, and academic research. Our editorial perspective is straightforward: we believe in free markets, free trade, and transparent taxation. If the government wants to raise $287 billion in revenue, it should do it honestly — not hide it in import duties and hope nobody notices.</p>
+
+      <p style="color: #374151; margin-bottom: 1rem;">That said, all 22 analysis articles are built on data, not ideology. If the data showed tariffs were working, we'd say so. It doesn't.</p>
+
+      <p style="color: #374151; margin-bottom: 1rem;"><a href="https://www.tarifftax.org" style="color: #0f766e; font-weight: 600;">TariffTax.org</a> joins TheDataProject's portfolio alongside <a href="https://www.aiexposure.org" style="color: #0f766e;">AI Exposure</a>, <a href="https://www.spacgraveyard.com" style="color: #0f766e;">SPACGraveyard</a>, <a href="https://www.warcosts.org" style="color: #0f766e;">WarCosts</a>, <a href="https://www.openmedicare.us" style="color: #0f766e;">OpenMedicare</a>, <a href="https://www.opencrime.us" style="color: #0f766e;">OpenCrime</a>, <a href="https://www.givescope.com" style="color: #0f766e;">GiveScope</a>, and our other public data platforms. Our mission remains the same: make public data accessible, useful, and impossible to ignore.</p>
+
+      <div style="background-color: #0c1222; color: #ffffff; border-radius: 0.75rem; padding: 2rem; margin: 2rem 0; text-align: center;">
+        <p style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; color: #f87171;">Every Tariff Is a Tax. See Who Pays.</p>
+        <p style="color: #94a3b8; margin-bottom: 1.5rem;">279 pages. 80 products. 30 countries. 51 states. 22 articles. All free.</p>
+        <a href="https://www.tarifftax.org" style="display: inline-block; background-color: #f87171; color: #ffffff; padding: 0.75rem 2rem; border-radius: 0.5rem; font-weight: 700; text-decoration: none;">Visit TariffTax.org →</a>
+      </div>
+    `,
+  },
+  {
     slug: "introducing-spacgraveyard",
     title: "Introducing SPACGraveyard: Where $363 Billion Went to Die",
     description: "We tracked 1,344 SPACs, $363 billion in capital, and 67 bankruptcies. SPACGraveyard.com is the definitive forensic investigation of the biggest speculative bubble in blank-check company history.",
