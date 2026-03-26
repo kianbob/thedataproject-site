@@ -133,7 +133,7 @@ export const articles: Article[] = [
       <p style="color: #374151; margin-bottom: 1rem;">279 pages. Not a blog with hot takes — a data platform with receipts.</p>
 
       <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 1.5rem 0;">
-        <a href="https://www.tarifftax.org/products" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+        <a href="https://www.tarifftax.org/search" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
           <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📦</div>
           <div style="font-weight: 600; color: #0f766e;">80 Product Pages</div>
           <div style="font-size: 0.875rem; color: #6b7280;">iPhones, cars, washing machines, avocados, lumber, steel — see exactly how tariffs hit each item you buy</div>
@@ -148,7 +148,7 @@ export const articles: Article[] = [
           <div style="font-weight: 600; color: #0f766e;">51 State Impact Pages</div>
           <div style="font-size: 0.875rem; color: #6b7280;">Which states are most trade-exposed? Which voters are paying the most? The answer might surprise you.</div>
         </a>
-        <a href="https://www.tarifftax.org/industries" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+        <a href="https://www.tarifftax.org/industry" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
           <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🏭</div>
           <div style="font-weight: 600; color: #0f766e;">20 Industry Breakdowns</div>
           <div style="font-size: 0.875rem; color: #6b7280;">Agriculture, automotive, tech, retail, steel — winners, losers, and the jobs caught in between</div>
