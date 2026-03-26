@@ -53,8 +53,6 @@ export default function Footer() {
               <a href="https://www.spacgraveyard.com" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">SPACGraveyard</a>
               <a href="https://www.aiexposure.org" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">AI Exposure</a>
               <a href="https://www.tarifftax.org" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">TariffTax</a>
-              <a href="https://powermap-app.vercel.app" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">PowerMap</a>
-              <a href="https://openhousing-app.vercel.app" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenHousing</a>
             </div>
           </div>
           <div>
