@@ -9,6 +9,100 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "introducing-ai-exposure",
+    title: "Introducing AI Exposure: Which Jobs Will Survive the AI Revolution?",
+    description: "We built the most comprehensive data platform tracking AI's impact on 925 real occupations across every U.S. county. 45.8 million Americans work in high-risk roles. AI Exposure shows exactly who, where, and why — with government data, not guesswork.",
+    date: "2026-03-26",
+    content: `
+      <p style="font-size: 1.125rem; color: #4b5563; margin-bottom: 2rem;">Everyone's talking about AI taking jobs. Almost nobody has the data. The breathless headlines cite a single Oxford study from 2013. The "will a robot take my job" sites give you a percentage and a shrug. We thought we could do better. <a href="https://www.aiexposure.org" style="color: #0f766e; font-weight: 600;">AI Exposure</a> is the most comprehensive data platform ever built on AI's impact on American workers — and everything on it is free.</p>
+
+      <div style="background-color: #0c1222; color: #ffffff; border-radius: 0.75rem; padding: 2rem; margin: 2rem 0;">
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.25rem; color: #ffffff;">The Scale of What We're Tracking</h2>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; text-align: center;">
+          <div><div style="font-size: 2rem; font-weight: 700; color: #06b6d4;">925</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Real Occupations (BLS OEWS)</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #fbbf24;">45.8M</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Workers in High-Risk Roles</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #ea580c;">511</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Tracked AI Layoffs</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #06b6d4;">3,220</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">U.S. Counties Mapped</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #fbbf24;">393</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Metro Areas</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #ea580c;">5</div><div style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.25rem;">Risk Score Sources</div></div>
+        </div>
+      </div>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">Why Existing Tools Fall Short</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">You've probably seen the sites. WillRobotsTakeMyJob gives you one number from one study. JobGoneToAI.com and AITakeoverTracker.com track headlines, not data. None of them answer the questions that actually matter: <em>Which specific tasks in my job are automatable? How exposed is my city? What should I transition to?</em></p>
+
+      <p style="color: #374151; margin-bottom: 1rem;">AI Exposure is different because it synthesizes <strong>five independent risk sources</strong> into a single composite score: the Frey &amp; Osborne automation probabilities, OECD risk assessments, Bureau of Labor Statistics employment projections, real layoff signals from layoffs.fyi, and generative AI task exposure analysis. One number backed by five perspectives — not a guess, a consensus.</p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">What You'll Find</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 1.5rem 0;">
+        <a href="https://www.aiexposure.org/occupations" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📊</div>
+          <div style="font-weight: 600; color: #0f766e;">925 Occupation Profiles</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">Every occupation from BLS data with composite risk scores, salary data, task-level automation analysis, and donut charts showing which tasks AI can do</div>
+        </a>
+        <a href="https://www.aiexposure.org/map" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🗺️</div>
+          <div style="font-weight: 600; color: #0f766e;">Interactive Choropleth Map</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">See AI exposure by state, metro area, and county — which regions are most vulnerable and which are positioned to thrive</div>
+        </a>
+        <a href="https://www.aiexposure.org/tools/risk-calculator" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🎯</div>
+          <div style="font-weight: 600; color: #0f766e;">Risk Calculator</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">Enter your job and get a detailed AI risk breakdown — composite score, task vulnerability, and what it means for your career</div>
+        </a>
+        <a href="https://www.aiexposure.org/tools/career-transition" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🔄</div>
+          <div style="font-weight: 600; color: #0f766e;">Career Transition Planner</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">If your job is at risk, find the best adjacent occupations — ranked by skill overlap, salary change, and lower AI exposure</div>
+        </a>
+        <a href="https://www.aiexposure.org/tools/salary-risk" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">💰</div>
+          <div style="font-weight: 600; color: #0f766e;">Salary-Risk Analyzer</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">Explore the relationship between what a job pays and how likely AI is to disrupt it — some of the highest-paid jobs are the most exposed</div>
+        </a>
+        <a href="https://www.aiexposure.org/tools/skills-gap" style="display: block; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🧠</div>
+          <div style="font-weight: 600; color: #0f766e;">Skills Gap Analyzer</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">Compare your current skills against AI-resilient careers and see exactly what you need to learn to make the jump</div>
+        </a>
+      </div>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">The Task-Level Detail That Changes Everything</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">Here's what no other platform does: we break every occupation into its individual tasks using O*NET data, then assess each task's automation potential. A cashier doesn't just get a "high risk" label — you see that 78% of their daily tasks (scanning items, processing payments, bagging groceries) are highly automatable, while the remaining 22% (handling customer complaints, checking IDs) still need a human. Every occupation page includes a donut chart showing this breakdown visually.</p>
+
+      <p style="color: #374151; margin-bottom: 1rem;">This matters because "AI will take your job" is almost always wrong. AI will take <em>some of your tasks</em>. Knowing which ones is the difference between panic and a plan.</p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">What the Data Shows</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;"><strong>45.8 million Americans</strong> currently work in occupations our composite model flags as high-risk. The most exposed: cashiers, truck drivers, retail salespersons, fast food workers, and office clerks. These aren't predictions from a think tank — they're based on actual BLS employment counts combined with multiple independent risk assessments.</p>
+
+      <p style="color: #374151; margin-bottom: 1rem;">We also track 511 confirmed AI-related layoffs from layoffs.fyi, mapped to specific occupations and industries. The layoffs aren't hypothetical anymore. They're happening at tech companies, media organizations, financial firms, and customer service centers right now.</p>
+
+      <p style="color: #374151; margin-bottom: 1rem;">Geographic exposure varies dramatically. A metro area dominated by logistics and retail looks very different from one anchored by healthcare and education. The interactive map lets you see this at the county level — all 3,220 of them.</p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">35 Deep Analysis Articles</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">The data is only useful if you can understand it. We wrote <a href="https://www.aiexposure.org/articles" style="color: #0f766e; font-weight: 600;">35 analysis articles</a> covering everything from which industries face the steepest disruption to how geographic concentration creates AI vulnerability hotspots. Every article is data-driven, fully sourced, and designed to inform rather than terrify.</p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">Data-Driven, Not Fear-Mongering</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">We built AI Exposure because the conversation about AI and jobs is dominated by hype on one side and denial on the other. The truth is in the data — and the data says some jobs are genuinely at risk while others are safer than people think. Our goal isn't to scare anyone. It's to give every worker, policymaker, and educator the information they need to make smart decisions about what's coming.</p>
+
+      <p style="color: #374151; margin-bottom: 1rem;">Government data. Academic research. Real layoff tracking. No paywalls. No guesswork.</p>
+
+      <p style="color: #374151; margin-bottom: 1rem;"><a href="https://www.aiexposure.org" style="color: #0f766e; font-weight: 600;">AI Exposure</a> joins TheDataProject's portfolio alongside <a href="https://www.spacgraveyard.com" style="color: #0f766e;">SPACGraveyard</a>, <a href="https://www.openmedicare.us" style="color: #0f766e;">OpenMedicare</a>, <a href="https://www.opencrime.us" style="color: #0f766e;">OpenCrime</a>, <a href="https://www.warcosts.org" style="color: #0f766e;">WarCosts</a>, <a href="https://www.givescope.com" style="color: #0f766e;">GiveScope</a>, and our other public data platforms. Our mission remains the same: make public data accessible, useful, and impossible to ignore.</p>
+
+      <div style="background-color: #0c1222; color: #ffffff; border-radius: 0.75rem; padding: 2rem; margin: 2rem 0; text-align: center;">
+        <p style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; color: #06b6d4;">Explore AI Exposure</p>
+        <p style="color: #94a3b8; margin-bottom: 1.5rem;">925 occupations. 3,220 counties. 5 risk sources. 35 articles. All free.</p>
+        <a href="https://www.aiexposure.org" style="display: inline-block; background-color: #06b6d4; color: #0c1222; padding: 0.75rem 2rem; border-radius: 0.5rem; font-weight: 700; text-decoration: none;">Visit AIExposure.org →</a>
+      </div>
+    `,
+  },
+  {
     slug: "introducing-spacgraveyard",
     title: "Introducing SPACGraveyard: Where $363 Billion Went to Die",
     description: "We tracked 1,344 SPACs, $363 billion in capital, and 67 bankruptcies. SPACGraveyard.com is the definitive forensic investigation of the biggest speculative bubble in blank-check company history.",
