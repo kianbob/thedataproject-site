@@ -44,7 +44,6 @@ export default function Footer() {
               <a href="https://www.openfeds.org" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenFeds</a>
               <a href="https://www.openimmigration.us" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenImmigration</a>
               <a href="https://www.openspending.us" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenSpending</a>
-              <a href="https://www.opensubsidies.org" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenSubsidies</a>
               <a href="https://www.vaccinewatch.org" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">VaccineWatch</a>
               <a href="https://www.openprescriber.org" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenPrescriber</a>
               <a href="https://www.opencrime.us" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">OpenCrime</a>
@@ -53,6 +52,8 @@ export default function Footer() {
               <a href="https://www.spacgraveyard.com" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">SPACGraveyard</a>
               <a href="https://www.aiexposure.org" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">AI Exposure</a>
               <a href="https://www.tarifftax.org" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">TariffTax</a>
+              <a href="https://www.shelterscope.com" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">ShelterScope</a>
+              <a href="https://thedataproject.ai" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">TheDataProject.ai</a>
             </div>
           </div>
           <div>
