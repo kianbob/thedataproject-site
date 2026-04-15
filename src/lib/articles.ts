@@ -2099,6 +2099,112 @@ export const articles: Article[] = [
       <p class="text-gray-600">GiveScope is built by <a href="/" class="text-teal-700 hover:underline font-medium">TheDataProject.AI</a> — making public data usable, searchable, and accessible to everyone.</p>
     `,
   },
+  {
+    slug: "launching-autopilotwatch",
+    title: "Launching AutoPilotWatch: Every Autonomous Vehicle Crash in America, Exposed",
+    description: "We built AutoPilotWatch to make autonomous vehicle safety data transparent. 6,215 crash reports, 68 fatalities, 60 manufacturers, 13 interactive tools — the most comprehensive AV safety tracker on the internet.",
+    date: "2026-04-15",
+    content: `
+      <p style="font-size: 1.125rem; color: #4b5563; margin-bottom: 2rem;">There are <strong>6,215 autonomous vehicle crashes</strong> in NHTSA's mandatory reporting database. <strong>68 people are dead.</strong> Tesla alone accounts for 3,092 of those incidents and 56 of those deaths. And yet, until now, there has been no single place where you could search, analyze, and understand all of this data. We built <a href="https://www.autopilotwatch.com" style="color: #0f766e; font-weight: 600;">AutoPilotWatch</a> to fix that.</p>
+
+      <div style="background-color: #0F172A; color: #ffffff; border-radius: 0.75rem; padding: 2rem; margin: 2rem 0;">
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.25rem; color: #ffffff;">AutoPilotWatch by the Numbers</h2>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
+          <div>
+            <p style="font-size: 2rem; font-weight: 700; color: #f87171;">6,215</p>
+            <p style="color: #d1d5db;">AV crash reports</p>
+          </div>
+          <div>
+            <p style="font-size: 2rem; font-weight: 700; color: #f87171;">68</p>
+            <p style="color: #d1d5db;">Fatalities</p>
+          </div>
+          <div>
+            <p style="font-size: 2rem; font-weight: 700; color: #f87171;">60</p>
+            <p style="color: #d1d5db;">Manufacturers tracked</p>
+          </div>
+          <div>
+            <p style="font-size: 2rem; font-weight: 700; color: #f87171;">3,092</p>
+            <p style="color: #d1d5db;">Tesla incidents alone</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">The Problem: Scattered Data, No Accountability</h2>
+      <p class="text-gray-600 mb-4">In 2021, NHTSA began requiring manufacturers to report any crash involving autonomous driving systems. The data is published as raw CSV files on a government server. No search. No analysis. No context. If you want to know how many people Tesla's Autopilot has killed, you have to download bulk files and parse them yourself.</p>
+      <p class="text-gray-600 mb-4">Meanwhile, the sites that do exist are deeply limited:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-6 space-y-2">
+        <li><strong>tesladeaths.com</strong> tracks fatalities only — no crash data, no analysis, manually updated</li>
+        <li><strong>NHTSA's own portal</strong> offers raw CSV downloads with no search or visualization</li>
+        <li><strong>Manufacturer safety reports</strong> (Tesla, Waymo) are self-reported and cherry-picked</li>
+        <li><strong>Law firm sites</strong> have analysis but exist to generate legal leads, not inform the public</li>
+      </ul>
+      <p class="text-gray-600 mb-4">Nobody has built a comprehensive, manufacturer-agnostic platform that cross-references crash reports, consumer complaints, recalls, and NHTSA investigations into one searchable database. That's what AutoPilotWatch does.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">What We Built</h2>
+      <p class="text-gray-600 mb-4">AutoPilotWatch pulls from six federal data sources — NHTSA's Standing General Order crash reports (both ADS and ADAS), the consumer complaints database, the recalls database, the investigations database, Technical Service Bulletins, and vehicle safety ratings. We cross-reference all of it.</p>
+
+      <h3 class="text-xl font-serif font-bold text-gray-900 mt-8 mb-3">Every Manufacturer, Every Model</h3>
+      <p class="text-gray-600 mb-4">We track <strong>60 manufacturers</strong> and <strong>100+ vehicle models</strong> with AV/ADAS crash reports. Each gets a detailed profile with incident counts, severity breakdowns, trends over time, and comparisons to peers. Tesla dominates with 49.8% of all reports. Waymo is second at 27.8% — though with a radically different safety profile (2 fatalities vs. Tesla's 56).</p>
+
+      <h3 class="text-xl font-serif font-bold text-gray-900 mt-8 mb-3">Searchable Incident Database</h3>
+      <p class="text-gray-600 mb-4">Every one of the 6,215 crash reports is individually searchable by manufacturer, vehicle, state, city, severity, weather conditions, and speed. Each incident has its own detail page with the full NHTSA narrative, crash circumstances, and related incidents.</p>
+
+      <h3 class="text-xl font-serif font-bold text-gray-900 mt-8 mb-3">13 Interactive Tools</h3>
+      <p class="text-gray-600 mb-4">We built tools that let anyone explore the data:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-6 space-y-2">
+        <li><strong>VIN Safety Lookup</strong> — Check if your vehicle is under investigation or recall</li>
+        <li><strong>Manufacturer Safety Scorecard</strong> — Side-by-side safety comparisons</li>
+        <li><strong>Route Risk Checker</strong> — AV incident history for any US city</li>
+        <li><strong>FSD Version Tracker</strong> — Which software versions crash most</li>
+        <li><strong>Recall Checker</strong> — Search recalls by make/model/year</li>
+        <li><strong>Crash Rate Calculator</strong> — Compare AV vs. human crash rates</li>
+        <li><strong>Safety Quiz</strong> — Test your knowledge of AV safety data</li>
+        <li>Plus compare models, incident search, cost calculator, narrative search, and more</li>
+      </ul>
+
+      <h3 class="text-xl font-serif font-bold text-gray-900 mt-8 mb-3">25+ Data-Driven Analysis Articles</h3>
+      <p class="text-gray-600 mb-4">We wrote deep dives into the data that nobody else has published:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-6 space-y-2">
+        <li>AV vs. human crash rates — are self-driving cars actually safer?</li>
+        <li>The phantom braking epidemic — Tesla's #1 complaint</li>
+        <li>Geographic risk hotspots — where AV crashes cluster</li>
+        <li>Speed and severity analysis — how fast were they going?</li>
+        <li>The reporting gap — what manufacturers aren't telling NHTSA</li>
+        <li>Emergency vehicle crashes — a disturbing pattern</li>
+        <li>Highway bias — why most AV deaths happen on highways</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">What the Data Actually Shows</h2>
+      <p class="text-gray-600 mb-4">Some findings from our analysis:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-6 space-y-2">
+        <li><strong>Tesla accounts for 82.3% of all fatalities</strong> in the NHTSA AV crash database (56 of 68)</li>
+        <li><strong>Average crash speed is 36 mph</strong> — these aren't just parking lot fender benders</li>
+        <li><strong>Clear weather dominates</strong> — 57% of crashes happen in clear conditions, undermining the "bad weather" excuse</li>
+        <li><strong>Peak crash time is 3-5 PM</strong> — rush hour, when the roads are most complex</li>
+        <li><strong>Waymo has 1,729 incidents but only 2 fatalities</strong> — suggesting very different safety characteristics between robotaxis and consumer ADAS</li>
+        <li><strong>AV crash reports are accelerating</strong> — monthly incident counts have trended upward since 2021</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Why This Matters Now</h2>
+      <p class="text-gray-600 mb-4">NHTSA has 3.2 million Tesla vehicles under active investigation — one step from mandatory recall. Tesla's robotaxi is launching amid unresolved safety probes. And the regulatory landscape is a patchwork: some states have no AV laws at all, while others require human safety drivers.</p>
+      <p class="text-gray-600 mb-4">The public deserves access to the actual data — not Tesla's self-reported safety statistics, not law firm marketing, not government CSV dumps. AutoPilotWatch makes the real data searchable, understandable, and impossible to ignore.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Part of TheDataProject.AI</h2>
+      <p class="text-gray-600 mb-4">AutoPilotWatch is our 21st public data platform, joining:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-6 space-y-2">
+        <li><a href="https://www.warcosts.org" class="text-teal-700 hover:underline font-medium">WarCosts</a> — Every American war from the Revolution to Iran 2026</li>
+        <li><a href="https://www.opencrime.us" class="text-teal-700 hover:underline font-medium">OpenCrime</a> — FBI crime data for 9,700+ cities</li>
+        <li><a href="https://www.aiexposure.org" class="text-teal-700 hover:underline font-medium">AI Exposure</a> — AI job displacement risk for 925 occupations</li>
+        <li><a href="https://www.shelterscope.com" class="text-teal-700 hover:underline font-medium">ShelterScope</a> — Housing affordability data for 373 metros</li>
+        <li><a href="https://www.givescope.com" class="text-teal-700 hover:underline font-medium">GiveScope</a> — Financial intelligence for 1.9M nonprofits</li>
+        <li><a href="https://www.spacgraveyard.com" class="text-teal-700 hover:underline font-medium">SPACGraveyard</a> — Where $363 billion in SPAC money went to die</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Explore AutoPilotWatch</h2>
+      <p class="text-gray-600 mb-4">Visit <a href="https://www.autopilotwatch.com" style="color: #0f766e; font-weight: 600;">autopilotwatch.com</a> to search every AV crash in America, explore manufacturer safety profiles, check if your vehicle is affected, and read data-driven analysis that holds the self-driving industry accountable.</p>
+      <p class="text-gray-600">AutoPilotWatch is built by <a href="/" class="text-teal-700 hover:underline font-medium">TheDataProject.AI</a> — making public data usable, searchable, and accessible to everyone.</p>
+    `,
+  },
 ];
 
 export const publishedArticles = articles.filter((a) => !a.draft);
