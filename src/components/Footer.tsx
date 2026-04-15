@@ -51,7 +51,7 @@ export default function Footer() {
               <a href="https://www.givescope.com" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">GiveScope</a>
               <a href="https://www.spacgraveyard.com" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">SPACGraveyard</a>
               <a href="https://www.aiexposure.org" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">AI Exposure</a>
-              <a href="https://www.tarifftax.org" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">TariffTax</a>
+              <a href="https://www.autopilotwatch.com" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">AutoPilotWatch</a>              <a href="https://www.tarifftax.org" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">TariffTax</a>
               <a href="https://www.shelterscope.com" target="_blank" rel="noopener noreferrer" className="block text-gray-500 hover:text-teal-700 text-sm transition-colors">ShelterScope</a>
             </div>
           </div>
