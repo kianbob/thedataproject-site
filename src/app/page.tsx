@@ -16,7 +16,7 @@ export default function Home() {
           </h1>
           <p className="mt-6 text-lg md:text-xl text-gray-500 max-w-2xl mx-auto">
             We build searchable, free data platforms from government and public sources.
-            135 sites. 376M+ records. 18 domains. All open to everyone.
+            166 sites. 376M+ records. 18 domains. All open to everyone.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link href="/sites" className="bg-teal-700 hover:bg-teal-800 text-white font-semibold px-6 py-3 rounded-lg transition-colors">

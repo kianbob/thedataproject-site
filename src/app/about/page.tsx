@@ -36,7 +36,7 @@ export default function AboutPage() {
         <div>
           <h2 className="text-2xl font-serif font-bold text-gray-900 mb-4">Our Story</h2>
           <p className="text-gray-600 leading-relaxed">
-            What started as a single healthcare data project grew into a portfolio of 134 platforms. Using AI-assisted development, we can process massive government datasets and build searchable interfaces in days rather than months — putting the focus on making data useful rather than wrestling with infrastructure.
+            What started as a single healthcare data project grew into a portfolio of 166 platforms. Using AI-assisted development, we can process massive government datasets and build searchable interfaces in days rather than months — putting the focus on making data useful rather than wrestling with infrastructure.
           </p>
         </div>
 
