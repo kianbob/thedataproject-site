@@ -9,6 +9,83 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "introducing-clearprices",
+    title: "44% of US Hospitals Charge 5x What Medicare Pays. We Graded All 3,093.",
+    description: "We built ClearPrices.org — a free healthcare price transparency tool using 9.6 million Medicare claims. We graded every US hospital on pricing fairness. The results are damning.",
+    date: "2026-04-20",
+    content: `
+      <p style="font-size: 1.125rem; color: #4b5563; margin-bottom: 2rem;">Healthcare pricing in America is broken. Hospitals charge wildly different amounts for the same procedures, markups are irrational, and patients have almost no way to know what something costs before they get the bill. We built <a href="https://www.clearprices.org" style="color: #059669; font-weight: 600;">ClearPrices.org</a> to change that — using real Medicare data, not estimates.</p>
+
+      <div style="background-color: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 0.75rem; padding: 2rem; margin: 2rem 0;">
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.25rem; color: #059669;">What We Found</h2>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; text-align: center;">
+          <div><div style="font-size: 2rem; font-weight: 700; color: #059669;">44%</div><div style="font-size: 0.75rem; color: #6b7280; margin-top: 0.25rem;">Hospitals Got an F Grade</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #dc2626;">5.5x</div><div style="font-size: 0.75rem; color: #6b7280; margin-top: 0.25rem;">Average Hospital Markup</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #f59e0b;">$38,924</div><div style="font-size: 0.75rem; color: #6b7280; margin-top: 0.25rem;">Avg Air Ambulance Cost</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #059669;">4,430</div><div style="font-size: 0.75rem; color: #6b7280; margin-top: 0.25rem;">Medical Procedures Tracked</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #dc2626;">3,093</div><div style="font-size: 0.75rem; color: #6b7280; margin-top: 0.25rem;">Hospitals Graded A-F</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #f59e0b;">1.26M</div><div style="font-size: 0.75rem; color: #6b7280; margin-top: 0.25rem;">Healthcare Providers</div></div>
+        </div>
+      </div>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">The Price Chaos Problem</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">A knee replacement costs <strong>$1,374</strong> under Medicare — but hospitals charge an average of <strong>$7,874</strong>. That's a 5.7x markup. And it gets worse: the same knee replacement costs $899 in Alabama but $2,641 in Mississippi. Same procedure, same outcome, wildly different prices.</p>
+
+      <p style="color: #374151; margin-bottom: 1rem;">We scored every major procedure on what we call the <strong>Price Chaos Index</strong> — measuring how irrational pricing is across states. The most chaotic procedures show price swings of 500%+ for identical services. This isn't driven by cost differences. It's a market failure.</p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">Hospital Fairness Grades</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">We graded all 3,093 US hospitals on a simple metric: how much do they charge compared to what Medicare pays? The results:</p>
+
+      <ul style="color: #374151; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+        <li style="margin-bottom: 0.5rem;"><strong>Grade A (under 2x markup):</strong> 232 hospitals (7.5%)</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Grade B (2-3x):</strong> 399 hospitals (12.9%)</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Grade C (3-4x):</strong> 546 hospitals (17.6%)</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Grade D (4-5x):</strong> 555 hospitals (17.9%)</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Grade F (over 5x):</strong> 1,361 hospitals (44.0%)</li>
+      </ul>
+
+      <p style="color: #374151; margin-bottom: 1rem;">Nearly half of all hospitals in America charge more than 5x what Medicare pays. If you're uninsured, you're often billed the full chargemaster price — the same inflated number that insurance companies negotiate down by 50-90%.</p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">Fraud Detection Built In</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">We didn't stop at pricing. ClearPrices includes a <a href="https://www.clearprices.org/fraud" style="color: #059669; font-weight: 600;">fraud analysis suite</a> that applies statistical methods to Medicare billing data:</p>
+
+      <ul style="color: #374151; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+        <li style="margin-bottom: 0.5rem;"><strong>Benford's Law analysis</strong> on submitted charges — detecting anomalous digit distributions</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Upcoding detection</strong> — flagging states/specialties with abnormal billing complexity</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Volume outliers</strong> — providers billing impossibly high patient volumes</li>
+        <li style="margin-bottom: 0.5rem;"><strong>83,000 excluded providers</strong> cross-referenced against billing data</li>
+      </ul>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">What You Can Do With It</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 1.5rem 0;">
+        <a href="https://www.clearprices.org/procedures/27447" style="display: block; background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-weight: 600; color: #059669;">Look Up Any Procedure</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">4,430 procedures with state-by-state costs, markups, and provider counts</div>
+        </a>
+        <a href="https://www.clearprices.org/hospitals" style="display: block; background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-weight: 600; color: #059669;">Grade Your Hospital</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">3,093 hospitals graded A-F on pricing fairness with demographics and chronic condition data</div>
+        </a>
+        <a href="https://www.clearprices.org/tools/bundle-calculator" style="display: block; background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-weight: 600; color: #059669;">Calculate the Real Cost</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">See the full cost of a medical journey — from consultation to recovery, not just the surgery</div>
+        </a>
+        <a href="https://www.clearprices.org/bills" style="display: block; background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 0.5rem; padding: 1.25rem; text-decoration: none;">
+          <div style="font-weight: 600; color: #059669;">Check Your Bill</div>
+          <div style="font-size: 0.875rem; color: #6b7280;">Got a medical bill that seems too high? Compare it to what Medicare actually pays</div>
+        </a>
+      </div>
+
+      <p style="color: #374151; margin-bottom: 1rem;">All free. No login. No ads. No paywall. Built with <a href="https://data.cms.gov" style="color: #059669;">public CMS data</a> — 9.6 million provider claims from 2023.</p>
+
+      <p style="color: #374151; margin-bottom: 1rem;"><strong><a href="https://www.clearprices.org" style="color: #059669; font-size: 1.125rem;">Explore ClearPrices.org →</a></strong></p>
+    `
+  },
+  {
     slug: "introducing-ai-exposure",
     title: "Introducing AI Exposure: Which Jobs Will Survive the AI Revolution?",
     description: "We built the most comprehensive data platform tracking AI's impact on 925 real occupations across every U.S. county. 45.8 million Americans work in high-risk roles. AI Exposure shows exactly who, where, and why — with government data, not guesswork.",
