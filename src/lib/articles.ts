@@ -2177,6 +2177,52 @@ export const articles: Article[] = [
     `,
   },
   {
+    slug: "launching-the-ai-lobby",
+    title: "Launching The AI Lobby: Tracking $225M in AI Lobbying, 400+ Bills, and the Companies Buying AI Policy",
+    description: "We built the most comprehensive tracker of AI lobbying, legislation, enforcement, and PAC money in America. 400+ bills across 50 states, 29 companies, 50 Congress members, revolving door data, and enforcement actions — all searchable and free.",
+    date: "2026-04-22",
+    content: `
+      <p class="text-lg text-gray-600 mb-8">Today we're launching <a href="https://www.theailobby.com" class="text-teal-700 hover:underline font-medium">The AI Lobby</a> — a free platform that tracks how the AI industry is shaping policy in America. With <strong>$225 million in lobbying spending</strong>, <strong>400+ bills</strong> across all 50 states, <strong>29 companies</strong>, <strong>50 Congress members</strong>, and a growing enforcement database, it's the most comprehensive open tracker of AI's political influence available anywhere.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Why AI Lobbying Matters Now</h2>
+      <p class="text-gray-600 mb-4">AI is the most consequential technology since the internet — and the industry is spending hundreds of millions to make sure it gets regulated on its own terms. From OpenAI and Google to defense contractors and healthcare companies, the companies building AI are also the ones writing the rules for it.</p>
+      <p class="text-gray-600 mb-4">The data tells a striking story: while Congress debates whether AI needs guardrails, the industry has already deployed an army of lobbyists — many of them former government officials — to shape every bill, every executive order, and every enforcement action. The AI Lobby makes this influence visible.</p>
+
+      <div class="bg-teal-50 border-l-4 border-teal-700 p-6 my-8 rounded-r-lg">
+        <p class="text-2xl font-bold text-teal-800">$225M in AI lobbying tracked</p>
+        <p class="text-teal-700">29 companies, 400+ bills, 50 states — every dollar of AI political influence, searchable and open.</p>
+      </div>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">What's on the Platform</h2>
+      <p class="text-gray-600 mb-4">The AI Lobby covers the full landscape of AI policy influence:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><strong>AI Legislation Tracker:</strong> 400+ bills across all 50 states and Congress, with status, sponsors, and AI-specific provisions</li>
+        <li><strong>Company Profiles:</strong> 29 major AI companies with lobbying spend, PAC contributions, revolving door connections, and legislative targets</li>
+        <li><strong>Congress Member Profiles:</strong> 50 key lawmakers with AI-related committee assignments, industry contributions, and voting records</li>
+        <li><strong>Enforcement Database:</strong> FTC, state AG, and international enforcement actions against AI companies</li>
+        <li><strong>Revolving Door Tracker:</strong> Former government officials now lobbying for AI companies, and former industry executives in government roles</li>
+        <li><strong>PAC Money:</strong> Political action committee contributions from AI companies to federal and state candidates</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Key Findings</h2>
+      <p class="text-gray-600 mb-4">Our analysis of AI political spending reveals patterns that should concern anyone who cares about technology governance:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+        <li><strong>AI lobbying spending has surged</strong> — companies are pouring record amounts into Washington as regulation looms</li>
+        <li><strong>State legislatures are the real battleground</strong> — while Congress stalls, states are moving fast with 400+ AI-related bills</li>
+        <li><strong>The revolving door is spinning</strong> — former regulators and congressional staffers are now representing the companies they once oversaw</li>
+        <li><strong>Enforcement is fragmented</strong> — the FTC, state attorneys general, and international regulators are all taking different approaches, creating a patchwork that benefits well-resourced companies</li>
+      </ul>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Part of TheDataProject Portfolio</h2>
+      <p class="text-gray-600 mb-4">The AI Lobby joins our growing network of government transparency platforms, including <a href="https://www.openlobby.us" class="text-teal-700 hover:underline">OpenLobby</a> (federal lobbying), <a href="https://www.openspending.us" class="text-teal-700 hover:underline">OpenSpending</a> (federal contracts), <a href="https://www.openfeds.org" class="text-teal-700 hover:underline">OpenFeds</a> (federal workforce), and <a href="https://www.aiexposure.org" class="text-teal-700 hover:underline">AI Exposure</a> (AI job displacement risk). Together, these platforms provide the most comprehensive open-access picture of how AI is reshaping government, policy, and the workforce.</p>
+
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 my-8">
+        <p class="font-semibold text-gray-900 mb-2">Explore The AI Lobby →</p>
+        <p class="text-gray-600 text-sm">Start at <a href="https://www.theailobby.com" class="text-teal-700 hover:underline font-medium">www.theailobby.com</a> — track AI lobbying by company, explore state legislation, or dive into the enforcement database.</p>
+      </div>
+    `,
+  },
+  {
     slug: "launching-autopilotwatch",
     title: "Launching AutoPilotWatch: Every Autonomous Vehicle Crash in America, Exposed",
     description: "We built AutoPilotWatch to make autonomous vehicle safety data transparent. 6,215 crash reports, 68 fatalities, 60 manufacturers, 13 interactive tools — the most comprehensive AV safety tracker on the internet.",

@@ -200,6 +200,7 @@ export const sites: Site[] = [
   { id: 168, name: "Texas Unclaimed Property Search", domain: "txunclaimedproperty.com", url: "https://www.txunclaimedproperty.com", records: 3459543, category: "standalone" },
   { id: null, name: "ClearPrices", domain: "clearprices.org", url: "https://www.clearprices.org", records: 9600000, category: "healthcare" },
   { id: null, name: "TariffTax", domain: "tarifftax.org", url: "https://www.tarifftax.org", records: null, category: "government" },
+  { id: null, name: "The AI Lobby", domain: "theailobby.com", url: "https://www.theailobby.com", records: null, category: "government" },
   { id: null, name: "AIExposure", domain: "aiexposure.org", url: "https://www.aiexposure.org", records: 511, category: "government" },
   { id: null, name: "ShelterScope", domain: "shelterscope.com", url: "https://www.shelterscope.com", records: 373, category: "housing" },
   { id: null, name: "GiveScope", domain: "givescope.com", url: "https://www.givescope.com", records: 1930252, category: "business" },
