@@ -29,6 +29,7 @@ export const categories: Category[] = [
   { slug: "software", name: "Software Reviews", icon: "💻", description: "Compare top software products across CRM, accounting, HR, cybersecurity and more.", domain: "topsoftwareproducts.com" },
   { slug: "education", name: "Education", icon: "🎓", description: "College rankings, degree earnings data, and public school directories.", domain: "explorebestcolleges.com" },
   { slug: "heritage", name: "Heritage & Infrastructure", icon: "🏛️", description: "Historic places, museums, dams, and fire stations across the United States.", domain: "heritageindex.org" },
+  { slug: "government-society", name: "Government & Society", icon: "🏛️", description: "Census survey data on AI usage, food insecurity, housing burden, trust in institutions, employment, and wellbeing.", domain: "howisamerica.com" },
 ];
 
 export const sites: Site[] = [
@@ -211,6 +212,7 @@ export const sites: Site[] = [
   { id: null, name: "NBA Awards Tracker", domain: "nbaawardstracker.com", url: "https://www.nbaawardstracker.com", records: null, category: "standalone" },
   { id: null, name: "NewFunds.fyi", domain: "newfunds.fyi", url: "https://www.newfunds.fyi", records: 600, category: "business" },
   { id: null, name: "OpenDOGE", domain: "opendoge-app.vercel.app", url: "https://opendoge-app.vercel.app", records: null, category: "government" },
+  { id: null, name: "How Is America", domain: "howisamerica.com", url: "https://www.howisamerica.com", records: null, category: "government-society" },
 ];
 
 export function formatRecords(count: number | null): string {

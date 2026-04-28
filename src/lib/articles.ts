@@ -9,6 +9,75 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "introducing-how-is-america",
+    title: "24% of Americans Use AI, Only 17.9% Trust Congress: Inside the Census Data Nobody Sees",
+    description: "We built HowIsAmerica.com — the first site to make Census Household Pulse Survey data accessible. 270+ pages covering AI usage, food insecurity, housing burden, trust in institutions, employment, and more across all 51 states.",
+    date: "2026-04-27",
+    content: `
+      <p style="font-size: 1.125rem; color: #4b5563; margin-bottom: 2rem;">How is America really doing? Not according to politicians or pundits — according to the people themselves. The Census Bureau runs the Household Topics and Pulse Survey (HTOPS), asking hundreds of thousands of Americans about their daily reality: Can they afford food? Do they trust their government? Are they using AI? The data is extraordinary — and almost nobody sees it. We built <a href="https://www.howisamerica.com" style="color: #059669; font-weight: 600;">HowIsAmerica.com</a> to change that.</p>
+
+      <div style="background-color: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 0.75rem; padding: 2rem; margin: 2rem 0;">
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.25rem; color: #059669;">What We Found</h2>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; text-align: center;">
+          <div><div style="font-size: 2rem; font-weight: 700; color: #059669;">24%</div><div style="font-size: 0.75rem; color: #6b7280; margin-top: 0.25rem;">Of Americans Use AI</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #dc2626;">17.9%</div><div style="font-size: 0.75rem; color: #6b7280; margin-top: 0.25rem;">Trust Congress</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #f59e0b;">7%</div><div style="font-size: 0.75rem; color: #6b7280; margin-top: 0.25rem;">Food Insecure</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #059669;">270+</div><div style="font-size: 0.75rem; color: #6b7280; margin-top: 0.25rem;">Pages of Data</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #dc2626;">70.7%</div><div style="font-size: 0.75rem; color: #6b7280; margin-top: 0.25rem;">Trust Census Bureau</div></div>
+          <div><div style="font-size: 2rem; font-weight: 700; color: #f59e0b;">6</div><div style="font-size: 0.75rem; color: #6b7280; margin-top: 0.25rem;">Federal Data Sources</div></div>
+        </div>
+      </div>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">The First Site to Make HTOPS Data Accessible</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">The Census Bureau's Household Topics and Pulse Survey is one of the most ambitious data collection efforts in American history — a near-real-time survey of how Americans are actually living. But the data is locked in dense tables, buried in Census Bureau interfaces that require statistical expertise to navigate. We processed all of it into something anyone can explore: state-by-state comparisons, interactive tools, and plain-English analysis across every dimension of American life the Census tracks.</p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">AI Usage: The Surprising Demographics</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">24% of Americans now report using AI — but the demographics challenge every assumption. The $25K–$35K income bracket uses AI at a <strong>higher rate than the $150K+ bracket</strong>. That's not a typo. Lower-income Americans are adopting AI tools at rates that rival or exceed the wealthy. The narrative that AI is a tool of the elite doesn't survive contact with the data.</p>
+
+      <p style="color: #374151; margin-bottom: 1rem;">State-level variation is dramatic. Some states show AI adoption rates above 30%, while others lag below 18%. Age, education, and income all play roles — but not always in the directions you'd expect.</p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">Trust in Institutions: The Full Picture</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">Only <strong>17.9% of Americans trust Congress</strong>. That's not surprising. What is surprising is the full ranking: the Census Bureau itself is the most trusted institution at <strong>70.7%</strong>, followed by the military and local government. The media, Congress, and social media platforms cluster at the bottom. HowIsAmerica breaks this down by state, income, age, and education — revealing which communities have lost faith in which institutions, and why.</p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">Food Insecurity, Housing Burden, and the Squeeze</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">7% of Americans report food insecurity. Housing cost burden affects millions more. We combined these dimensions — plus employment, healthcare access, and financial stress — into two original composite indexes:</p>
+
+      <ul style="color: #374151; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+        <li style="margin-bottom: 0.5rem;"><strong>Wellbeing Index:</strong> A state-by-state score combining food security, housing affordability, employment, health insurance coverage, and mental health indicators</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Squeeze Index:</strong> Measuring how squeezed Americans feel — combining housing burden, food insecurity, financial stress, and difficulty paying bills</li>
+      </ul>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">Interactive Calculator: How Are You Doing?</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">We built an interactive <strong>"How Are You Doing?"</strong> calculator that lets you input your own situation — income, housing costs, food security, employment status — and see how you compare to your state and national averages. It's personal, data-driven, and designed to turn abstract statistics into something that feels real.</p>
+
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem;">Six Federal Data Sources Combined</h2>
+
+      <p style="color: #374151; margin-bottom: 1rem;">HowIsAmerica doesn't rely on a single dataset. We combined six federal data sources to build a comprehensive picture of American life:</p>
+
+      <ul style="color: #374151; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+        <li style="margin-bottom: 0.5rem;">Census Household Pulse Survey (HTOPS)</li>
+        <li style="margin-bottom: 0.5rem;">Bureau of Labor Statistics employment data</li>
+        <li style="margin-bottom: 0.5rem;">Census American Community Survey</li>
+        <li style="margin-bottom: 0.5rem;">USDA food security data</li>
+        <li style="margin-bottom: 0.5rem;">HUD housing affordability data</li>
+        <li style="margin-bottom: 0.5rem;">Federal Reserve economic data</li>
+      </ul>
+
+      <p style="color: #374151; margin-bottom: 1rem;">The result is 270+ pages covering all 51 states (including D.C.), with state profiles, topic deep-dives, interactive tools, and original analysis.</p>
+
+      <div style="background-color: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 0.75rem; padding: 2rem; margin: 2rem 0; text-align: center;">
+        <p style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem; color: #059669;">Explore How Is America</p>
+        <p style="font-size: 0.875rem; margin-bottom: 1.25rem; color: #6b7280;">270+ pages · 51 states · AI usage · Trust in institutions · Food insecurity · Housing burden · Wellbeing Index · Squeeze Index · Interactive calculator</p>
+        <a href="https://www.howisamerica.com" style="display: inline-block; background-color: #059669; color: #ffffff; padding: 0.75rem 2rem; border-radius: 0.5rem; font-weight: 700; text-decoration: none;">Visit HowIsAmerica.com →</a>
+      </div>
+    `
+  },
+  {
     slug: "introducing-clearprices",
     title: "44% of US Hospitals Charge 5x What Medicare Pays. We Graded All 3,093.",
     description: "We built ClearPrices.org — a free healthcare price transparency tool using 9.6 million Medicare claims. We graded every US hospital on pricing fairness. The results are damning.",
