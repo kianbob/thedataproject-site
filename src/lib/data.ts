@@ -213,6 +213,7 @@ export const sites: Site[] = [
   { id: null, name: "NewFunds.fyi", domain: "newfunds.fyi", url: "https://www.newfunds.fyi", records: 600, category: "business" },
   { id: null, name: "OpenDOGE", domain: "opendoge-app.vercel.app", url: "https://opendoge-app.vercel.app", records: null, category: "government" },
   { id: null, name: "How Is America", domain: "howisamerica.com", url: "https://www.howisamerica.com", records: null, category: "government-society" },
+  { id: null, name: "I Hate Patent Trolls", domain: "ihatepatenttrolls.com", url: "https://ihatepatenttrolls.com", records: null, category: "business" },
 ];
 
 export function formatRecords(count: number | null): string {
