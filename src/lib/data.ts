@@ -214,6 +214,8 @@ export const sites: Site[] = [
   { id: null, name: "OpenDOGE", domain: "opendoge-app.vercel.app", url: "https://opendoge-app.vercel.app", records: null, category: "government" },
   { id: null, name: "How Is America", domain: "howisamerica.com", url: "https://www.howisamerica.com", records: null, category: "government-society" },
   { id: null, name: "I Hate Patent Trolls", domain: "ihatepatenttrolls.com", url: "https://ihatepatenttrolls.com", records: null, category: "business" },
+  { id: null, name: "GovBidAlerts", domain: "govbidalerts.org", url: "https://govbidalerts.org", records: null, category: "government" },
+  { id: null, name: "PortcoMonitor", domain: "portcomonitor.com", url: "https://portcomonitor.com", records: null, category: "business" },
 ];
 
 export function formatRecords(count: number | null): string {
