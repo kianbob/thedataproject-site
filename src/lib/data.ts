@@ -29,7 +29,7 @@ export const categories: Category[] = [
   { slug: "software", name: "Software Reviews", icon: "💻", description: "Compare top software products across CRM, accounting, HR, cybersecurity and more.", domain: "topsoftwareproducts.com" },
   { slug: "education", name: "Education", icon: "🎓", description: "College rankings, degree earnings data, and public school directories.", domain: "explorebestcolleges.com" },
   { slug: "heritage", name: "Heritage & Infrastructure", icon: "🏛️", description: "Historic places, museums, dams, and fire stations across the United States.", domain: "heritageindex.org" },
-  { slug: "government-society", name: "Government & Society", icon: "🏛️", description: "Census survey data on AI usage, food insecurity, housing burden, trust in institutions, employment, and wellbeing.", domain: "howisamerica.com" },
+  { slug: "government", name: "Government", icon: "🏛️", description: "Government data platforms covering federal spending, lobbying, immigration, crime, military costs, subsidies, and more.", domain: "openspending.us" },
 ];
 
 export const sites: Site[] = [
@@ -212,9 +212,9 @@ export const sites: Site[] = [
   { id: null, name: "NBA Awards Tracker", domain: "nbaawardstracker.com", url: "https://www.nbaawardstracker.com", records: null, category: "standalone" },
   { id: null, name: "NewFunds.fyi", domain: "newfunds.fyi", url: "https://www.newfunds.fyi", records: 600, category: "business" },
   { id: null, name: "OpenDOGE", domain: "opendoge-app.vercel.app", url: "https://opendoge-app.vercel.app", records: null, category: "government" },
-  { id: null, name: "How Is America", domain: "howisamerica.com", url: "https://www.howisamerica.com", records: null, category: "government-society" },
+  { id: null, name: "How Is America", domain: "howisamerica.com", url: "https://www.howisamerica.com", records: null, category: "government" },
   { id: null, name: "I Hate Patent Trolls", domain: "ihatepatenttrolls.com", url: "https://ihatepatenttrolls.com", records: null, category: "business" },
-  { id: null, name: "GovBidAlerts", domain: "govbidalerts.org", url: "https://govbidalerts.org", records: null, category: "government-society" },
+  { id: null, name: "GovBidAlerts", domain: "govbidalerts.org", url: "https://govbidalerts.org", records: null, category: "government" },
   { id: null, name: "PortcoMonitor", domain: "portcomonitor.com", url: "https://portcomonitor.com", records: null, category: "business" },
 ];
 
