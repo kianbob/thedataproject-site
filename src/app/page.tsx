@@ -107,6 +107,13 @@ export default function Home() {
               <p className="text-gray-500 mt-2">Track $147 billion in USDA farm subsidies. 31.8M payment records, 157 programs, every state and county. Entity analysis, zombie programs, DOGE reform angles.</p>
               <span className="inline-block mt-4 text-teal-700 text-sm font-medium">opensubsidies.org →</span>
             </a>
+            <a href="https://permitcore.io" target="_blank" rel="noopener noreferrer"
+              className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group">
+              <div className="text-4xl mb-4">🏗️</div>
+              <h3 className="text-xl font-bold text-gray-900 group-hover:text-teal-700 transition-colors">PermitCore</h3>
+              <p className="text-gray-500 mt-2">Sales intelligence for building-products teams. Daily-refreshed construction permits classified by segment, enriched with parcel data, geocoded, and ranked by contractor volume.</p>
+              <span className="inline-block mt-4 text-teal-700 text-sm font-medium">permitcore.io →</span>
+            </a>
           </div>
         </div>
       </section>

@@ -2397,6 +2397,64 @@ export const articles: Article[] = [
       <p class="text-gray-600">AutoPilotWatch is built by <a href="/" class="text-teal-700 hover:underline font-medium">TheDataProject.AI</a> — making public data usable, searchable, and accessible to everyone.</p>
     `,
   },
+  {
+    slug: "introducing-permitcore",
+    title: "Introducing PermitCore — Sales Intelligence from Construction Permits",
+    description: "We built PermitCore to turn raw construction permit filings into actionable sales intelligence for building-products teams. Daily-refreshed, segment-classified, parcel-joined, and honestly labeled.",
+    date: "2026-08-03",
+    content: `
+      <p style="font-size: 1.125rem; color: #4b5563; margin-bottom: 2rem;">Every day, thousands of commercial construction permits get filed across New York City. Each one represents a real project — a contractor who needs materials, equipment, and subcontractors. For building-products sales teams, these permits are the earliest possible signal that a deal is forming. The problem? The raw data is a mess. We built <a href="https://permitcore.io" style="color: #0f766e; font-weight: 600;">PermitCore</a> to fix that.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">The Problem: Permit Data Exists, but It's Unusable</h2>
+      <p class="text-gray-600 mb-4">Construction permit data is public record. Cities publish it. In theory, any sales team could download a CSV from NYC's DOB and start prospecting. In practice, nobody does — because the raw data is nearly useless for sales purposes.</p>
+      <p class="text-gray-600 mb-4">Permit descriptions are free-text fields written by contractors in a hurry. "INSTALL NEW HVAC SYSTEM 3RD FLR" sits next to "MECHANICAL WORK PER PLANS" sits next to "AS PER DOB APPROVED PLANS." There's no standardized category field. There's no reliable way to know whether a permit is for roofing, plumbing, fire suppression, or electrical work without reading each description manually.</p>
+      <p class="text-gray-600 mb-4">On top of that, the permit record tells you nothing about the building itself — its size, zoning, age, owner, or roof area. You get an address and a BIN number. To build a complete picture, you'd need to cross-reference multiple city datasets, geocode addresses, and do your own enrichment. That's weeks of data engineering before you can even start selling.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">What PermitCore Does</h2>
+      <p class="text-gray-600 mb-4">PermitCore is sales intelligence for building-products teams. It takes raw construction permit filings and transforms them into a structured, searchable, enriched dataset that's refreshed nightly. Here's the pipeline:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-6 space-y-2">
+        <li><strong>Ingest:</strong> We pull new permit filings from NYC DOB every night — job filings, applications, and permits across all five boroughs.</li>
+        <li><strong>Classify:</strong> Each permit gets classified into real trade segments — Commercial HVAC, Sprinklers &amp; Fire Suppression, Roofing, Plumbing, Electrical, General Construction, and more. We read the actual permit description, work type, and filing fields to make segment calls — not just keyword matching.</li>
+        <li><strong>Parcel-join:</strong> Every permit is joined to NYC PLUTO (Primary Land Use Tax Lot Output) data via BIN and BBL. This enriches each record with zoning district, lot area, building area, year built, number of units, owner name, and land use classification.</li>
+        <li><strong>Geocode:</strong> Addresses are geocoded with confidence scores so you can map permits, build territory views, and filter by geography.</li>
+        <li><strong>Enrich:</strong> We estimate roof area and HVAC load based on building characteristics — useful for roofing and mechanical distributors sizing opportunities.</li>
+        <li><strong>Rank:</strong> Contractors are ranked by permit volume, estimated project value, and momentum (are they pulling more permits this quarter than last?).</li>
+      </ul>
+      <p class="text-gray-600 mb-4">The result: a clean, structured feed of commercial construction activity that sales teams can actually use. Filter by segment, borough, contractor, date range, or building type. Export to CSV or Parquet. Hit the API for automated workflows.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Why Classification Matters (and Why Most Get It Wrong)</h2>
+      <p class="text-gray-600 mb-4">This is where PermitCore diverges from competitors like Shovels. Most permit data platforms use keyword matching or simple rules to categorize permits. "HVAC" in the description? It's an HVAC permit. "Roof" mentioned? Roofing. This sounds reasonable until you realize how many permits have vague, ambiguous, or missing descriptions.</p>
+      <p class="text-gray-600 mb-4">What do you do with "GENERAL CONSTRUCTION PER APPROVED PLANS"? Or "MECHANICAL ALTERATIONS"? Or permits where the description is just a project number? Keyword-matching platforms force these into a category anyway — because empty segments look bad in a demo. The result is contaminated data. Your HVAC segment includes permits that aren't HVAC. Your roofing leads include general construction. The sales team wastes time chasing bad leads and loses trust in the data.</p>
+      <p class="text-gray-600 mb-4">PermitCore takes a different approach: <strong>honest classification.</strong> When the permit fields don't contain enough information to make a confident segment call, we label it "Unclassified" rather than guessing. We'd rather give you 800 permits we're confident are Commercial HVAC than 1,200 where 400 are wrong. Every classified permit includes the evidence — the specific fields and text that drove the segment assignment — so you can verify it yourself.</p>
+      <p class="text-gray-600 mb-4">This isn't a limitation. It's a feature. Sales teams that have used both approaches tell us they'd rather have a smaller, accurate list than a larger, noisy one. When every lead in your CRM is a real HVAC project, your conversion rate goes up and your reps stop questioning the data.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Three Ways Sales Teams Use PermitCore</h2>
+
+      <h3 class="text-xl font-serif font-bold text-gray-900 mt-8 mb-3">1. Territory Intelligence</h3>
+      <p class="text-gray-600 mb-4">A regional sales manager for a commercial roofing distributor needs to know: which contractors in my territory are active right now? PermitCore shows every contractor who pulled a roofing permit in the last 90 days, ranked by volume. The rep can see which contractors are ramping up (pulling more permits than usual), which buildings are involved (age, size, zoning), and where the projects are clustered geographically. Instead of cold-calling from a stale list, they're reaching out to contractors who have active projects that need materials right now.</p>
+
+      <h3 class="text-xl font-serif font-bold text-gray-900 mt-8 mb-3">2. Competitive Displacement</h3>
+      <p class="text-gray-600 mb-4">An HVAC equipment manufacturer wants to identify contractors who are growing fast but aren't yet loyal to a competitor's brand. PermitCore's contractor momentum rankings highlight firms whose permit volume is accelerating quarter over quarter. The manufacturer's sales team targets these high-growth contractors with product demos and pricing, catching them before a competitor locks them in with a volume agreement.</p>
+
+      <h3 class="text-xl font-serif font-bold text-gray-900 mt-8 mb-3">3. Market Sizing and Planning</h3>
+      <p class="text-gray-600 mb-4">A fire suppression systems company is evaluating whether to expand into a new borough. PermitCore's segment-level analytics show sprinkler and fire suppression permit volume by geography, building type, and time period. They can see whether activity is growing or contracting, who the dominant contractors are, and what types of buildings are driving demand. The expansion decision is backed by data, not gut feel.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">The Data Quality Philosophy</h2>
+      <p class="text-gray-600 mb-4">PermitCore is built on a simple principle: <strong>never fabricate confidence you don't have.</strong> This applies everywhere:</p>
+      <ul class="list-disc pl-6 text-gray-600 mb-6 space-y-2">
+        <li><strong>Geocoding:</strong> Every geocoded address includes a confidence score. If we can't confidently place a permit on the map, we flag it rather than silently dropping a pin at the zip code centroid.</li>
+        <li><strong>Classification:</strong> Permits without enough information for a segment call are labeled "Unclassified" — not forced into the closest guess.</li>
+        <li><strong>Enrichment:</strong> Roof area and HVAC load are estimates based on building characteristics. We label them as estimates, show the inputs, and let you decide how to use them.</li>
+        <li><strong>Parcel data:</strong> When a BIN or BBL doesn't match PLUTO records (new construction, data lag), we show what we have and flag what's missing.</li>
+      </ul>
+      <p class="text-gray-600 mb-4">This philosophy extends to pricing and access. PermitCore has transparent pricing on the website — no "contact sales" gates, no enterprise minimums for basic access. Self-serve API access and bulk exports are available from day one. If the data is public, the tooling to use it shouldn't require a sales call.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-gray-900 mt-12 mb-4">Part of TheDataProject.AI</h2>
+      <p class="text-gray-600 mb-4">PermitCore joins our growing portfolio of data platforms that make public records usable. The same philosophy that drives <a href="https://www.openspending.us" class="text-teal-700 hover:underline font-medium">OpenSpending</a> (federal contracts and grants), <a href="https://www.openimmigration.us" class="text-teal-700 hover:underline font-medium">OpenImmigration</a> (9.6M immigration court cases), and <a href="https://www.opencrime.us" class="text-teal-700 hover:underline font-medium">OpenCrime</a> (FBI data for 9,700+ cities) applies here: public data should be structured, searchable, and accessible — not locked behind bureaucratic interfaces or enterprise paywalls.</p>
+      <p class="text-gray-600 mb-4">Construction permits are among the most valuable public datasets in commercial real estate and building products. They're also among the least accessible in usable form. PermitCore changes that.</p>
+      <p class="text-gray-600 mb-4">Visit <a href="https://permitcore.io" style="color: #0f766e; font-weight: 600;">permitcore.io</a> to explore the data, try the API, or set up segment-filtered alerts for your territory. No sales call required.</p>
+    `,
+  },
 ];
 
 export const publishedArticles = articles.filter((a) => !a.draft);

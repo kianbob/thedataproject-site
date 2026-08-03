@@ -8,7 +8,7 @@ const categories: Record<string, string[]> = {
   Flagships: ["tracking-medicaid-spending", "federal-brain-drain", "federal-spending-breakdown", "building-with-ai", "introducing-warcosts"],
   Healthcare: ["healthcare-data"],
   Government: ["government-salaries", "ppp-loan-lookup"],
-  Finance: ["housing-finance", "elections-political-money", "business-finance"],
+  Finance: ["housing-finance", "elections-political-money", "business-finance", "introducing-permitcore"],
   Data: ["food-agriculture", "transportation-data", "genealogy-records", "heritage-infrastructure", "education-data", "software-reviews", "california-unclaimed-property"],
 };
 
