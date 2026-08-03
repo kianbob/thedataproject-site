@@ -217,6 +217,7 @@ export const sites: Site[] = [
   { id: null, name: "GovBidAlerts", domain: "govbidalerts.org", url: "https://govbidalerts.org", records: null, category: "government" },
   { id: null, name: "PortcoMonitor", domain: "portcomonitor.com", url: "https://portcomonitor.com", records: null, category: "business" },
   { id: null, name: "GovComp", domain: "govcomp.app", url: "https://govcomp.app", records: null, category: "government" },
+  { id: null, name: "PermitCore", domain: "permitcore.io", url: "https://permitcore.io", records: null, category: "business" },
 ];
 
 export function formatRecords(count: number | null): string {
